@@ -654,8 +654,8 @@ public:
 	static const int mapChipValueMax = 63;
 	
 	/// 1マスのドット数
-	static const int mapOnePanelDot = 28;
-	
+	static const int mapOnePanelDot = 24;
+
 	/// パーティ数
 	static const int maxParty = 3;
 	/// 最大スキル数
@@ -664,7 +664,7 @@ public:
 	static const int maxUnitItem = 16;
 	
 	/// スプライト倍率
-	static constexpr float spriteScale = 4.0;
+//    static constexpr float spriteScale = 4.0;
 
 	/// 下チップZインデックス
 	static const int zSortDownMapChip = 1;
@@ -674,7 +674,7 @@ public:
 	static const int zSortUnit = 100;
 	/// 上チップZインデックス(投下あり) + Y座標
 	static const int zSortUpMapChipTrans = 100;
-	
+
 private:
 	
 	/**

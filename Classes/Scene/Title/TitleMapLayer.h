@@ -37,12 +37,14 @@ private:
 	/// チップ
 	Sprite **chips;
 	
-	/// 幅
-	int mapWidth;
-	/// 高さ
-	int mapHeight;
-	
-	/**
+	/// マップサイズ幅
+    int mapSizeWidth;
+    /// マップサイズ高さ
+    int mapSizeHeight;
+    /// ワールドサイズ
+    Size worldSize;
+
+    /**
 	 *  レイヤー初期化
 	 */
 	virtual void initLayer() override;

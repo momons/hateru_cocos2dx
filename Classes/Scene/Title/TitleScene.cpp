@@ -61,6 +61,5 @@ void TitleScene::setupInstance() {
  *  @param delta デルタ
  */
 void TitleScene::update(float delta) {
-	
 }
 

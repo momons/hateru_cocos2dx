@@ -69,7 +69,7 @@ void UnitLayer::setupUnitLayer(PlayerEntity *playerEntity, GameMapEntity *mapEnt
 	for (auto i = 0;i < playerEntity->units.size();i++) {
 		units[i] = UnitSprite::create(dataService->charas[playerEntity->units[i].unitId]);
 		units[i]->setMapLocation(playerEntity->location.x, playerEntity->location.y);
-		units[i]->setScale(GameConst::spriteScale);
+//        units[i]->setScale(GameConst::spriteScale);
 		addChild(units[i]);
 	}
 	
@@ -78,7 +78,7 @@ void UnitLayer::setupUnitLayer(PlayerEntity *playerEntity, GameMapEntity *mapEnt
 		if (!mapEntity->events[i].isUseUnit && mapEntity->events[i].workStatus == EventWorkStatus::Valid) {
 			units[i] = UnitSprite::create(dataService->charas[mapEntity->events[i].charaId]);
 			units[i]->setMapLocation(mapEntity->events[i].mapX, mapEntity->events[i].mapY);
-			units[i]->setScale(GameConst::spriteScale);
+//            units[i]->setScale(GameConst::spriteScale);
 			addChild(units[i]);
 		}
 	}

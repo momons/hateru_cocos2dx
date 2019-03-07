@@ -73,7 +73,7 @@ void MapUpLayer::setupMapUpLayer(const GameMapEntity *mapEntity) {
 			int mapChipIndex =  mapEntity->upMapChips[it->upChipId - 1];
 			if (mapChipIndex != 255) {
 				chips[index] = Sprite::createWithSpriteFrame(getSpriteFrame(mapChipIndex));
-				chips[index]->setScale(GameConst::spriteScale);
+//                chips[index]->setScale(GameConst::spriteScale);
 				addChild(chips[index], 0);
 			}
 		}

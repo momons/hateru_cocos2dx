@@ -137,7 +137,7 @@ void MapLayer::setupNormalMap(const GameMapEntity *mapEntity) {
 			int mapChipIndex =  mapEntity->downMapChips[it->downChipId - 1];
 			if (mapChipIndex != 255) {
 				downChips[index] = Sprite::createWithSpriteFrame(getSpriteFrame(mapChipIndex));
-				downChips[index]->setScale(GameConst::spriteScale);
+//                downChips[index]->setScale(GameConst::spriteScale);
 				addChild(downChips[index], GameConst::zSortDownMapChip);
 			}
 		}
@@ -146,7 +146,7 @@ void MapLayer::setupNormalMap(const GameMapEntity *mapEntity) {
 			int mapChipIndex = mapEntity->upMapChips[it->upChipId - 1];
 			if (mapChipIndex != 255) {
 				upChips[index] = Sprite::createWithSpriteFrame(getSpriteFrame(mapChipIndex));
-				upChips[index]->setScale(GameConst::spriteScale);
+//                upChips[index]->setScale(GameConst::spriteScale);
 				addChild(upChips[index], GameConst::zSortUpMapChip);
 			}
 		}

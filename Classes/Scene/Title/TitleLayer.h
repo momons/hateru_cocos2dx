@@ -34,6 +34,16 @@ public:
 	
 private:
 	
+    /// タイトル
+    Sprite *_titleSprite;
+    /// 気球
+    Sprite *_balloonSprite;
+    /// 気球の影
+    DrawNode *_balloonShadow;
+
+    /// 気球の速度
+    Point _balloonSpeed;
+    
 	/**
 	 *  レイヤー初期化
 	 */

@@ -157,8 +157,8 @@ void BaseLayer::setBackgroundColor(const Color4B color) {
 		backgroundColor->removeFromParent();
 		backgroundColor = nullptr;
 	}
-	Size size = Director::getInstance()->getVisibleSize();
-	backgroundColor = LayerColor::create(color, size.width, size.height);
+    auto screenSize = Director::getInstance()->getOpenGLView()->getDesignResolutionSize();
+	backgroundColor = LayerColor::create(color, screenSize.width, screenSize.height);
 	this->addChild(backgroundColor, 0);
 }
 

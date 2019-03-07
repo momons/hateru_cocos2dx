@@ -31,7 +31,7 @@ private:
 	
 	/// インスタンス
 	static TitleScene *instance;
-	
+    
 	/**
 	 *  インストラクタ
 	 */

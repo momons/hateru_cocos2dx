@@ -57,27 +57,31 @@ void TitleMapLayer::initLayer() {
 	setBackgroundColor(Color4B(0, 0, 0, 0));
 
 	// 幅、高さ計算
-	auto glview = Director::getInstance()->getOpenGLView();
-	auto screenSize = glview->getDesignResolutionSize();
-	mapWidth = (int)ceil(screenSize.width / (GameConst::mapOnePanelDot * GameConst::spriteScale));
-	mapHeight = (int)ceil(screenSize.height / (GameConst::mapOnePanelDot * GameConst::spriteScale)) + 2;
-	
+    auto screenSize = Director::getInstance()->getOpenGLView()->getFrameSize();
+	mapSizeWidth = (int)(screenSize.width / GameConst::mapOnePanelDot) + 3;
+	mapSizeHeight = (int)(screenSize.height / GameConst::mapOnePanelDot) + 3;
+    worldSize.width = mapSizeWidth * GameConst::mapOnePanelDot;
+    worldSize.height = mapSizeHeight * GameConst::mapOnePanelDot;
+
 	// メモリ確保
-	int size = mapWidth * mapHeight * sizeof(Sprite*);
+	int size = mapSizeWidth * mapSizeHeight * sizeof(Sprite*);
 	chips = (Sprite**)malloc(size);
 	memset(chips, 0x00, size);
 	
 	// スプライト設定
 	int index = 0;
-	for (auto i = 0;i < mapWidth;i++) {
-		for (auto j = 0;j < mapHeight;j++) {
-			auto filePath = GameMapManager::getImageFilePath(11);
+    float x = 0;
+	for (auto i = 0;i < mapSizeWidth;i++) {
+        float y = 0;
+		for (auto j = 0;j < mapSizeHeight;j++) {
+			auto filePath = GameMapManager::getImageFilePath(11); // 海
 			chips[index] = Sprite::createWithSpriteFrame(SpriteFrameCache::getInstance()->getSpriteFrameByName(filePath));
-			chips[index]->setPosition(Point(j * GameConst::mapOnePanelDot, i * GameConst::mapOnePanelDot));
-			chips[index]->setScale(GameConst::spriteScale);
-			addChild(chips[index]);
+			chips[index]->setPosition(Point(x, y));
+			addChild(chips[index], 0);
 			index += 1;
+            y += GameConst::mapOnePanelDot;
 		}
+        x += GameConst::mapOnePanelDot;
 	}
 }
 
@@ -85,5 +89,14 @@ void TitleMapLayer::initLayer() {
  *  レイヤーメイン処理
  */
 void TitleMapLayer::layerMain() {
-	
+    auto position = getPosition();
+    position.x -= 1;
+    position.y -= 1;
+    if (position.x < -GameConst::mapOnePanelDot) {
+        position.x += GameConst::mapOnePanelDot;
+    }
+    if (position.y < -GameConst::mapOnePanelDot) {
+        position.y += GameConst::mapOnePanelDot;
+    }
+    setPosition(position);
 }
