@@ -18,3 +18,11 @@ string ItemListGetMyFetcher::url() {
 	return UrlConst::domainName + "/item_list_get_my";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type ItemListGetMyFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

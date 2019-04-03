@@ -18,3 +18,11 @@ string ItemSendFetcher::url() {
 	return UrlConst::domainName + "/item_send";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type ItemSendFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

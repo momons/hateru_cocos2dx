@@ -23,7 +23,14 @@ public:
 	 *  @return URL
 	 */
 	string url();
-	
+    
+    /**
+     *  メソッド取得
+     *
+     *  @return Method
+     */
+    network::HttpRequest::Type method();    
+
 private:
 	
 };

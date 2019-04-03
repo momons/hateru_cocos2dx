@@ -18,3 +18,11 @@ string SaveSendFetcher::url() {
 	return UrlConst::domainName + "/save_send";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type SaveSendFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

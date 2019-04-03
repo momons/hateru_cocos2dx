@@ -18,3 +18,12 @@ string BbsGetFetcher::url() {
 	return UrlConst::domainName + "/bbs_get";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type BbsGetFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}
+

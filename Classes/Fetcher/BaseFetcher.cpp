@@ -27,7 +27,7 @@ void BaseFetcher<T_REQUEST, T_RESPONSE>::startRequest(T_REQUEST requestEntity, s
 	// 通信設定
 	auto request = new network::HttpRequest();
 	request->setUrl(url().c_str());
-	request->setRequestType(network::HttpRequest::Type::POST);
+	request->setRequestType(method());
 	request->setResponseCallback(this, httpresponse_selector(BaseFetcher::onHttpRequestCompleted));
 
 	// POSTデータ作成

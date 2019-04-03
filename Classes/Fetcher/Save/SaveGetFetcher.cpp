@@ -18,3 +18,11 @@ string SaveGetFetcher::url() {
 	return UrlConst::domainName + "/save_get";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type SaveGetFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

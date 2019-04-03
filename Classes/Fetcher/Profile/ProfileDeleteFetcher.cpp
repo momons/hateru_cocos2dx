@@ -18,3 +18,11 @@ string ProfileDeleteFetcher::url() {
 	return UrlConst::domainName + "/profile_delete";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type ProfileDeleteFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

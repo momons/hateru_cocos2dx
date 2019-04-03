@@ -18,3 +18,11 @@ string ProfileSendFetcher::url() {
 	return UrlConst::domainName + "/profile_send";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type ProfileSendFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

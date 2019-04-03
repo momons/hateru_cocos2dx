@@ -18,3 +18,12 @@ string TokenGetFetcher::url() {
 	return UrlConst::domainName + "/token_get";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type TokenGetFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}
+

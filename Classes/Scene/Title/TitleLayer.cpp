@@ -97,7 +97,7 @@ void TitleLayer::layerMain() {
     } else if (position.y >= screenSize.height) {
         position.y = screenSize.height;
         _balloonSpeed.y = -0.5;
-    }
+    }   
 
     _balloonSprite->setPosition(position);
     _balloonShadow->setPosition(position.x, position.y - 40);

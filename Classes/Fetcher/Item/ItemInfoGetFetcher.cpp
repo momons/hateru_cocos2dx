@@ -18,3 +18,11 @@ string ItemInfoGetFetcher::url() {
 	return UrlConst::domainName + "/item_info_get";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type ItemInfoGetFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

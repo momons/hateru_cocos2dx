@@ -18,3 +18,12 @@ string CharaSendFetcher::url() {
 	return UrlConst::domainName + "/chara_send";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type CharaSendFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}
+

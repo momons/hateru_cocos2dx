@@ -18,3 +18,12 @@ string BbsWriteFetcher::url() {
 	return UrlConst::domainName + "/bbs_write";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type BbsWriteFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}
+

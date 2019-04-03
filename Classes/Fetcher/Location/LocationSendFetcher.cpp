@@ -18,3 +18,11 @@ string LocationSendFetcher::url() {
 	return UrlConst::domainName + "/location_send";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type LocationSendFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}

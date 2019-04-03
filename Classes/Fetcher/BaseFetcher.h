@@ -53,6 +53,13 @@ public:
 	 */
 	virtual string url() = 0;
 	
+    /**
+     *  メソッド取得
+     *
+     *  @return Method
+     */
+    virtual network::HttpRequest::Type method() = 0;
+    
 	/**
 	 *  エラーチェック
 	 *

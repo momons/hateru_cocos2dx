@@ -18,3 +18,12 @@ string CharaGetFetcher::url() {
 	return UrlConst::domainName + "/chara_get";
 }
 
+/**
+ *  メソッド取得
+ *
+ *  @return Method
+ */
+network::HttpRequest::Type CharaGetFetcher::method() {
+    return network::HttpRequest::Type::GET;
+}
+
