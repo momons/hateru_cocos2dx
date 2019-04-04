@@ -7,68 +7,112 @@
 
 #include "AuthService.h"
 
-/// インスタンス
 AuthService *AuthService::instance;
 
-/**
- *  インストラクタ
- */
 AuthService::AuthService() {
     
 #if defined(__ANDROID__)
-    app = firebase::App::Create(firebase::AppOptions(), my_jni_env, my_activity);
+    app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
 #else
-    app = firebase::App::Create(firebase::AppOptions());
+    app = App::Create(firebase::AppOptions());
 #endif  // defined(__ANDROID__)
     
-    auth = firebase::auth::Auth::GetAuth(app);
-    //    auto auth = new firebase::auth::Auth;
-    //    firebase::Future<firebase::auth::User*> result = auth->CreateUserWithEmailAndPassword("a", "b");
+    auth = auth::Auth::GetAuth(app);
 }
 
-/**
- *  インスタンスシェア
- *
- *  @return インスタンス
- */
 AuthService *AuthService::sharedInstance() {
     static once_flag flag;
     call_once(flag, setupInstance);
     return instance;
 }
 
-/**
- *  インスタンス設定
- */
 void AuthService::setupInstance() {
     instance = new AuthService();
 }
 
-/**
- *  ログイン可否
- *
- *  @return true:ログイン中、false:非ログイン
- */
+// MARK:- サインアップ
+
+void AuthService::SignUpByEmail(const string email, const string password, const function<void(bool)> handler) {
+    auto result = auth->CreateUserWithEmailAndPassword(email.c_str(), password.c_str());
+    result.OnCompletion([handler](const Future<auth::User *> &result) {
+        if (result.error() != auth::kAuthErrorNone) {
+            printf("failed Sign in '%s'\n", result.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+// MARK:- サインイン
+
+void AuthService::SignInByEmail(const string email, const string password, const function<void(bool)> handler) {
+    auto result = auth->SignInWithEmailAndPassword(email.c_str(), password.c_str());
+    result.OnCompletion([handler](const Future<auth::User *> &result) {
+        if (result.error() != auth::kAuthErrorNone) {
+            printf("failed Sign in '%s'\n", result.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+void AuthService::SignInByGoogle(const string idToken, const function<void(bool)> handler) {
+    auto credential = auth::GoogleAuthProvider::GetCredential(idToken.c_str(), nullptr);
+    auto result = auth->SignInWithCredential(credential);
+    result.OnCompletion([handler](const Future<auth::User *> &result) {
+        if (result.error() != auth::kAuthErrorNone) {
+            printf("failed Sign in '%s'\n", result.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+void AuthService::SignInByFacebook(const string accessToken, const function<void(bool)> handler) {
+    auto credential = auth::FacebookAuthProvider::GetCredential(accessToken.c_str());
+    auto result = auth->SignInWithCredential(credential);
+    result.OnCompletion([handler](const Future<auth::User *> &result) {
+        if (result.error() != auth::kAuthErrorNone) {
+            printf("failed Sign in '%s'\n", result.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+void AuthService::SignInByTwitter(const string token, const string secret, const function<void(bool)> handler) {
+    auto credential = auth::TwitterAuthProvider::GetCredential(token.c_str(), secret.c_str());
+    auto result = auth->SignInWithCredential(credential);
+    result.OnCompletion([handler](const Future<auth::User *> &result) {
+        if (result.error() != auth::kAuthErrorNone) {
+            printf("failed Sign in '%s'\n", result.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+// MARK:- サインアウト
+
+void AuthService::SignOut() {
+    auth->SignOut();
+}
+
+// MARK:- その他
+
 bool AuthService::isLoggedIn() {
     return auth->current_user() != nullptr;
 }
 
-/**
- *  ユーザーID取得
- *
- *  @return ユーザーID
- */
 string AuthService::userId() {
     auto user = auth->current_user();
     if (user == nullptr) {
         return "";
     }
     return user->uid();
-}
-
-/**
- *  ログアウト
- */
-void AuthService::Logout() {
-    auth->SignOut();
 }
