@@ -20,17 +20,6 @@ using namespace std;
 class PlayerProfileEntity final: public Ref {
 public:
 	
-	/// 性別
-	int gender;
-	/// 年齢
-	int age;
-	/// 住所
-	int address;
-	/// 血液型
-	int blood;
-	/// 星座
-	int constellation;
-	
 	/**
 	 *  コンストラクタ
 	 */
@@ -39,7 +28,7 @@ public:
 	/**
 	 *  デストラクタ
 	 */
-	~PlayerProfileEntity();
+    ~PlayerProfileEntity() {};
 	
 	/**
 	 *  シリアライズ
@@ -56,9 +45,50 @@ public:
 	 *  @return マッピング可否
 	 */
 	bool mapping(picojson::object &object);
-	
+
+    /**
+     *  性別 setter/getter
+     */
+    void setGender(const int gender);
+    int gender();
+
+    /**
+     *  年齢 setter/getter
+     */
+    void setAge(const int age);
+    int age();
+
+    /**
+     *  住所 setter/getter
+     */
+    void setAddress(const int adress);
+    int address();
+
+    /**
+     *  血液型 setter/getter
+     */
+    void setBlood(const int blood);
+    int blood();
+
+    /**
+     *  星座 setter/getter
+     */
+    void setConstellation(const int constellation);
+    int constellation();
+
 private:
 	
+    /// 性別
+    int _gender;
+    /// 年齢
+    int _age;
+    /// 住所
+    int _address;
+    /// 血液型
+    int _blood;
+    /// 星座
+    int _constellation;
+
 };
 
 #endif /* PlayerProfileEntity_h */

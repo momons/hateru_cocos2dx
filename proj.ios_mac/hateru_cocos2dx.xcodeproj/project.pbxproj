@@ -177,6 +177,11 @@
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
 		F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C362254994A0041D565 /* MediaPlayer.framework */; };
 		F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34A3C3A22549C570041D565 /* AuthService.cpp */; };
+		F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C3D2255E2910041D565 /* firebase_database.framework */; };
+		F35862692255E356007F2966 /* RealtimeDatabaseService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */; };
+		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
+		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
+		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
 		F3AFE23A225454B000C48F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3AFE235225454B000C48F84 /* GoogleService-Info.plist */; };
 		F3D88640220E913E00B426CC /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8863E220E913E00B426CC /* libcocos2d iOS.a */; };
 		F3D887DE220E94C500B426CC /* EncryptConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88730220E94C400B426CC /* EncryptConst.cpp */; };
@@ -583,6 +588,15 @@
 		F34A3C362254994A0041D565 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		F34A3C3922549C460041D565 /* AuthService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
 		F34A3C3A22549C570041D565 /* AuthService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AuthService.cpp; sourceTree = "<group>"; };
+		F34A3C3D2255E2910041D565 /* firebase_database.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_database.framework; sourceTree = "<group>"; };
+		F35862662255E348007F2966 /* RealtimeDatabaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealtimeDatabaseService.h; sourceTree = "<group>"; };
+		F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RealtimeDatabaseService.cpp; sourceTree = "<group>"; };
+		F358626B2256EA31007F2966 /* DBProfileEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfileEntity.h; sourceTree = "<group>"; };
+		F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBProfileEntity.cpp; sourceTree = "<group>"; };
+		F358626F2256F09E007F2966 /* DBProfilesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfilesManager.h; sourceTree = "<group>"; };
+		F35862702256F0A8007F2966 /* DBProfilesManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBProfilesManager.cpp; sourceTree = "<group>"; };
+		F35862722256F17B007F2966 /* DBBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBaseManager.h; sourceTree = "<group>"; };
+		F35862732256F185007F2966 /* DBBaseManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBBaseManager.cpp; sourceTree = "<group>"; };
 		F3AFE235225454B000C48F84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3D8863E220E913E00B426CC /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../cocos2d/build/lib/libcocos2d iOS.a"; sourceTree = "<group>"; };
 		F3D8872F220E94C400B426CC /* GameConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConst.h; sourceTree = "<group>"; };
@@ -739,6 +753,7 @@
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */,
+				F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */,
 				F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -1462,16 +1477,46 @@
 		F34A3C3822549C070041D565 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				F34A3C3922549C460041D565 /* AuthService.h */,
 				F34A3C3A22549C570041D565 /* AuthService.cpp */,
+				F34A3C3922549C460041D565 /* AuthService.h */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		F34A3C3C2255E1D40041D565 /* RealtimeDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */,
+				F35862662255E348007F2966 /* RealtimeDatabaseService.h */,
+			);
+			path = RealtimeDatabase;
+			sourceTree = "<group>";
+		};
+		F358626A2256EA02007F2966 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */,
+				F358626B2256EA31007F2966 /* DBProfileEntity.h */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F358626E2256F078007F2966 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F35862732256F185007F2966 /* DBBaseManager.cpp */,
+				F35862722256F17B007F2966 /* DBBaseManager.h */,
+				F35862702256F0A8007F2966 /* DBProfilesManager.cpp */,
+				F358626F2256F09E007F2966 /* DBProfilesManager.h */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		F3AFE232225454B000C48F84 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
 				F34A3C2822547DAE0041D565 /* firebase_auth.framework */,
+				F34A3C3D2255E2910041D565 /* firebase_database.framework */,
 				F34A3C2722547DAE0041D565 /* firebase.framework */,
 				F3AFE235225454B000C48F84 /* GoogleService-Info.plist */,
 			);
@@ -1484,6 +1529,7 @@
 				F32BE4B22237D65C00ECA798 /* API */,
 				F32BE4132237D65B00ECA798 /* Game */,
 				F32BE4082237D65B00ECA798 /* Player */,
+				F358626A2256EA02007F2966 /* Database */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -1530,6 +1576,7 @@
 		F3D887FA220E94DB00B426CC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F358626E2256F078007F2966 /* Database */,
 				F3D8880E220E94DB00B426CC /* BaseManager.h */,
 				F3D88814220E94DB00B426CC /* BaseManager.cpp */,
 				F3D88804220E94DB00B426CC /* ProjectIniManager.h */,
@@ -1669,6 +1716,7 @@
 			isa = PBXGroup;
 			children = (
 				F34A3C3822549C070041D565 /* Auth */,
+				F34A3C3C2255E1D40041D565 /* RealtimeDatabase */,
 				F3D88852220E94DC00B426CC /* BaseService.h */,
 				F3D8884A220E94DC00B426CC /* BaseService.cpp */,
 				F3D8884D220E94DC00B426CC /* GameMapService.h */,
@@ -2094,6 +2142,9 @@
 				F3D887E1220E94C500B426CC /* GameConst.cpp in Sources */,
 				F3D8886B220E94DC00B426CC /* BattleLayer.cpp in Sources */,
 				F32BE5402237D65C00ECA798 /* GameEventSelectYesNoEntity.cpp in Sources */,
+				F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */,
+				F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */,
+				F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */,
 				F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */,
 				F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */,
 				F3D88865220E94DC00B426CC /* ProjectUtil.cpp in Sources */,
@@ -2140,6 +2191,7 @@
 				F32BE54B2237D65C00ECA798 /* GameEventBBSEntity.cpp in Sources */,
 				F32BE54E2237D65C00ECA798 /* GameEventBattleEntity.cpp in Sources */,
 				F32BE5292237D65C00ECA798 /* NamesEntity.cpp in Sources */,
+				F35862692255E356007F2966 /* RealtimeDatabaseService.cpp in Sources */,
 				F32BE5452237D65C00ECA798 /* GameEventItemShopEntity.cpp in Sources */,
 				F32BE5352237D65C00ECA798 /* PlayerMapEntity.cpp in Sources */,
 				F32BE5442237D65C00ECA798 /* GameEventShowImageEntity.cpp in Sources */,

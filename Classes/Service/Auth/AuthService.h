@@ -37,7 +37,7 @@ public:
      *  @param password パスワード
      *  @param handler  完了ハンドラ true:成功、false:失敗
      */
-    void SignUpByEmail(const string email, const string password, const function<void(bool)> handler);
+    void signUpByEmail(const string email, const string password, const function<void(bool)> handler);
 
     /**
      *  メールでサインイン
@@ -46,7 +46,7 @@ public:
      *  @param password パスワード
      *  @param handler  完了ハンドラ true:成功、false:失敗
      */
-    void SignInByEmail(const string email, const string password, const function<void(bool)> handler);
+    void signInByEmail(const string email, const string password, const function<void(bool)> handler);
 
     /**
      *  Googleでサインイン
@@ -54,7 +54,7 @@ public:
      *  @param idToken  IDトークン
      *  @param handler  完了ハンドラ true:成功、false:失敗
      */
-    void SignInByGoogle(const string idToken, const function<void(bool)> handler);
+    void signInByGoogle(const string idToken, const function<void(bool)> handler);
     
     /**
      *  Facebookでサインイン
@@ -62,7 +62,7 @@ public:
      *  @param accessToken  アクセストークン
      *  @param handler      完了ハンドラ true:成功、false:失敗
      */
-    void SignInByFacebook(const string accessToken, const function<void(bool)> handler);
+    void signInByFacebook(const string accessToken, const function<void(bool)> handler);
     
     /**
      *  Twitterでサインイン
@@ -71,12 +71,12 @@ public:
      *  @param secret  シークレット
      *  @param handler 完了ハンドラ true:成功、false:失敗
      */
-    void SignInByTwitter(const string token, const string secret, const function<void(bool)> handler);
+    void signInByTwitter(const string token, const string secret, const function<void(bool)> handler);
 
     /**
      *  サインアウト
      */
-    void SignOut();
+    void signOut();
 
     /**
      *  ログイン可否
@@ -97,9 +97,9 @@ private:
     /// インスタンス
     static AuthService *instance;
     
-    // Firebaseインスタンス
+    /// Firebaseインスタンス
     App *app;
-    // 認証インスタンス
+    /// 認証インスタンス
     auth::Auth *auth;
     
     /**

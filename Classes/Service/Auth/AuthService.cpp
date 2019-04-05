@@ -15,7 +15,7 @@ AuthService::AuthService() {
     app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
 #else
     app = App::Create(firebase::AppOptions());
-#endif  // defined(__ANDROID__)
+#endif
     
     auth = auth::Auth::GetAuth(app);
 }
@@ -32,7 +32,7 @@ void AuthService::setupInstance() {
 
 // MARK:- サインアップ
 
-void AuthService::SignUpByEmail(const string email, const string password, const function<void(bool)> handler) {
+void AuthService::signUpByEmail(const string email, const string password, const function<void(bool)> handler) {
     auto result = auth->CreateUserWithEmailAndPassword(email.c_str(), password.c_str());
     result.OnCompletion([handler](const Future<auth::User *> &result) {
         if (result.error() != auth::kAuthErrorNone) {
@@ -46,7 +46,7 @@ void AuthService::SignUpByEmail(const string email, const string password, const
 
 // MARK:- サインイン
 
-void AuthService::SignInByEmail(const string email, const string password, const function<void(bool)> handler) {
+void AuthService::signInByEmail(const string email, const string password, const function<void(bool)> handler) {
     auto result = auth->SignInWithEmailAndPassword(email.c_str(), password.c_str());
     result.OnCompletion([handler](const Future<auth::User *> &result) {
         if (result.error() != auth::kAuthErrorNone) {
@@ -58,7 +58,7 @@ void AuthService::SignInByEmail(const string email, const string password, const
     });
 }
 
-void AuthService::SignInByGoogle(const string idToken, const function<void(bool)> handler) {
+void AuthService::signInByGoogle(const string idToken, const function<void(bool)> handler) {
     auto credential = auth::GoogleAuthProvider::GetCredential(idToken.c_str(), nullptr);
     auto result = auth->SignInWithCredential(credential);
     result.OnCompletion([handler](const Future<auth::User *> &result) {
@@ -71,7 +71,7 @@ void AuthService::SignInByGoogle(const string idToken, const function<void(bool)
     });
 }
 
-void AuthService::SignInByFacebook(const string accessToken, const function<void(bool)> handler) {
+void AuthService::signInByFacebook(const string accessToken, const function<void(bool)> handler) {
     auto credential = auth::FacebookAuthProvider::GetCredential(accessToken.c_str());
     auto result = auth->SignInWithCredential(credential);
     result.OnCompletion([handler](const Future<auth::User *> &result) {
@@ -84,7 +84,7 @@ void AuthService::SignInByFacebook(const string accessToken, const function<void
     });
 }
 
-void AuthService::SignInByTwitter(const string token, const string secret, const function<void(bool)> handler) {
+void AuthService::signInByTwitter(const string token, const string secret, const function<void(bool)> handler) {
     auto credential = auth::TwitterAuthProvider::GetCredential(token.c_str(), secret.c_str());
     auto result = auth->SignInWithCredential(credential);
     result.OnCompletion([handler](const Future<auth::User *> &result) {
@@ -99,7 +99,7 @@ void AuthService::SignInByTwitter(const string token, const string secret, const
 
 // MARK:- サインアウト
 
-void AuthService::SignOut() {
+void AuthService::signOut() {
     auth->SignOut();
 }
 

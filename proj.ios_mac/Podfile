@@ -15,5 +15,6 @@ target 'hateru_cocos2dx-mobile' do
 
   pod 'Firebase/Core', '5.18.0'
   pod 'Firebase/Auth', '5.18.0'
+  pod 'Firebase/Database', '5.18.0'
 
 end
