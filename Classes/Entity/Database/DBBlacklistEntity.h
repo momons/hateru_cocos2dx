@@ -1,46 +1,47 @@
 //
-//  DBBBSEntity.h
+//  DBBlacklistEntity.h
 //  hateru_cocos2dx
 //
 //  Created by Kazunari Hara on 2019/04/08.
 //
 
-#ifndef DBBBSEntity_h
-#define DBBBSEntity_h
+#ifndef DBBlacklistEntity_h
+#define DBBlacklistEntity_h
 
 #include "firebase/database.h"
 
 using namespace std;
 using namespace firebase;
 
-/// 掲示板ベースエンティティ
-class DBBBSEntity final {
+/// ブラックリストデータベースエンティティ
+class DBBlacklistEntity final {
 public:
     
     /**
      * コンストラクタ
      */
-    DBBBSEntity();
+    DBBlacklistEntity();
     
     /**
      * コンストラクタ
      *
      *  @param snapshot スナップショット
      */
-    DBBBSEntity(const database::DataSnapshot *snapshot);
+    DBBlacklistEntity(const database::DataSnapshot *snapshot);
     
     /**
      * コンストラクタ
      *
-     *  @param saveData   セーブデータ
-     *  @param checkDigit チェックデジット
+     *  @param userId    ユーザーID
+     *  @param username  ユーザー名
+     *  @param createdAt 作成日時
      */
-    DBBBSEntity(const string &saveData, const string &checkDigit);
+    DBBlacklistEntity(const string &userId, const string &username, const time_t createdAt);
     
     /**
      * デストラクタ
      */
-    ~DBBBSEntity() {};
+    ~DBBlacklistEntity() {};
     
     /**
      * map<string, Variant>に変換
@@ -48,12 +49,6 @@ public:
      *  @return map<string, Variant>
      */
     map<string, Variant> toVariants();
-    
-    /**
-     *  メッセージID setter/getter
-     */
-    void setMessageId(const string &messageId);
-    string messageId();
     
     /**
      *  ユーザーID setter/getter
@@ -68,12 +63,6 @@ public:
     string username();
     
     /**
-     *  メッセージ setter/getter
-     */
-    void setMessage(const string &message);
-    string message();
-    
-    /**
      *  作成日時 setter/getter
      */
     void setCreatedAt(const time_t createdAt);
@@ -81,17 +70,13 @@ public:
 
 private:
     
-    /// メッセージID
-    string _messageId;
     /// ユーザーID
     string _userId;
     /// ユーザー名
     string _username;
-    /// メッセージ
-    string _message;
     /// 作成日時
     time_t _createdAt;
-
+    
 };
 
-#endif /* DBBBSEntity_h */
+#endif /* DBBlacklistEntity_h */

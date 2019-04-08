@@ -90,9 +90,9 @@ string DBBBSEntity::message() {
     return _message;
 }
 
-void DBBBSEntity::setCreatedAt(const int createdAt) {
+void DBBBSEntity::setCreatedAt(const time_t createdAt) {
     _createdAt = createdAt;
 }
-int DBBBSEntity::createdAt() {
+time_t DBBBSEntity::createdAt() {
     return _createdAt;
 }

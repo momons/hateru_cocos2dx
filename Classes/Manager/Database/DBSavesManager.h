@@ -52,7 +52,7 @@ private:
     /**
      *  セーブデータのリファレンス取得
      *
-     *  @return 位置情報のリファレンス
+     *  @return セーブデータのリファレンス
      */
     database::DatabaseReference ref();
     
