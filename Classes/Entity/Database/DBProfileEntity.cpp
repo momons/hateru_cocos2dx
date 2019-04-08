@@ -65,12 +65,12 @@ DBProfileEntity::DBProfileEntity(const string &username, PlayerProfileEntity *pr
 
 map<string, Variant> DBProfileEntity::toVariants() {
     map<string, Variant> variants;
-    variants["username"] = username();
-    variants["gender"] = gender();
-    variants["age"] = age();
-    variants["address"] = address();
-    variants["blood"] = blood();
-    variants["constellation"] = constellation();
+    variants["username"] = _username;
+    variants["gender"] = _gender;
+    variants["age"] = _age;
+    variants["address"] = _address;
+    variants["blood"] = _blood;
+    variants["constellation"] = _constellation;
     return variants;
 }
 

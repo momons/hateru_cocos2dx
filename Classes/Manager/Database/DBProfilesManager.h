@@ -56,14 +56,14 @@ private:
      *
      *  @return プロフィール情報のリファレンス
      */
-    database::DatabaseReference profilesRef();
+    database::DatabaseReference ref();
     
     /**
      *  自分のプロフィール情報のリファレンス取得
      *
      *  @return 自分のプロフィール情報のリファレンス
      */
-    database::DatabaseReference myProfilesRef();
+    database::DatabaseReference myRef();
 
 };
 

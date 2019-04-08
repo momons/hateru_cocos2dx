@@ -172,6 +172,9 @@
 		F32BE58F2237D65C00ECA798 /* BaseRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5162237D65C00ECA798 /* BaseRequestEntity.cpp */; };
 		F32BE5902237D65C00ECA798 /* ItemGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5182237D65C00ECA798 /* ItemGetRequestEntity.cpp */; };
 		F32BE5912237D65C00ECA798 /* ItemGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE51A2237D65C00ECA798 /* ItemGetResponseEntity.cpp */; };
+		F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685A22572F30005DD29F /* DBLocationsManager.cpp */; };
+		F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685D225B07D7005DD29F /* DBSaveEntity.cpp */; };
+		F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336860225B0A0E005DD29F /* DBSavesManager.cpp */; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
@@ -182,6 +185,7 @@
 		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
 		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
 		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
+		F358627722572B58007F2966 /* DBLocationEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358627622572B58007F2966 /* DBLocationEntity.cpp */; };
 		F3AFE23A225454B000C48F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3AFE235225454B000C48F84 /* GoogleService-Info.plist */; };
 		F3D88640220E913E00B426CC /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8863E220E913E00B426CC /* libcocos2d iOS.a */; };
 		F3D887DE220E94C500B426CC /* EncryptConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88730220E94C400B426CC /* EncryptConst.cpp */; };
@@ -581,6 +585,12 @@
 		F32BE5192237D65C00ECA798 /* ItemGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGetResponseEntity.h; sourceTree = "<group>"; };
 		F32BE51A2237D65C00ECA798 /* ItemGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemGetResponseEntity.cpp; sourceTree = "<group>"; };
 		F32BE51B2237D65C00ECA798 /* ItemGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGetRequestEntity.h; sourceTree = "<group>"; };
+		F333685822572F26005DD29F /* DBLocationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLocationsManager.h; sourceTree = "<group>"; };
+		F333685A22572F30005DD29F /* DBLocationsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBLocationsManager.cpp; sourceTree = "<group>"; };
+		F333685C225B07CE005DD29F /* DBSaveEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSaveEntity.h; sourceTree = "<group>"; };
+		F333685D225B07D7005DD29F /* DBSaveEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBSaveEntity.cpp; sourceTree = "<group>"; };
+		F333685F225B0A03005DD29F /* DBSavesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSavesManager.h; sourceTree = "<group>"; };
+		F3336860225B0A0E005DD29F /* DBSavesManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBSavesManager.cpp; sourceTree = "<group>"; };
 		F3369DAD22240FE300CAA8F7 /* GameEtcManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEtcManager.h; sourceTree = "<group>"; };
 		F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEtcManager.cpp; sourceTree = "<group>"; };
 		F34A3C2722547DAE0041D565 /* firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase.framework; sourceTree = "<group>"; };
@@ -597,6 +607,8 @@
 		F35862702256F0A8007F2966 /* DBProfilesManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBProfilesManager.cpp; sourceTree = "<group>"; };
 		F35862722256F17B007F2966 /* DBBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBaseManager.h; sourceTree = "<group>"; };
 		F35862732256F185007F2966 /* DBBaseManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBBaseManager.cpp; sourceTree = "<group>"; };
+		F358627522572B45007F2966 /* DBLocationEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLocationEntity.h; sourceTree = "<group>"; };
+		F358627622572B58007F2966 /* DBLocationEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBLocationEntity.cpp; sourceTree = "<group>"; };
 		F3AFE235225454B000C48F84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3D8863E220E913E00B426CC /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../cocos2d/build/lib/libcocos2d iOS.a"; sourceTree = "<group>"; };
 		F3D8872F220E94C400B426CC /* GameConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConst.h; sourceTree = "<group>"; };
@@ -1497,6 +1509,10 @@
 			children = (
 				F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */,
 				F358626B2256EA31007F2966 /* DBProfileEntity.h */,
+				F358627622572B58007F2966 /* DBLocationEntity.cpp */,
+				F358627522572B45007F2966 /* DBLocationEntity.h */,
+				F333685D225B07D7005DD29F /* DBSaveEntity.cpp */,
+				F333685C225B07CE005DD29F /* DBSaveEntity.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1508,6 +1524,10 @@
 				F35862722256F17B007F2966 /* DBBaseManager.h */,
 				F35862702256F0A8007F2966 /* DBProfilesManager.cpp */,
 				F358626F2256F09E007F2966 /* DBProfilesManager.h */,
+				F333685A22572F30005DD29F /* DBLocationsManager.cpp */,
+				F333685822572F26005DD29F /* DBLocationsManager.h */,
+				F3336860225B0A0E005DD29F /* DBSavesManager.cpp */,
+				F333685F225B0A03005DD29F /* DBSavesManager.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -2118,6 +2138,7 @@
 				F3D8885C220E94DC00B426CC /* GameCharaManager.cpp in Sources */,
 				F32BE53F2237D65C00ECA798 /* GameEventEndIfEntity.cpp in Sources */,
 				F32BE5502237D65C00ECA798 /* GameEventIfTimeEntity.cpp in Sources */,
+				F358627722572B58007F2966 /* DBLocationEntity.cpp in Sources */,
 				F3D888F2220EB09F00B426CC /* ItemListGetFetcher.cpp in Sources */,
 				F3D8887B220E94DC00B426CC /* GameDataService.cpp in Sources */,
 				F3D8885E220E94DC00B426CC /* GameJobManager.cpp in Sources */,
@@ -2133,6 +2154,7 @@
 				F32BE56B2237D65C00ECA798 /* SaveGetResponseEntity.cpp in Sources */,
 				F32BE55C2237D65C00ECA798 /* GameEventINNEntity.cpp in Sources */,
 				F32BE5342237D65C00ECA798 /* GameJobEntity.cpp in Sources */,
+				F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */,
 				F3D8886C220E94DC00B426CC /* SplashScene.cpp in Sources */,
 				F32BE5262237D65C00ECA798 /* GameEnemyEncountEntity.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
@@ -2144,6 +2166,7 @@
 				F32BE5402237D65C00ECA798 /* GameEventSelectYesNoEntity.cpp in Sources */,
 				F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */,
 				F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */,
+				F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */,
 				F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */,
 				F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */,
 				F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */,
@@ -2171,6 +2194,7 @@
 				F3D888EA220EB09F00B426CC /* TokenGetFetcher.cpp in Sources */,
 				F32BE5722237D65C00ECA798 /* TokenGetRequestEntity.cpp in Sources */,
 				F32BE55E2237D65C00ECA798 /* GameEventMoveLocationEntity.cpp in Sources */,
+				F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */,
 				F32BE5642237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp in Sources */,
 				F32BE5252237D65C00ECA798 /* GameCharaEntity.cpp in Sources */,
 				F32BE5742237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp in Sources */,

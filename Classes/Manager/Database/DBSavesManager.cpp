@@ -1,57 +1,57 @@
 //
-//  DBProfilesManager.cpp
+//  DBSavesManager.cpp
 //  hateru_cocos2dx-mobile
 //
-//  Created by Kazunari Hara on 2019/04/05.
+//  Created by Kazunari Hara on 2019/04/08.
 //
 
-#include "DBProfilesManager.h"
+#include "DBSavesManager.h"
 
 #include "AuthService.h"
 
-database::DatabaseReference DBProfilesManager::ref() {
-    return database->GetReference().Child(DBBaseManager::topFieldName.c_str()).Child("profiles");
+database::DatabaseReference DBSavesManager::ref() {
+    return database->GetReference().Child(DBBaseManager::topFieldName.c_str()).Child("saves");
 }
 
-database::DatabaseReference DBProfilesManager::myRef() {
+database::DatabaseReference DBSavesManager::myRef() {
     auto userId = AuthService::sharedInstance()->userId();
     return ref().Child(userId);
 }
 
-void DBProfilesManager::read(const string &userId, const function<void(const bool, const DBProfileEntity)> handler) {
+void DBSavesManager::readMy(const function<void(const bool, const DBSaveEntity)> handler) {
     
-    auto dbref = ref().Child(userId);
+    auto dbref = myRef();
     auto result = dbref.GetValue();
     result.OnCompletion([handler](const Future<database::DataSnapshot> &result) {
         if (result.error() != kFutureStatusComplete) {
             printf("ERROR: GetValue() returned an invalid result.");
-            handler(false, DBProfileEntity());
+            handler(false, DBSaveEntity());
             return;
         }
         if (result.error() != database::kErrorNone) {
             printf("ERROR: GetValue() returned error %d: %s", result.error(), result.error_message());
-            handler(false, DBProfileEntity());
+            handler(false, DBSaveEntity());
             return;
         }
         
         auto snapshot = result.result();
         if (!snapshot->exists()) {
-            handler(false, DBProfileEntity());
+            handler(false, DBSaveEntity());
             return;
         }
         
-        auto entity = DBProfileEntity(snapshot);
+        auto entity = DBSaveEntity(snapshot);
         handler(true, entity);
     });
 }
 
-void DBProfilesManager::writeMy(const string &username, PlayerProfileEntity *profile) {
+void DBSavesManager::writeMy(const string &saveData, const string &checkDigit) {
     auto dbref = myRef();
-    auto entity = DBProfileEntity(username, profile);
+    auto entity = DBSaveEntity(saveData, checkDigit);
     dbref.UpdateChildren(entity.toVariants());
 }
 
-void DBProfilesManager::deleteMy() {
+void DBSavesManager::deleteMy() {
     auto dbref = myRef();
     dbref.RemoveValue();
 }
