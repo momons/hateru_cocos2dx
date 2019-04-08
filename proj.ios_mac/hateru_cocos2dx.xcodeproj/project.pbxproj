@@ -175,6 +175,8 @@
 		F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685A22572F30005DD29F /* DBLocationsManager.cpp */; };
 		F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685D225B07D7005DD29F /* DBSaveEntity.cpp */; };
 		F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336860225B0A0E005DD29F /* DBSavesManager.cpp */; };
+		F3336864225B0C42005DD29F /* DBBBSEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336863225B0C42005DD29F /* DBBBSEntity.cpp */; };
+		F3336867225B13B9005DD29F /* DBBBSManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336866225B13B9005DD29F /* DBBBSManager.cpp */; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
@@ -591,6 +593,10 @@
 		F333685D225B07D7005DD29F /* DBSaveEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBSaveEntity.cpp; sourceTree = "<group>"; };
 		F333685F225B0A03005DD29F /* DBSavesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSavesManager.h; sourceTree = "<group>"; };
 		F3336860225B0A0E005DD29F /* DBSavesManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBSavesManager.cpp; sourceTree = "<group>"; };
+		F3336862225B0C35005DD29F /* DBBBSEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBBSEntity.h; sourceTree = "<group>"; };
+		F3336863225B0C42005DD29F /* DBBBSEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBBBSEntity.cpp; sourceTree = "<group>"; };
+		F3336865225B13AF005DD29F /* DBBBSManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBBBSManager.h; sourceTree = "<group>"; };
+		F3336866225B13B9005DD29F /* DBBBSManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBBBSManager.cpp; sourceTree = "<group>"; };
 		F3369DAD22240FE300CAA8F7 /* GameEtcManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEtcManager.h; sourceTree = "<group>"; };
 		F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEtcManager.cpp; sourceTree = "<group>"; };
 		F34A3C2722547DAE0041D565 /* firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase.framework; sourceTree = "<group>"; };
@@ -1513,6 +1519,8 @@
 				F358627522572B45007F2966 /* DBLocationEntity.h */,
 				F333685D225B07D7005DD29F /* DBSaveEntity.cpp */,
 				F333685C225B07CE005DD29F /* DBSaveEntity.h */,
+				F3336863225B0C42005DD29F /* DBBBSEntity.cpp */,
+				F3336862225B0C35005DD29F /* DBBBSEntity.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1528,6 +1536,8 @@
 				F333685822572F26005DD29F /* DBLocationsManager.h */,
 				F3336860225B0A0E005DD29F /* DBSavesManager.cpp */,
 				F333685F225B0A03005DD29F /* DBSavesManager.h */,
+				F3336866225B13B9005DD29F /* DBBBSManager.cpp */,
+				F3336865225B13AF005DD29F /* DBBBSManager.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -2080,8 +2090,10 @@
 				F3D88866220E94DC00B426CC /* SJISUtil.cpp in Sources */,
 				F32BE5472237D65C00ECA798 /* GameEventExchangeUnitEntity.cpp in Sources */,
 				F32BE53C2237D65C00ECA798 /* GameEventWipeEntity.cpp in Sources */,
+				F3336864225B0C42005DD29F /* DBBBSEntity.cpp in Sources */,
 				F32BE5882237D65C00ECA798 /* CharaSendResponseEntity.cpp in Sources */,
 				F32BE5332237D65C00ECA798 /* GameJobSkillEntity.cpp in Sources */,
+				F3336867225B13B9005DD29F /* DBBBSManager.cpp in Sources */,
 				F3D88860220E94DC00B426CC /* GameMapChipGroupManager.cpp in Sources */,
 				F32BE5542237D65C00ECA798 /* GameEventCloakroomEntity.cpp in Sources */,
 				F3D88858220E94DC00B426CC /* GameVariableManager.cpp in Sources */,

@@ -63,7 +63,7 @@ public:
     
 private:
     
-    // セーブデータ
+    /// セーブデータ
     string _saveData;
     /// チェックデジット
     string _checkDigit;

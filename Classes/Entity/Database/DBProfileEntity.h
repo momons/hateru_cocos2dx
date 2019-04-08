@@ -89,7 +89,7 @@ public:
 
 private:
 
-    // ユーザー名
+    /// ユーザー名
     string _username;
     /// 性別
     int _gender;
