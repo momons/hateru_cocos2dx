@@ -29,6 +29,11 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 
+#import "GoogleSignInService.h"
+
+#import <GoogleSignIn/GoogleSignIn.h>
+#import <Firebase.h>
+
 @implementation AppController
 
 @synthesize window;
@@ -41,6 +46,9 @@ static AppDelegate s_sharedApplication;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    // Firebase初期化
+    [FIRApp configure];
+
     cocos2d::Application *app = cocos2d::Application::getInstance();
     
     // Initialize the GLView attributes
@@ -143,5 +151,10 @@ static AppDelegate s_sharedApplication;
 }
 #endif
 
+- (BOOL)application:(nonnull UIApplication *)application
+            openURL:(nonnull NSURL *)url
+            options:(nonnull NSDictionary<NSString *, id> *)options {
+    return [GoogleSignInService handleURL:url options:options];
+}
 
 @end

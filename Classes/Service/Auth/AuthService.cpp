@@ -7,14 +7,16 @@
 
 #include "AuthService.h"
 
+#include "GoogleSignInServiceWrap.h"
+
 AuthService *AuthService::instance;
 
 AuthService::AuthService() {
     
-#if defined(__ANDROID__)
-    app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
-#else
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
     app = App::Create(firebase::AppOptions());
+#else
+    app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
 #endif
     
     auth = auth::Auth::GetAuth(app);
@@ -58,17 +60,13 @@ void AuthService::signInByEmail(const string email, const string password, const
     });
 }
 
-void AuthService::signInByGoogle(const string idToken, const function<void(bool)> handler) {
-    auto credential = auth::GoogleAuthProvider::GetCredential(idToken.c_str(), nullptr);
-    auto result = auth->SignInWithCredential(credential);
-    result.OnCompletion([handler](const Future<auth::User *> &result) {
-        if (result.error() != auth::kAuthErrorNone) {
-            printf("failed Sign in '%s'\n", result.error_message());
-            handler(false);
-            return;
-        }
-        handler(true);
-    });
+void AuthService::signInByGoogle(const function<void(bool)> handler) {
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+    auto service = GoogleSignInServiceWrap();
+    service.signIn(handler);
+#else
+    handler(false);
+#endif
 }
 
 void AuthService::signInByFacebook(const string accessToken, const function<void(bool)> handler) {

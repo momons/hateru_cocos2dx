@@ -26,7 +26,7 @@
 #include "SplashScene.h"
 #include "GameConst.h"
 
-#include "DBProfilesManager.h"
+#include "DBBlacklistsManager.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -129,30 +129,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // run
     director->runWithScene(scene);
     
-
-//    auto dbService = RealtimeDatabaseService::sharedInstance();
-//    dbService->writeMyLocation("まもんず", 2, 100, 200, "これはテストだよー2", "テストなんです2");
-//    dbService->readLocation(2, 100, 100);
-
-    
-    // プロフィール取得
-    auto manager = DBProfilesManager();
-    manager.read("9I8u7vRkSjXNtEKMl2kBIyzqsbx2", [](const bool hasData, const DBProfileEntity profile) {
-
-    });
-    
-    // プロフィール書き込み
-//    PlayerProfileEntity entity;
-//    entity.setGender(1);
-//    entity.setAge(2);
-//    entity.setAddress(3);
-//    entity.setBlood(4);
-//    entity.setConstellation(5);
-//    manager.writeMy("まもんず", &entity);
-    
-    // プロフィール削除
-//    dbService->deleteMyPrpfole();
-
     return true;
 }
 

@@ -62,6 +62,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [GIDSignIn sharedInstance].uiDelegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -125,5 +127,15 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+// MARK:- GIDSignInUIDelegate
+
+- (void)signInWillDispatch:(GIDSignIn *)signIn error:(NSError *)error {
+}
+
+- (void)signIn:(GIDSignIn *)signIn presentViewController:(UIViewController *)viewController {
+}
+
+- (void)signIn:(GIDSignIn *)signIn dismissViewController:(UIViewController *)viewController {
+}
 
 @end

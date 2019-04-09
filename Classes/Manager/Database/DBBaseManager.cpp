@@ -10,10 +10,10 @@
 const string DBBaseManager::topFieldName = "hateru";
 
 DBBaseManager::DBBaseManager() {
-#if defined(__ANDROID__)
-    auto app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
-#else
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
     auto app = App::Create(firebase::AppOptions());
+#else
+    auto app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
 #endif
     database = database::Database::GetInstance(app);
 }

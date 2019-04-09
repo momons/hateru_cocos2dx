@@ -181,13 +181,14 @@
 		F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */; };
 		F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */; };
 		F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */; };
+		F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3336878225C3957005DD29F /* GoogleSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
 		F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C362254994A0041D565 /* MediaPlayer.framework */; };
 		F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34A3C3A22549C570041D565 /* AuthService.cpp */; };
 		F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C3D2255E2910041D565 /* firebase_database.framework */; };
-		F35862692255E356007F2966 /* RealtimeDatabaseService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */; };
 		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
 		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
 		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
@@ -609,6 +610,10 @@
 		F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBCharacterEntity.cpp; sourceTree = "<group>"; };
 		F3336871225C2DCE005DD29F /* DBCharactersManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCharactersManager.h; sourceTree = "<group>"; };
 		F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBCharactersManager.cpp; sourceTree = "<group>"; };
+		F3336877225C3957005DD29F /* GoogleSignInService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleSignInService.h; sourceTree = "<group>"; };
+		F3336878225C3957005DD29F /* GoogleSignInService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GoogleSignInService.mm; sourceTree = "<group>"; };
+		F333687D225C76A9005DD29F /* GoogleSignInServiceWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleSignInServiceWrap.h; sourceTree = "<group>"; };
+		F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GoogleSignInServiceWrap.mm; sourceTree = "<group>"; };
 		F3369DAD22240FE300CAA8F7 /* GameEtcManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEtcManager.h; sourceTree = "<group>"; };
 		F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEtcManager.cpp; sourceTree = "<group>"; };
 		F34A3C2722547DAE0041D565 /* firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase.framework; sourceTree = "<group>"; };
@@ -617,8 +622,6 @@
 		F34A3C3922549C460041D565 /* AuthService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
 		F34A3C3A22549C570041D565 /* AuthService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AuthService.cpp; sourceTree = "<group>"; };
 		F34A3C3D2255E2910041D565 /* firebase_database.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_database.framework; sourceTree = "<group>"; };
-		F35862662255E348007F2966 /* RealtimeDatabaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealtimeDatabaseService.h; sourceTree = "<group>"; };
-		F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RealtimeDatabaseService.cpp; sourceTree = "<group>"; };
 		F358626B2256EA31007F2966 /* DBProfileEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfileEntity.h; sourceTree = "<group>"; };
 		F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBProfileEntity.cpp; sourceTree = "<group>"; };
 		F358626F2256F09E007F2966 /* DBProfilesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfilesManager.h; sourceTree = "<group>"; };
@@ -843,6 +846,8 @@
 		1AF87B461F6F77D6007BE51C /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				F3336883225C84A4005DD29F /* ViewController */,
+				F3336875225C3921005DD29F /* Service */,
 				1A88B2631FC3D9C9005C14AE /* Images.xcassets */,
 				1AF87B471F6F77D6007BE51C /* AppController.h */,
 				1AF87B481F6F77D6007BE51C /* AppController.mm */,
@@ -851,8 +856,6 @@
 				1AF87B5A1F6F77D6007BE51C /* LaunchScreenBackground.png */,
 				1AF87B5B1F6F77D6007BE51C /* main.m */,
 				1AF87B5C1F6F77D6007BE51C /* Prefix.pch */,
-				1AF87B5D1F6F77D6007BE51C /* RootViewController.h */,
-				1AF87B5E1F6F77D6007BE51C /* RootViewController.mm */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -1504,6 +1507,26 @@
 			path = ItemGet;
 			sourceTree = "<group>";
 		};
+		F3336875225C3921005DD29F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F3336877225C3957005DD29F /* GoogleSignInService.h */,
+				F3336878225C3957005DD29F /* GoogleSignInService.mm */,
+				F333687D225C76A9005DD29F /* GoogleSignInServiceWrap.h */,
+				F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F3336883225C84A4005DD29F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1AF87B5D1F6F77D6007BE51C /* RootViewController.h */,
+				1AF87B5E1F6F77D6007BE51C /* RootViewController.mm */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		F34A3C3822549C070041D565 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -1511,15 +1534,6 @@
 				F34A3C3922549C460041D565 /* AuthService.h */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		F34A3C3C2255E1D40041D565 /* RealtimeDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				F35862682255E356007F2966 /* RealtimeDatabaseService.cpp */,
-				F35862662255E348007F2966 /* RealtimeDatabaseService.h */,
-			);
-			path = RealtimeDatabase;
 			sourceTree = "<group>";
 		};
 		F358626A2256EA02007F2966 /* Database */ = {
@@ -1766,7 +1780,6 @@
 			isa = PBXGroup;
 			children = (
 				F34A3C3822549C070041D565 /* Auth */,
-				F34A3C3C2255E1D40041D565 /* RealtimeDatabase */,
 				F3D88852220E94DC00B426CC /* BaseService.h */,
 				F3D8884A220E94DC00B426CC /* BaseService.cpp */,
 				F3D8884D220E94DC00B426CC /* GameMapService.h */,
@@ -1900,6 +1913,7 @@
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				F3AFE23C225454F300C48F84 /* ShellScript */,
+				A872D82FC4ED882257E3B0E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2070,6 +2084,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A872D82FC4ED882257E3B0E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F3AFE23C225454F300C48F84 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2202,6 +2238,7 @@
 				F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */,
 				F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */,
 				F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */,
+				F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */,
 				F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */,
 				F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */,
 				F3D88865220E94DC00B426CC /* ProjectUtil.cpp in Sources */,
@@ -2241,6 +2278,7 @@
 				F3D888EE220EB09F00B426CC /* ProfileSendFetcher.cpp in Sources */,
 				F32BE54F2237D65C00ECA798 /* GameEventIfTerminalEntity.cpp in Sources */,
 				F32BE5512237D65C00ECA798 /* GameEventIfVariableEntity.cpp in Sources */,
+				F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */,
 				F32BE58D2237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp in Sources */,
 				F32BE56A2237D65C00ECA798 /* SaveGetRequestEntity.cpp in Sources */,
 				F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */,
@@ -2250,7 +2288,6 @@
 				F32BE54B2237D65C00ECA798 /* GameEventBBSEntity.cpp in Sources */,
 				F32BE54E2237D65C00ECA798 /* GameEventBattleEntity.cpp in Sources */,
 				F32BE5292237D65C00ECA798 /* NamesEntity.cpp in Sources */,
-				F35862692255E356007F2966 /* RealtimeDatabaseService.cpp in Sources */,
 				F32BE5452237D65C00ECA798 /* GameEventItemShopEntity.cpp in Sources */,
 				F32BE5352237D65C00ECA798 /* PlayerMapEntity.cpp in Sources */,
 				F32BE5442237D65C00ECA798 /* GameEventShowImageEntity.cpp in Sources */,

@@ -10,3 +10,10 @@
 #ifdef __cplusplus
 	#include "cocos2d.h"
 #endif
+
+#ifdef DEBUG
+    #define LOG(...) NSLog(__VA_ARGS__)
+#else
+    #define LOG(...)
+#endif
+

@@ -51,10 +51,9 @@ public:
     /**
      *  Googleでサインイン
      *
-     *  @param idToken  IDトークン
-     *  @param handler  完了ハンドラ true:成功、false:失敗
+     *  @param handler     完了ハンドラ true:成功、false:失敗
      */
-    void signInByGoogle(const string idToken, const function<void(bool)> handler);
+    void signInByGoogle(const function<void(bool)> handler);
     
     /**
      *  Facebookでサインイン

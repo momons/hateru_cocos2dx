@@ -26,8 +26,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import <GoogleSignIn/GoogleSignIn.h>
 
-@interface RootViewController : UIViewController {
+@interface RootViewController : UIViewController<GIDSignInUIDelegate> {
 
 }
 - (BOOL) prefersStatusBarHidden;
