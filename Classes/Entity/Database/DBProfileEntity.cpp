@@ -29,7 +29,7 @@ DBProfileEntity::DBProfileEntity(const database::DataSnapshot *snapshot) {
     
     auto username = snapshot->Child("username").value();
     if (username.is_mutable_string()) {
-        setUsername(username.mutable_string().c_str());
+        setUsername(username.mutable_string());
     }
     auto gender = snapshot->Child("gender").value();
     if (gender.is_int64()) {

@@ -58,7 +58,7 @@ map<string, Variant> DBBBSEntity::toVariants() {
     variants["userId"] = _userId;
     variants["username"] = _username;
     variants["message"] = _message;
-    variants["createdAt"] = _createdAt;
+    variants["createdAt"] = static_cast<int64_t>(_createdAt);
     return variants;
 }
 

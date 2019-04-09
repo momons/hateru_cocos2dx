@@ -180,6 +180,7 @@
 		F333686A225B1A25005DD29F /* DBBlacklistEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336869225B1A25005DD29F /* DBBlacklistEntity.cpp */; };
 		F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */; };
 		F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */; };
+		F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
@@ -606,6 +607,8 @@
 		F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBBlacklistsManager.cpp; sourceTree = "<group>"; };
 		F333686E225B41C0005DD29F /* DBCharacterEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCharacterEntity.h; sourceTree = "<group>"; };
 		F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBCharacterEntity.cpp; sourceTree = "<group>"; };
+		F3336871225C2DCE005DD29F /* DBCharactersManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCharactersManager.h; sourceTree = "<group>"; };
+		F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBCharactersManager.cpp; sourceTree = "<group>"; };
 		F3369DAD22240FE300CAA8F7 /* GameEtcManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameEtcManager.h; sourceTree = "<group>"; };
 		F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEtcManager.cpp; sourceTree = "<group>"; };
 		F34A3C2722547DAE0041D565 /* firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase.framework; sourceTree = "<group>"; };
@@ -1545,6 +1548,8 @@
 				F35862722256F17B007F2966 /* DBBaseManager.h */,
 				F35862702256F0A8007F2966 /* DBProfilesManager.cpp */,
 				F358626F2256F09E007F2966 /* DBProfilesManager.h */,
+				F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */,
+				F3336871225C2DCE005DD29F /* DBCharactersManager.h */,
 				F333685A22572F30005DD29F /* DBLocationsManager.cpp */,
 				F333685822572F26005DD29F /* DBLocationsManager.h */,
 				F3336860225B0A0E005DD29F /* DBSavesManager.cpp */,
@@ -2250,6 +2255,7 @@
 				F32BE5352237D65C00ECA798 /* PlayerMapEntity.cpp in Sources */,
 				F32BE5442237D65C00ECA798 /* GameEventShowImageEntity.cpp in Sources */,
 				F32BE57F2237D65C00ECA798 /* ItemListGetRequestEntity.cpp in Sources */,
+				F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */,
 				F3D888E6220EB09F00B426CC /* CharaDeleteFetcher.cpp in Sources */,
 				F32BE5772237D65C00ECA798 /* CharaDeleteResponseEntity.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
