@@ -30,8 +30,8 @@
 #import "RootViewController.h"
 
 #import "GoogleSignInService.h"
+#import "FacebookSignInService.h"
 
-#import <GoogleSignIn/GoogleSignIn.h>
 #import <Firebase.h>
 
 @implementation AppController
@@ -154,7 +154,20 @@ static AppDelegate s_sharedApplication;
 - (BOOL)application:(nonnull UIApplication *)application
             openURL:(nonnull NSURL *)url
             options:(nonnull NSDictionary<NSString *, id> *)options {
-    return [GoogleSignInService handleURL:url options:options];
+    
+    // Google認証
+    BOOL handle = [GoogleSignInService handleURL:url options:options];
+    if (handle) {
+        return YES;
+    }
+    
+    // Facebook認証
+    handle = [FacebookSignInService handleURL:url options:options application:application];
+    if (handle) {
+        return YES;
+    }
+
+    return NO;
 }
 
 @end

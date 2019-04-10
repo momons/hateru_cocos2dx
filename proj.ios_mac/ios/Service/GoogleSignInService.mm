@@ -41,8 +41,8 @@
 
 - (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
     if (error != nil) {
-        LOG("ERROR: GoogleGoogle sign in. %@", error.description);
-        _signInHandler(FALSE);
+        LOG("ERROR: Google sign in. %@", error.description);
+        _signInHandler(NO);
         return;
     }
     __weak GoogleSignInService *weakSelf = self;
@@ -54,13 +54,13 @@
             return;
         }
         if (error != nil) {
-            LOG("ERROR: GoogleGoogle sign in. %@", error.description);
+            LOG("ERROR: Google sign in. %@", error.description);
             // 失敗
-            blocksSelf->_signInHandler(FALSE);
+            blocksSelf->_signInHandler(NO);
             return;
         }
         // 成功
-        blocksSelf->_signInHandler(TRUE);
+        blocksSelf->_signInHandler(YES);
     }];
 }
 

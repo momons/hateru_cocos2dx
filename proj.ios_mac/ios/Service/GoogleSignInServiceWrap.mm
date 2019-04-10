@@ -15,7 +15,7 @@ GoogleSignInServiceWrap::GoogleSignInServiceWrap() {
 
 void GoogleSignInServiceWrap::signIn(const function<void(bool)> handler) {
     [_service signInWithCompletion:^(BOOL success) {
-        handler(success == TRUE);
+        handler(success);
     }];
 }
 

@@ -189,6 +189,8 @@
 		F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C362254994A0041D565 /* MediaPlayer.framework */; };
 		F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34A3C3A22549C570041D565 /* AuthService.cpp */; };
 		F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C3D2255E2910041D565 /* firebase_database.framework */; };
+		F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
 		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
 		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
@@ -622,6 +624,10 @@
 		F34A3C3922549C460041D565 /* AuthService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthService.h; sourceTree = "<group>"; };
 		F34A3C3A22549C570041D565 /* AuthService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AuthService.cpp; sourceTree = "<group>"; };
 		F34A3C3D2255E2910041D565 /* firebase_database.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_database.framework; sourceTree = "<group>"; };
+		F3504FED225C99A500F6C11E /* FacebookSignInService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookSignInService.h; sourceTree = "<group>"; };
+		F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FacebookSignInService.mm; sourceTree = "<group>"; };
+		F3504FF1225D7B0B00F6C11E /* FacebookSignInServiceWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookSignInServiceWrap.h; sourceTree = "<group>"; };
+		F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FacebookSignInServiceWrap.mm; sourceTree = "<group>"; };
 		F358626B2256EA31007F2966 /* DBProfileEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfileEntity.h; sourceTree = "<group>"; };
 		F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBProfileEntity.cpp; sourceTree = "<group>"; };
 		F358626F2256F09E007F2966 /* DBProfilesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBProfilesManager.h; sourceTree = "<group>"; };
@@ -1514,6 +1520,10 @@
 				F3336878225C3957005DD29F /* GoogleSignInService.mm */,
 				F333687D225C76A9005DD29F /* GoogleSignInServiceWrap.h */,
 				F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */,
+				F3504FED225C99A500F6C11E /* FacebookSignInService.h */,
+				F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */,
+				F3504FF1225D7B0B00F6C11E /* FacebookSignInServiceWrap.h */,
+				F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -2093,12 +2103,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2154,6 +2166,7 @@
 				F32BE5542237D65C00ECA798 /* GameEventCloakroomEntity.cpp in Sources */,
 				F3D88858220E94DC00B426CC /* GameVariableManager.cpp in Sources */,
 				F32BE58C2237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp in Sources */,
+				F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */,
 				F3D888E5220EB09F00B426CC /* CharaGetFetcher.cpp in Sources */,
 				F3D888F3220EB09F00B426CC /* UserIdGetFetcher.cpp in Sources */,
 				F32BE55D2237D65C00ECA798 /* GameEventOperateVariableEntity.cpp in Sources */,
@@ -2327,6 +2340,7 @@
 				F32BE5792237D65C00ECA798 /* UserIdGetRequestEntity.cpp in Sources */,
 				F32BE5662237D65C00ECA798 /* GameEventChangeUnitEntity.cpp in Sources */,
 				F32BE57D2237D65C00ECA798 /* ProfileGetResponseEntity.cpp in Sources */,
+				F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */,
 				F32BE5712237D65C00ECA798 /* LocationSendRequestEntity.cpp in Sources */,
 				F3D8885F220E94DC00B426CC /* NamesManager.cpp in Sources */,
 				F32BE52A2237D65C00ECA798 /* GameImageEntity.cpp in Sources */,

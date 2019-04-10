@@ -58,10 +58,9 @@ public:
     /**
      *  Facebookでサインイン
      *
-     *  @param accessToken  アクセストークン
      *  @param handler      完了ハンドラ true:成功、false:失敗
      */
-    void signInByFacebook(const string accessToken, const function<void(bool)> handler);
+    void signInByFacebook(const function<void(bool)> handler);
     
     /**
      *  Twitterでサインイン
