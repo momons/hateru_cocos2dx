@@ -88,6 +88,9 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.2):
+    - TwitterCore (>= 3.2.0)
 
 DEPENDENCIES:
   - FBSDKLoginKit
@@ -95,6 +98,7 @@ DEPENDENCIES:
   - Firebase/Core (= 5.18.0)
   - Firebase/Database (= 5.18.0)
   - GoogleSignIn
+  - TwitterKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -115,6 +119,8 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - TwitterCore
+    - TwitterKit
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
@@ -134,7 +140,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: ec9ce61aa39b2fdbd881810a0f6108e444f1e186
+PODFILE CHECKSUM: 566403229f203e84106f8ad4d7be2680f6da1894
 
 COCOAPODS: 1.6.1

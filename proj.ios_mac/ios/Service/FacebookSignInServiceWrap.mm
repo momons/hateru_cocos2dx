@@ -10,15 +10,11 @@
 #import "FacebookSignInService.h"
 
 FacebookSignInServiceWrap::FacebookSignInServiceWrap() {
-    _service = [FacebookSignInService new];
+    _service = [[FacebookSignInService new] autorelease];
 }
 
 void FacebookSignInServiceWrap::signIn(const function<void(bool)> handler) {
     [_service signInWithCompletion:^(BOOL success) {
         handler(success);
     }];
-}
-
-void FacebookSignInServiceWrap::signOut() {
-    [_service signOut];
 }

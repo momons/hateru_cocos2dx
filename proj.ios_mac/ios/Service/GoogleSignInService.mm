@@ -20,12 +20,12 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self setupGoogleSignIn];
+        [self setup];
     }
     return self;
 }
 
-- (void)setupGoogleSignIn {
+- (void)setup {
     [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
     [GIDSignIn sharedInstance].delegate = self;
 }
@@ -35,13 +35,9 @@
     [[GIDSignIn sharedInstance] signIn];
 }
 
-+ (void)signOut {
-    [[GIDSignIn sharedInstance] signOut];
-}
-
 - (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error {
     if (error != nil) {
-        LOG("ERROR: Google sign in. %@", error.description);
+        LOG(@"ERROR: Google sign in. %@", error.description);
         _signInHandler(NO);
         return;
     }
@@ -54,12 +50,10 @@
             return;
         }
         if (error != nil) {
-            LOG("ERROR: Google sign in. %@", error.description);
-            // 失敗
+            LOG(@"ERROR: Google sign in. %@", error.description);
             blocksSelf->_signInHandler(NO);
             return;
         }
-        // 成功
         blocksSelf->_signInHandler(YES);
     }];
 }

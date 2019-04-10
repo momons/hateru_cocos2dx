@@ -54,6 +54,9 @@
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
+		F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */; };
+		F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */; };
+		F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */; };
 		F32BE51C2237D65C00ECA798 /* PlayerEncryptEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40A2237D65B00ECA798 /* PlayerEncryptEntity.cpp */; };
 		F32BE51D2237D65C00ECA798 /* ProjectIniEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40C2237D65B00ECA798 /* ProjectIniEntity.cpp */; };
 		F32BE51E2237D65C00ECA798 /* PlayerEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40D2237D65B00ECA798 /* PlayerEntity.cpp */; };
@@ -181,16 +184,16 @@
 		F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */; };
 		F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */; };
 		F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */; };
-		F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3336878225C3957005DD29F /* GoogleSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3336878225C3957005DD29F /* GoogleSignInService.mm */; };
+		F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
 		F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C362254994A0041D565 /* MediaPlayer.framework */; };
 		F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34A3C3A22549C570041D565 /* AuthService.cpp */; };
 		F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C3D2255E2910041D565 /* firebase_database.framework */; };
-		F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */; };
+		F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */; };
 		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
 		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
 		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
@@ -358,6 +361,12 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F31FE8BB225D87BA0074AE3D /* TwitterSignInService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterSignInService.h; sourceTree = "<group>"; };
+		F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TwitterSignInService.mm; sourceTree = "<group>"; };
+		F31FE8C0225D8B8A0074AE3D /* TwitterConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterConst.h; sourceTree = "<group>"; };
+		F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwitterConst.cpp; sourceTree = "<group>"; };
+		F31FE8C3225D920B0074AE3D /* TwitterSignInServiceWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterSignInServiceWrap.h; sourceTree = "<group>"; };
+		F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TwitterSignInServiceWrap.mm; sourceTree = "<group>"; };
 		F32BE4092237D65B00ECA798 /* ProjectIniEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectIniEntity.h; sourceTree = "<group>"; };
 		F32BE40A2237D65B00ECA798 /* PlayerEncryptEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerEncryptEntity.cpp; sourceTree = "<group>"; };
 		F32BE40B2237D65B00ECA798 /* PlayerItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerItemEntity.h; sourceTree = "<group>"; };
@@ -1524,6 +1533,10 @@
 				F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */,
 				F3504FF1225D7B0B00F6C11E /* FacebookSignInServiceWrap.h */,
 				F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */,
+				F31FE8BB225D87BA0074AE3D /* TwitterSignInService.h */,
+				F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */,
+				F31FE8C3225D920B0074AE3D /* TwitterSignInServiceWrap.h */,
+				F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1625,6 +1638,8 @@
 				F3D88736220E94C400B426CC /* ProfileConst.h */,
 				F3D88730220E94C400B426CC /* EncryptConst.cpp */,
 				F3D88737220E94C400B426CC /* EncryptConst.h */,
+				F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */,
+				F31FE8C0225D8B8A0074AE3D /* TwitterConst.h */,
 			);
 			path = Const;
 			sourceTree = "<group>";
@@ -1924,6 +1939,7 @@
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				F3AFE23C225454F300C48F84 /* ShellScript */,
 				A872D82FC4ED882257E3B0E8 /* [CP] Copy Pods Resources */,
+				B7353578D3AC2A9E44434D73 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2105,6 +2121,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -2112,10 +2129,35 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7353578D3AC2A9E44434D73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-frameworks.sh",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hateru_cocos2dx-mobile/Pods-hateru_cocos2dx-mobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3AFE23C225454F300C48F84 /* ShellScript */ = {
@@ -2196,6 +2238,7 @@
 				F3D888F9220EB09F00B426CC /* ItemSendFetcher.cpp in Sources */,
 				F32BE5302237D65C00ECA798 /* GameItemEntity.cpp in Sources */,
 				F32BE56F2237D65C00ECA798 /* BbsWriteResponseEntity.cpp in Sources */,
+				F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */,
 				F3D8885B220E94DC00B426CC /* ProjectIniManager.cpp in Sources */,
 				F3D8886A220E94DC00B426CC /* StringUtil.cpp in Sources */,
 				F3D887DE220E94C500B426CC /* EncryptConst.cpp in Sources */,
@@ -2251,6 +2294,7 @@
 				F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */,
 				F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */,
 				F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */,
+				F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */,
 				F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */,
 				F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */,
 				F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */,
@@ -2327,6 +2371,7 @@
 				F32BE5562237D65C00ECA798 /* GameEventChangeChipEntity.cpp in Sources */,
 				F32BE58F2237D65C00ECA798 /* BaseRequestEntity.cpp in Sources */,
 				F3D887E4220E94C500B426CC /* UrlConst.cpp in Sources */,
+				F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */,
 				F32BE5532237D65C00ECA798 /* GameEventEntity.cpp in Sources */,
 				F3D88857220E94DC00B426CC /* GameSkillManager.cpp in Sources */,
 				F32BE5782237D65C00ECA798 /* UserIdGetResponseEntity.cpp in Sources */,

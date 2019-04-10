@@ -65,11 +65,9 @@ public:
     /**
      *  Twitterでサインイン
      *
-     *  @param token   トークン
-     *  @param secret  シークレット
      *  @param handler 完了ハンドラ true:成功、false:失敗
      */
-    void signInByTwitter(const string token, const string secret, const function<void(bool)> handler);
+    void signInByTwitter(const function<void(bool)> handler);
 
     /**
      *  サインアウト

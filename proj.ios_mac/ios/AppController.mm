@@ -31,6 +31,7 @@
 
 #import "GoogleSignInService.h"
 #import "FacebookSignInService.h"
+#import "TwitterSignInService.h"
 
 #import <Firebase.h>
 
@@ -48,6 +49,8 @@ static AppDelegate s_sharedApplication;
     
     // Firebase初期化
     [FIRApp configure];
+    // Twitter初期化
+    [TwitterSignInService configure];
 
     cocos2d::Application *app = cocos2d::Application::getInstance();
     
@@ -167,6 +170,12 @@ static AppDelegate s_sharedApplication;
         return YES;
     }
 
+    // Twitter認証
+    handle = [TwitterSignInService handleURL:url options:options application:application];
+    if (handle) {
+        return YES;
+    }
+    
     return NO;
 }
 

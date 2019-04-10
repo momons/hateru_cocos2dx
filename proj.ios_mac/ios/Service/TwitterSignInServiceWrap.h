@@ -1,31 +1,31 @@
 //
-//  GoogleSignInServiceWrap.h
+//  TwitterSignInServiceWrap.h
 //  hateru_cocos2dx-mobile
 //
-//  Created by Kazunari Hara on 2019/04/09.
+//  Created by Kazunari Hara on 2019/04/10.
 //
 
 using namespace std;
 
 #ifdef __OBJC__
-@class GoogleSignInService;
+@class TwitterSignInService;
 #else
-class GoogleSignInService;
+class TwitterSignInService;
 #endif
 
-/// Googleサインインサービスをラップするクラス
-class GoogleSignInServiceWrap final {
+/// Twitterサインインサービスをラップするクラス
+class TwitterSignInServiceWrap final {
 public:
     
     /**
      *  コンストラクタ
      */
-    GoogleSignInServiceWrap();
+    TwitterSignInServiceWrap();
     
     /**
      *  デストラクタ
      */
-    ~GoogleSignInServiceWrap() {}
+    ~TwitterSignInServiceWrap() {}
     
     /**
      *  サインイン
@@ -36,6 +36,6 @@ public:
     
 private:
     
-    /// Googleサインインサービス
-    GoogleSignInService *_service;
+    /// Twitterサインインサービス
+    TwitterSignInService *_service;
 };

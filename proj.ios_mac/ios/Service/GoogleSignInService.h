@@ -26,11 +26,6 @@ typedef void (^signInHandler)(BOOL);
 - (void)signInWithCompletion:(nonnull signInHandler)completion;
 
 /**
- サインアウト
- */
-+ (void)signOut;
-
-/**
  URLハンドリング
 
  @param url     URL

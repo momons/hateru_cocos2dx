@@ -34,11 +34,6 @@ public:
      */
     void signIn(const function<void(bool)> handler);
     
-    /**
-     *  サインアウト
-     */
-    void signOut();
-    
 private:
     
     /// Facebookサインインサービス

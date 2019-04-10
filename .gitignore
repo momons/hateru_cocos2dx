@@ -12,7 +12,7 @@ proj.win32
 Resources
 Documents
 素材
-EncryptConst.h
 EncryptConst.cpp
+TwitterConst.cpp
 xcuserdata
 project.xcworkspace

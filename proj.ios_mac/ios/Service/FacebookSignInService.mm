@@ -27,13 +27,13 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self setupFacebookSignIn];
+        [self setup];
     }
     return self;
 }
 
-- (void)setupFacebookSignIn {
-    _loginManager = [FBSDKLoginManager new];
+- (void)setup {
+    _loginManager = [[FBSDKLoginManager new] autorelease];
 }
 
 - (void)signInWithCompletion:(signInHandler)completion {
@@ -41,7 +41,7 @@
     UIViewController* viewController = (UIViewController *)appController.viewController;
     [_loginManager logInWithReadPermissions:@[@"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error != nil) {
-            LOG("ERROR: Facebook sign in. %@", error.description);
+            LOG(@"ERROR: Facebook sign in. %@", error.description);
             completion(NO);
             return;
         }
@@ -52,22 +52,16 @@
         FIRAuthCredential *credential = [FIRFacebookAuthProvider credentialWithAccessToken:[FBSDKAccessToken currentAccessToken].tokenString];
         [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
             if (error != nil) {
-                LOG("ERROR: Facebook sign in. %@", error.description);
-                // 失敗
+                LOG(@"ERROR: Facebook sign in. %@", error.description);
                 completion(NO);
                 return;
             }
-            // 成功
             completion(YES);
         }];
     }];
 }
 
-- (void)signOut {
-    [_loginManager logOut];
-}
-
-+ (BOOL)handleURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *, id> *)options application:(UIApplication *)application {
++ (BOOL)handleURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *, id> *)options application:(nonnull UIApplication *)application {
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                           openURL:url
                                                 sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
