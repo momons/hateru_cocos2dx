@@ -36,7 +36,7 @@ public:
 	 *  @param error      エラー
 	 *  @param jsonString JSON文字列
 	 */
-	static void jsonParse(picojson::value *jsonValue, string *error, string *jsonString);
+	static void jsonParse(picojson::value *jsonValue, string *error, const string &jsonString);
 	
 private:
 	

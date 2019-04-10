@@ -50,7 +50,7 @@ int RemoteConfigService::latestVersions() {
     
     string error;
     picojson::value jsonValue;
-    JsonUtil::jsonParse(&jsonValue, &error, &latestVersions);
+    JsonUtil::jsonParse(&jsonValue, &error, latestVersions);
     if(!error.empty()){
         log(LogConst::jsonParseError.c_str(), error.c_str());
         return -1;

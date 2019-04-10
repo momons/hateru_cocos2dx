@@ -69,7 +69,7 @@ PlayerEntity PlayerEncryptEntity::toPlayerEntity() {
 	// JSON変換
 	string error;
 	picojson::value jsonValue;
-	JsonUtil::jsonParse(&jsonValue, &error, &decryptStr);
+	JsonUtil::jsonParse(&jsonValue, &error, decryptStr);
 	if(!error.empty()){
 		log(LogConst::jsonParseError.c_str(), error.c_str());
 		return PlayerEntity();

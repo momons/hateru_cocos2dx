@@ -55,7 +55,7 @@ PlayerEncryptEntity PlayerManager::loadEncrypt() {
 	// JSON変換
 	string error;
 	picojson::value jsonValue;
-	JsonUtil::jsonParse(&jsonValue, &error, &saveData);
+	JsonUtil::jsonParse(&jsonValue, &error, saveData);
 	if(!error.empty()){
 		log(LogConst::jsonParseError.c_str(), error.c_str());
 		return encryptEntity;
