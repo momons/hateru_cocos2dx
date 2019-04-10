@@ -10,7 +10,7 @@
 #import "GoogleSignInService.h"
 
 GoogleSignInServiceWrap::GoogleSignInServiceWrap() {
-    _service = [[GoogleSignInService new] autorelease];
+    _service = [GoogleSignInService new];
 }
 
 void GoogleSignInServiceWrap::signIn(const function<void(bool)> handler) {

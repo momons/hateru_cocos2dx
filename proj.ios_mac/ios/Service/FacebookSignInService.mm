@@ -27,13 +27,13 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self setup];
+        [self configure];
     }
     return self;
 }
 
-- (void)setup {
-    _loginManager = [[FBSDKLoginManager new] autorelease];
+- (void)configure {
+    _loginManager = [FBSDKLoginManager new];
 }
 
 - (void)signInWithCompletion:(signInHandler)completion {

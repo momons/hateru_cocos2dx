@@ -49,8 +49,6 @@ static AppDelegate s_sharedApplication;
     
     // Firebase初期化
     [FIRApp configure];
-    // Twitter初期化
-    [TwitterSignInService configure];
 
     cocos2d::Application *app = cocos2d::Application::getInstance();
     

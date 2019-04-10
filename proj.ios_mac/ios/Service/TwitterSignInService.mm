@@ -20,7 +20,14 @@
 
 @implementation TwitterSignInService
 
-+ (void)configure {
+- (instancetype)init {
+    if (self = [super init]) {
+        [self configure];
+    }
+    return self;
+}
+
+- (void)configure {
     [[Twitter sharedInstance] startWithConsumerKey:[NSString stringWithUTF8String:TwitterConst::consumerKey.c_str()]
                                     consumerSecret:[NSString stringWithUTF8String:TwitterConst::consumerSecret.c_str()]];
 }

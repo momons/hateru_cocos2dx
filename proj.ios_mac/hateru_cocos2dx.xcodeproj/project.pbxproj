@@ -54,9 +54,9 @@
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
-		F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */; };
+		F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */; };
-		F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */; };
+		F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F32BE51C2237D65C00ECA798 /* PlayerEncryptEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40A2237D65B00ECA798 /* PlayerEncryptEntity.cpp */; };
 		F32BE51D2237D65C00ECA798 /* ProjectIniEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40C2237D65B00ECA798 /* ProjectIniEntity.cpp */; };
 		F32BE51E2237D65C00ECA798 /* PlayerEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40D2237D65B00ECA798 /* PlayerEntity.cpp */; };
@@ -184,16 +184,16 @@
 		F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */; };
 		F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */; };
 		F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */; };
-		F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3336878225C3957005DD29F /* GoogleSignInService.mm */; };
-		F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */; };
+		F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3336878225C3957005DD29F /* GoogleSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F333687E225C76A9005DD29F /* GoogleSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3369DAE22240FF100CAA8F7 /* GameEtcManager.cpp */; };
 		F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2722547DAE0041D565 /* firebase.framework */; };
 		F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C2822547DAE0041D565 /* firebase_auth.framework */; };
 		F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C362254994A0041D565 /* MediaPlayer.framework */; };
 		F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F34A3C3A22549C570041D565 /* AuthService.cpp */; };
 		F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F34A3C3D2255E2910041D565 /* firebase_database.framework */; };
-		F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */; };
-		F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */; };
+		F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FEE225C99A500F6C11E /* FacebookSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3504FF2225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F358626D2256EA3E007F2966 /* DBProfileEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */; };
 		F35862712256F0A8007F2966 /* DBProfilesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862702256F0A8007F2966 /* DBProfilesManager.cpp */; };
 		F35862742256F185007F2966 /* DBBaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F35862732256F185007F2966 /* DBBaseManager.cpp */; };
@@ -2435,6 +2435,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FACEBOOK_APP_ID = 117902875492666;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Firebase",
@@ -2450,6 +2451,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GOOGLE_REVERSED_CLIENT_ID = "com.googleusercontent.apps.463109741164-k83ruff5j5simdiklljr8sepj8d0nh74";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../cocos2d/external/openssl/include/ios",
 					"$(inherited)",
@@ -2466,6 +2468,7 @@
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
+				TWITTER_CONSUMER_KEY = RXdBn4ur6meseWuVnvitKJyzS;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};
@@ -2482,6 +2485,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				ENABLE_BITCODE = NO;
+				FACEBOOK_APP_ID = 558820207838914;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Firebase",
@@ -2496,6 +2500,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GOOGLE_REVERSED_CLIENT_ID = "com.googleusercontent.apps.929137262116-v1p1fsmbg3lhqi84muvc64sp8f957ttg";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../cocos2d/external/openssl/include/ios",
 					"$(inherited)",
@@ -2512,6 +2517,7 @@
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
+				TWITTER_CONSUMER_KEY = 2InAE6UeF1GIQGQ1DvqJjYRAv;
 				USER_HEADER_SEARCH_PATHS = "$(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};

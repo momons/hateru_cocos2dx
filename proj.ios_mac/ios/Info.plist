@@ -29,7 +29,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.463109741164-k83ruff5j5simdiklljr8sepj8d0nh74</string>
+				<string>${GOOGLE_REVERSED_CLIENT_ID}</string>
 			</array>
 		</dict>
 		<dict>
@@ -37,7 +37,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb117902875492666</string>
+				<string>fb${FACEBOOK_APP_ID}</string>
 			</array>
 		</dict>
 		<dict>
@@ -45,14 +45,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>twitterkit-RXdBn4ur6meseWuVnvitKJyzS</string>
+				<string>twitterkit-${TWITTER_CONSUMER_KEY}</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0.0</string>
 	<key>FacebookAppID</key>
-	<string>117902875492666</string>
+	<string>${FACEBOOK_APP_ID}</string>
 	<key>FacebookDisplayName</key>
 	<string>果てしなき道標</string>
 	<key>LSApplicationQueriesSchemes</key>

@@ -14,11 +14,6 @@ typedef void (^signInHandler)(BOOL);
 @interface TwitterSignInService : NSObject
 
 /**
- セットアップ
- */
-+ (void)configure;
-
-/**
  サインイン
  
  @param completion 完了通知

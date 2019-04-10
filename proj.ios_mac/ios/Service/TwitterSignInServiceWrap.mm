@@ -10,7 +10,7 @@
 #import "TwitterSignInService.h"
 
 TwitterSignInServiceWrap::TwitterSignInServiceWrap() {
-    _service = [[TwitterSignInService new] autorelease];
+    _service = [TwitterSignInService new];
 }
 
 void TwitterSignInServiceWrap::signIn(const function<void(bool)> handler) {

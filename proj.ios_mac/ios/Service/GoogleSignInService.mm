@@ -20,12 +20,12 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        [self setup];
+        [self configure];
     }
     return self;
 }
 
-- (void)setup {
+- (void)configure {
     [GIDSignIn sharedInstance].clientID = [FIRApp defaultApp].options.clientID;
     [GIDSignIn sharedInstance].delegate = self;
 }
@@ -46,15 +46,16 @@
                                                                      accessToken:user.authentication.accessToken];
     [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
         GoogleSignInService *blocksSelf = weakSelf;
-        if (weakSelf == nil) {
-            return;
-        }
         if (error != nil) {
             LOG(@"ERROR: Google sign in. %@", error.description);
-            blocksSelf->_signInHandler(NO);
+            if (blocksSelf != nil && blocksSelf->_signInHandler != nullptr) {
+                blocksSelf->_signInHandler(NO);
+            }
             return;
         }
-        blocksSelf->_signInHandler(YES);
+        if (blocksSelf != nil && blocksSelf->_signInHandler != nullptr) {
+            blocksSelf->_signInHandler(YES);
+        }
     }];
 }
 
