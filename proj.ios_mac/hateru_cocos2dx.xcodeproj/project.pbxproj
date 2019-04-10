@@ -271,6 +271,10 @@
 		F3D888F9220EB09F00B426CC /* ItemSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888E2220EB09F00B426CC /* ItemSendFetcher.cpp */; };
 		F3D888FD220EBECE00B426CC /* GameImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D888FB220EBECD00B426CC /* GameImages.plist */; };
 		F3D888FE220EBECE00B426CC /* GameImages.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D888FC220EBECE00B426CC /* GameImages.png */; };
+		F3D93D09225DC104001A36D6 /* firebase_remote_config.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */; };
+		F3D93D0D225DC213001A36D6 /* RemoteConfigService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */; };
+		F3D93D11225DC3DF001A36D6 /* FirebaseService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */; };
+		F3D93D15225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -787,6 +791,13 @@
 		F3D888E4220EB09F00B426CC /* BaseFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFetcher.h; sourceTree = "<group>"; };
 		F3D888FB220EBECD00B426CC /* GameImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameImages.plist; sourceTree = "<group>"; };
 		F3D888FC220EBECE00B426CC /* GameImages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameImages.png; sourceTree = "<group>"; };
+		F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_remote_config.framework; sourceTree = "<group>"; };
+		F3D93D0B225DC15C001A36D6 /* RemoteConfigService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConfigService.h; sourceTree = "<group>"; };
+		F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoteConfigService.cpp; sourceTree = "<group>"; };
+		F3D93D0F225DC3D2001A36D6 /* FirebaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseService.h; sourceTree = "<group>"; };
+		F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FirebaseService.cpp; sourceTree = "<group>"; };
+		F3D93D13225DE310001A36D6 /* RemoteConfigLatestVersionsEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConfigLatestVersionsEntity.h; sourceTree = "<group>"; };
+		F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoteConfigLatestVersionsEntity.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -812,6 +823,7 @@
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
 				D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */,
+				F3D93D09225DC104001A36D6 /* firebase_remote_config.framework in Frameworks */,
 				7517FD2DBD573952FEBD02DF /* libPods-hateru_cocos2dx-mobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1604,6 +1616,7 @@
 			children = (
 				F34A3C2822547DAE0041D565 /* firebase_auth.framework */,
 				F34A3C3D2255E2910041D565 /* firebase_database.framework */,
+				F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */,
 				F34A3C2722547DAE0041D565 /* firebase.framework */,
 				F3AFE235225454B000C48F84 /* GoogleService-Info.plist */,
 			);
@@ -1804,7 +1817,7 @@
 		F3D88848220E94DC00B426CC /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F34A3C3822549C070041D565 /* Auth */,
+				F3D93D0E225DC3AC001A36D6 /* Firebase */,
 				F3D88852220E94DC00B426CC /* BaseService.h */,
 				F3D8884A220E94DC00B426CC /* BaseService.cpp */,
 				F3D8884D220E94DC00B426CC /* GameMapService.h */,
@@ -1924,6 +1937,36 @@
 				F3D888E1220EB09F00B426CC /* ItemInfoGetFetcher.cpp */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		F3D93D0A225DC10A001A36D6 /* RemoteConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F3D93D12225DE2E0001A36D6 /* Entity */,
+				F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */,
+				F3D93D0B225DC15C001A36D6 /* RemoteConfigService.h */,
+			);
+			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		F3D93D0E225DC3AC001A36D6 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */,
+				F3D93D0F225DC3D2001A36D6 /* FirebaseService.h */,
+				F34A3C3822549C070041D565 /* Auth */,
+				F3D93D0A225DC10A001A36D6 /* RemoteConfig */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		F3D93D12225DE2E0001A36D6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */,
+				F3D93D13225DE310001A36D6 /* RemoteConfigLatestVersionsEntity.h */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2235,6 +2278,7 @@
 				F3D88863220E94DC00B426CC /* BaseManager.cpp in Sources */,
 				F3D88870220E94DC00B426CC /* TitleMapLayer.cpp in Sources */,
 				F32BE5552237D65C00ECA798 /* GameEventSaveEntity.cpp in Sources */,
+				F3D93D0D225DC213001A36D6 /* RemoteConfigService.cpp in Sources */,
 				F3D888F9220EB09F00B426CC /* ItemSendFetcher.cpp in Sources */,
 				F32BE5302237D65C00ECA798 /* GameItemEntity.cpp in Sources */,
 				F32BE56F2237D65C00ECA798 /* BbsWriteResponseEntity.cpp in Sources */,
@@ -2267,6 +2311,7 @@
 				F358627722572B58007F2966 /* DBLocationEntity.cpp in Sources */,
 				F3D888F2220EB09F00B426CC /* ItemListGetFetcher.cpp in Sources */,
 				F3D8887B220E94DC00B426CC /* GameDataService.cpp in Sources */,
+				F3D93D11225DC3DF001A36D6 /* FirebaseService.cpp in Sources */,
 				F3D8885E220E94DC00B426CC /* GameJobManager.cpp in Sources */,
 				F3D8887A220E94DC00B426CC /* BaseService.cpp in Sources */,
 				F32BE5482237D65C00ECA798 /* GameEventChangeBGMEntity.cpp in Sources */,
@@ -2280,6 +2325,7 @@
 				F32BE56B2237D65C00ECA798 /* SaveGetResponseEntity.cpp in Sources */,
 				F32BE55C2237D65C00ECA798 /* GameEventINNEntity.cpp in Sources */,
 				F32BE5342237D65C00ECA798 /* GameJobEntity.cpp in Sources */,
+				F3D93D15225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp in Sources */,
 				F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */,
 				F3D8886C220E94DC00B426CC /* SplashScene.cpp in Sources */,
 				F32BE5262237D65C00ECA798 /* GameEnemyEncountEntity.cpp in Sources */,

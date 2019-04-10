@@ -8,7 +8,6 @@
 #ifndef AuthService_h
 #define AuthService_h
 
-#include "firebase/app.h"
 #include "firebase/auth.h"
 
 using namespace std;
@@ -93,10 +92,8 @@ private:
     /// インスタンス
     static AuthService *instance;
     
-    /// Firebaseインスタンス
-    App *app;
     /// 認証インスタンス
-    auth::Auth *auth;
+    auth::Auth *_auth;
     
     /**
      *  インストラクタ

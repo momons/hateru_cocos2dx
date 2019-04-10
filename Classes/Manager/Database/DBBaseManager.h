@@ -8,7 +8,6 @@
 #ifndef DBBaseManager_h
 #define DBBaseManager_h
 
-#include "firebase/app.h"
 #include "firebase/auth.h"
 #include "firebase/database.h"
 

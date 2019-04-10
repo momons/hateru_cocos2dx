@@ -534,11 +534,11 @@ return var;						      \
 		bool is_number_only = true;
 		while (1) {
 			int ch = in.getc();
-			if ('0' > ch || ch > '9') {
-				is_number_only = false;
-			}
 			if (('0' <= ch && ch <= '9') || ch == '+' || ch == '-' || ch == '.'
 				|| ch == 'e' || ch == 'E') {
+                if ('0' > ch || ch > '9') {
+                    is_number_only = false;
+                }
 				num_str.push_back(ch);
 			} else {
 				in.ungetc();

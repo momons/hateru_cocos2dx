@@ -7,6 +7,7 @@
 
 #include "AuthService.h"
 
+#include "FirebaseService.h"
 #include "GoogleSignInServiceWrap.h"
 #include "FacebookSignInServiceWrap.h"
 #include "TwitterSignInServiceWrap.h"
@@ -14,14 +15,7 @@
 AuthService *AuthService::instance;
 
 AuthService::AuthService() {
-    
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    app = App::Create(firebase::AppOptions());
-#else
-    app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
-#endif
-    
-    auth = auth::Auth::GetAuth(app);
+    _auth = auth::Auth::GetAuth(FirebaseService::sharedInstance()->app());
 }
 
 AuthService *AuthService::sharedInstance() {
@@ -37,7 +31,7 @@ void AuthService::setupInstance() {
 // MARK:- サインアップ
 
 void AuthService::signUpByEmail(const string email, const string password, const function<void(bool)> handler) {
-    auto result = auth->CreateUserWithEmailAndPassword(email.c_str(), password.c_str());
+    auto result = _auth->CreateUserWithEmailAndPassword(email.c_str(), password.c_str());
     result.OnCompletion([handler](const Future<auth::User *> &result) {
         if (result.error() != auth::kAuthErrorNone) {
             printf("failed Sign in '%s'\n", result.error_message());
@@ -51,7 +45,7 @@ void AuthService::signUpByEmail(const string email, const string password, const
 // MARK:- サインイン
 
 void AuthService::signInByEmail(const string email, const string password, const function<void(bool)> handler) {
-    auto result = auth->SignInWithEmailAndPassword(email.c_str(), password.c_str());
+    auto result = _auth->SignInWithEmailAndPassword(email.c_str(), password.c_str());
     result.OnCompletion([handler](const Future<auth::User *> &result) {
         if (result.error() != auth::kAuthErrorNone) {
             printf("failed Sign in '%s'\n", result.error_message());
@@ -92,17 +86,17 @@ void AuthService::signInByTwitter(const function<void(bool)> handler) {
 // MARK:- サインアウト
 
 void AuthService::signOut() {
-    auth->SignOut();
+    _auth->SignOut();
 }
 
 // MARK:- その他
 
 bool AuthService::isLoggedIn() {
-    return auth->current_user() != nullptr;
+    return _auth->current_user() != nullptr;
 }
 
 string AuthService::userId() {
-    auto user = auth->current_user();
+    auto user = _auth->current_user();
     if (user == nullptr) {
         return "";
     }

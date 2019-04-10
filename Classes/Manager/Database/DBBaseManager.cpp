@@ -7,13 +7,10 @@
 
 #include "DBBaseManager.h"
 
+#include "FirebaseService.h"
+
 const string DBBaseManager::topFieldName = "hateru";
 
 DBBaseManager::DBBaseManager() {
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
-    auto app = App::Create(firebase::AppOptions());
-#else
-    auto app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
-#endif
-    database = database::Database::GetInstance(app);
+    database = database::Database::GetInstance(FirebaseService::sharedInstance()->app());
 }
