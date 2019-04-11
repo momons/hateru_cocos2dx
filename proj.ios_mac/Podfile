@@ -18,6 +18,7 @@ target 'hateru_cocos2dx-mobile' do
   pod 'Firebase/Auth', '5.18.0'
   pod 'Firebase/Database', '5.18.0'
   pod 'Firebase/RemoteConfig', '5.18.0'
+  pod 'Firebase/Messaging', '5.18.0'
 
   # Google
   pod 'GoogleSignIn'
