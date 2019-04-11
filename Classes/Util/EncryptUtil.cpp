@@ -8,6 +8,7 @@
 
 #include "EncryptUtil.h"
 
+#include "cocos2d.h"
 #include <iostream>
 #include <iomanip>
 #include <openssl/md5.h>
@@ -15,6 +16,8 @@
 
 #include "EncryptConst.h"
 #include "Base64Util.h"
+
+USING_NS_CC;
 
 /**
  *  ハッシュ化

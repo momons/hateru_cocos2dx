@@ -8,10 +8,12 @@
 #ifndef GameEtcManager_h
 #define GameEtcManager_h
 
-#include "BaseManager.h"
+#include <string>
+
+using namespace std;
 
 /// ゲームその他マネージャ
-class GameEtcManager final: BaseManager {
+class GameEtcManager final {
 public:
     
     /**

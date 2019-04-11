@@ -7,7 +7,7 @@
 
 #include "DBProfilesManager.h"
 
-#include "AuthService.h"
+#include "../../Service/Firebase/Auth/AuthService.h"
 
 database::DatabaseReference DBProfilesManager::ref() {
     return database->GetReference().Child(DBBaseManager::topFieldName.c_str()).Child("profiles");

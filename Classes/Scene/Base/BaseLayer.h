@@ -33,7 +33,7 @@ public:
 	/**
 	 *  デストラクタ
 	 */
-	virtual ~BaseLayer();
+    virtual ~BaseLayer() {};
 
 	/**
 	 *  レイヤー破棄

@@ -10,7 +10,9 @@
 #define UnitSprite_h
 
 #include "cocos2d.h"
-#include "GameCharaEntity.h"
+
+#include "../../Const/GameConst.h"
+#include "../../Entity/Game/Chara/GameCharaEntity.h"
 
 USING_NS_CC;
 using namespace std;
@@ -50,7 +52,7 @@ public:
 	/**
 	 *  向きを設定
 	 *
-	 *  @param direction 向きタイプ
+	 *  @param directionType 向きタイプ
 	 */
 	void setDirectionType(DirectionType directionType);
 	

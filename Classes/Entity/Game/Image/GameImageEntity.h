@@ -9,10 +9,8 @@
 #ifndef GameImageEntity_h
 #define GameImageEntity_h
 
-#include "BaseGameEntity.h"
-
 /// 画像Entity
-class GameImageEntity final: public BaseGameEntity {
+class GameImageEntity final {
 public:
 	
 private:

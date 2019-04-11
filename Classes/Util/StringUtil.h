@@ -9,7 +9,8 @@
 #ifndef StringUtil_h
 #define StringUtil_h
 
-#include <stdio.h>
+#include <string>
+#include <vector>
 
 using namespace std;
 

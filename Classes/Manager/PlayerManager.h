@@ -9,13 +9,11 @@
 #ifndef PlayerManager_h
 #define PlayerManager_h
 
-#include "BaseManager.h"
-
-#include "PlayerEntity.h"
-#include "PlayerEncryptEntity.h"
+#include "../Entity/Player/PlayerEntity.h"
+#include "../Entity/Player/PlayerEncryptEntity.h"
 
 /// プレイヤーマネージャ
-class PlayerManager final: BaseManager {
+class PlayerManager final {
 public:
 	
 	/**

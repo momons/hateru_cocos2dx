@@ -11,14 +11,14 @@
 #include "GameDataService.h"
 #include "GameEventService.h"
 
-#include "PlayerEntity.h"
-#include "GameMapEntity.h"
-#include "GameEventBaseEntity.h"
-#include "GameEventFluctuateHPEntity.h"
-#include "GameEventFluctuateMPEntity.h"
-#include "GameEventFluctuateGoldEntity.h"
-#include "GameEventFluctuateItemEntity.h"
-#include "GameItemEntity.h"
+#include "../Entity/Player/PlayerEntity.h"
+#include "../Entity/Game/Map/GameMapEntity.h"
+#include "../Entity/Game/Event/Detail/GameEventBaseEntity.h"
+#include "../Entity/Game/Event/Detail/GameEventFluctuateHPEntity.h"
+#include "../Entity/Game/Event/Detail/GameEventFluctuateMPEntity.h"
+#include "../Entity/Game/Event/Detail/GameEventFluctuateGoldEntity.h"
+#include "../Entity/Game/Event/Detail/GameEventFluctuateItemEntity.h"
+#include "../Entity/Game/Item/GameItemEntity.h"
 
 #pragma mark - 初期化
 

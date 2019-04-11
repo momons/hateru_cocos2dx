@@ -9,10 +9,15 @@
 #ifndef GameEventBaseEntity_h
 #define GameEventBaseEntity_h
 
-#include "BaseGameEntity.h"
+#include <vector>
+#include <string>
+
+#include "../../../../Const/GameConst.h"
+
+using namespace std;
 
 /// イベントEntity基底クラス
-class GameEventBaseEntity: public BaseGameEntity {
+class GameEventBaseEntity {
 public:
 	
 	/**

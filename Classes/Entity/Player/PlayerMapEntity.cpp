@@ -8,7 +8,12 @@
 
 #include "PlayerMapEntity.h"
 
+#include "cocos2d.h"
+
 #include "LogConst.h"
+
+USING_NS_CC;
+
 
 /**
  *  コンストラクタ

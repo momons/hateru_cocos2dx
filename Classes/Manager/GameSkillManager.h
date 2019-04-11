@@ -9,11 +9,10 @@
 #ifndef GameSkillManager_h
 #define GameSkillManager_h
 
-#include "BaseManager.h"
-#include "GameSkillEntity.h"
+#include "../Entity/Game/Skill/GameSkillEntity.h"
 
 /// ゲームスキルマネージャ
-class GameSkillManager final: BaseManager {
+class GameSkillManager final {
 public:
 	
 	/**

@@ -9,10 +9,10 @@
 #ifndef GameItemStatusEntity_h
 #define GameItemStatusEntity_h
 
-#include "BaseGameEntity.h"
+#include "../../../Const/GameConst.h"
 
 /// アイテムステータスEntity
-class GameItemStatusEntity final: public BaseGameEntity {
+class GameItemStatusEntity final {
 public:
 	
 	/// ステータス種別

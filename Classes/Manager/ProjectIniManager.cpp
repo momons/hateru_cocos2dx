@@ -8,8 +8,12 @@
 
 #include "ProjectIniManager.h"
 
+#include "cocos2d.h"
 #include <mutex>
-#include "FileConst.h"
+
+#include "../Const/FileConst.h"
+
+USING_NS_CC;
 
 /**
  *  Project.ini読み込み

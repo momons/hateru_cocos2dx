@@ -9,11 +9,15 @@
 #ifndef GameJobEntity_h
 #define GameJobEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+
+#include "../../../Const/GameConst.h"
 #include "GameJobSkillEntity.h"
 
+using namespace std;
+
 /// 職業Entity
-class GameJobEntity final: public BaseGameEntity {
+class GameJobEntity final {
 public:
 	
 	/// 名前

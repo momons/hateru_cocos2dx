@@ -8,8 +8,8 @@
 
 #include "NamesEntity.h"
 
-#include "SJISUtil.h"
-#include "StringUtil.h"
+#include "../../../Util/SJISUtil.h"
+#include "../../../Util/StringUtil.h"
 
 
 /**

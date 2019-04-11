@@ -9,10 +9,12 @@
 #ifndef GameVariableEntity_h
 #define GameVariableEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+
+using namespace std;
 
 /// 変数Entity
-class GameVariableEntity final: public BaseGameEntity {
+class GameVariableEntity final {
 public:
 	
 	/// ID

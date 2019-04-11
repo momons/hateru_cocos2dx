@@ -9,8 +9,8 @@
 #define DBProfilesManager_h
 
 #include "DBBaseManager.h"
-#include "DBProfileEntity.h"
-#include "PlayerProfileEntity.h"
+#include "../../Entity/Database/DBProfileEntity.h"
+#include "../../Entity/Player/PlayerProfileEntity.h"
 
 using namespace std;
 

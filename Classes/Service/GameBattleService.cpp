@@ -46,12 +46,8 @@ GameBattleService *GameBattleService::sharedInstance() {
 void GameBattleService::setupInstance() {
 	instance = new GameBattleService();
 	if (instance == nullptr) {
-		delete instance;
-		instance = nullptr;
 		return;
 	}
-	
-	instance->Ref::autorelease();
 }
 
 /**

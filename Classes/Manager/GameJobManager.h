@@ -9,11 +9,10 @@
 #ifndef GameJobManager_h
 #define GameJobManager_h
 
-#include "BaseManager.h"
-#include "GameJobEntity.h"
+#include "../Entity/Game/Job/GameJobEntity.h"
 
 /// ゲーム職業マネージャ
-class GameJobManager final: BaseManager {
+class GameJobManager final {
 public:
 	
 	/**

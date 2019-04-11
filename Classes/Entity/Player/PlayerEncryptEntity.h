@@ -9,17 +9,16 @@
 #ifndef PlayerEncryptionEntity_h
 #define PlayerEncryptionEntity_h
 
-#include "cocos2d.h"
+#include <string>
 
-#include "picojson.h"
+#include "../../Util/picojson.h"
 
-#include "PlayerEntity.h"
+class PlayerEntity;
 
-USING_NS_CC;
 using namespace std;
 
 /// プレイヤー暗号化Entity
-class PlayerEncryptEntity: public Ref {
+class PlayerEncryptEntity {
 public:
 	
 	/// 有効フラグ

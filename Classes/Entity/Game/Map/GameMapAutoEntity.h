@@ -9,10 +9,12 @@
 #ifndef GameMapAutoEntity_h
 #define GameMapAutoEntity_h
 
-#include "BaseGameEntity.h"
+#include <vector>
+
+using namespace std;
 
 /// 自動マップEntity
-class GameMapAutoEntity final: public BaseGameEntity {
+class GameMapAutoEntity final {
 public:
 	
 	/// 階層

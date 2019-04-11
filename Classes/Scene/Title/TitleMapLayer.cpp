@@ -8,8 +8,8 @@
 
 #include "TitleMapLayer.h"
 
-#include "GameConst.h"
-#include "GameMapManager.h"
+#include "../../Const/GameConst.h"
+#include "../../Manager/GameMapManager.h"
 
 /**
  *  クラス作成

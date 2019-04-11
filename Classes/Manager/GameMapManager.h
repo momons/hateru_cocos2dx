@@ -9,11 +9,10 @@
 #ifndef GameMapManager_h
 #define GameMapManager_h
 
-#include "BaseManager.h"
-#include "GameMapEntity.h"
+#include "../Entity/Game/Map/GameMapEntity.h"
 
 /// ゲームマップマネージャ
-class GameMapManager final: BaseManager {
+class GameMapManager final {
 public:
 	
 	/**

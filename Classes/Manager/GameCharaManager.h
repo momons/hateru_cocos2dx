@@ -9,11 +9,10 @@
 #ifndef GameCharaManager_h
 #define GameCharaManager_h
 
-#include "BaseManager.h"
-#include "GameCharaEntity.h"
+#include "../Entity/Game/Chara/GameCharaEntity.h"
 
 /// ゲームキャラマネージャ
-class GameCharaManager final: BaseManager {
+class GameCharaManager final {
 public:
 	
 	/**

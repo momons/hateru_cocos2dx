@@ -9,12 +9,10 @@
 #ifndef GameEnemyEncountEntity_h
 #define GameEnemyEncountEntity_h
 
-#include "BaseGameEntity.h"
-
 class PlayerMapEntity;
 
 /// 敵 遭遇Entity
-class GameEnemyEncountEntity final: public BaseGameEntity {
+class GameEnemyEncountEntity final {
 public:
 	
 	/// マップ

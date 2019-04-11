@@ -8,9 +8,9 @@
 
 #include "MapUpLayer.h"
 
-#include "GameMapService.h"
-#include "GameMapEntity.h"
-#include "GameMapManager.h"
+#include "../../Service/GameMapService.h"
+#include "../../Entity/Game/Map/GameMapEntity.h"
+#include "../../Manager/GameMapManager.h"
 
 /**
  *  クラス作成

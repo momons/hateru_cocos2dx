@@ -9,13 +9,14 @@
 #ifndef ProfileConst_h
 #define ProfileConst_h
 
-#include "cocos2d.h"
+#include <string>
+#include <vector>
 
 USING_NS_CC;
 using namespace std;
 
 /// プロフィール定数
-class ProfileConst final: Ref {
+class ProfileConst final {
 public:
 	
 	/// 性別

@@ -9,7 +9,7 @@
 #define DBBBSManager_h
 
 #include "DBBaseManager.h"
-#include "DBBBSEntity.h"
+#include "../../Entity/Database/DBBBSEntity.h"
 
 using namespace std;
 

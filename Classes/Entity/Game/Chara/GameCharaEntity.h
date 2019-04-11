@@ -9,10 +9,13 @@
 #ifndef GameCharaEntity_h
 #define GameCharaEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+#include <vector>
+
+using namespace std;
 
 /// キャラEntity
-class GameCharaEntity final: public BaseGameEntity {
+class GameCharaEntity final {
 public:
 	
 	/// 名前

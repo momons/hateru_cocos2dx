@@ -9,14 +9,18 @@
 #ifndef GameEnemyEntity_h
 #define GameEnemyEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+#include <vector>
+
 #include "GameEnemyItemEntity.h"
 #include "GameEnemyEncountEntity.h"
 
 class PlayerEntity;
 
+using namespace std;
+
 /// 敵Entity
-class GameEnemyEntity final: public BaseGameEntity {
+class GameEnemyEntity final {
 public:
 	
 	/// 名前

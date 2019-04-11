@@ -9,7 +9,7 @@
 #ifndef EncryptConst_h
 #define EncryptConst_h
 
-#include <stdio.h>
+#include <string>
 
 using namespace std;
 

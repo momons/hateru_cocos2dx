@@ -9,13 +9,12 @@
 #ifndef GameEventEntity_h
 #define GameEventEntity_h
 
-#include "BaseGameEntity.h"
-#include "GameEventBaseEntity.h"
+#include "Detail/GameEventBaseEntity.h"
 
 class UnitSprite;
 
 /// マップイベントEntity
-class GameEventEntity final: public BaseGameEntity {
+class GameEventEntity final {
 public:
 	
 	/// 名前

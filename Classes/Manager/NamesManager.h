@@ -9,11 +9,10 @@
 #ifndef NamesManager_h
 #define NamesManager_h
 
-#include "BaseManager.h"
-#include "NamesEntity.h"
+#include "../Entity/Game/Image/NamesEntity.h"
 
 /// 名前リストマネージャ
-class NamesManager final: BaseManager {
+class NamesManager final {
 public:
 	
 	/// マップチップ

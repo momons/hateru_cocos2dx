@@ -9,7 +9,7 @@
 #include "GameMapService.h"
 
 #include "GameDataService.h"
-#include "PlayerManager.h"
+#include "../Manager/PlayerManager.h"
 
 /// インスタンス
 GameMapService *GameMapService::instance;
@@ -55,11 +55,8 @@ GameMapService *GameMapService::sharedInstance() {
 void GameMapService::setupInstance() {
 	instance = new GameMapService();
 	if (instance == nullptr) {
-		delete instance;
-		instance = nullptr;
 		return;
 	}
-	instance->Ref::autorelease();
 }
 
 #pragma mark - 初期化

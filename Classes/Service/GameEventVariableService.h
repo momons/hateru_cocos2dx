@@ -9,8 +9,7 @@
 #ifndef GameEventVariableService_h
 #define GameEventVariableService_h
 
-#include "BaseService.h"
-#include "GameConst.h"
+#include "../Const/GameConst.h"
 
 class GameEventService;
 class PlayerEntity;
@@ -18,7 +17,7 @@ class GameMapEntity;
 class GameEventBaseEntity;
 
 /// ゲームイベント ステータス関連サービス
-class GameEventVariableService final: public BaseService {
+class GameEventVariableService final {
 public:
 	
 #pragma mark - 初期化

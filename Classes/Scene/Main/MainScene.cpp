@@ -8,10 +8,10 @@
 
 #include "MainScene.h"
 
-#include "MapLayer.h"
-#include "UnitLayer.h"
+#include "../Map/MapLayer.h"
+#include "../Map/UnitLayer.h"
 
-#include "GameMapService.h"
+#include "../../Service/GameMapService.h"
 
 #include <mutex>
 

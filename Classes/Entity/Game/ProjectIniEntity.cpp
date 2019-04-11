@@ -8,7 +8,7 @@
 
 #include "ProjectIniEntity.h"
 
-#include "StringUtil.h"
+#include "../../Util/StringUtil.h"
 
 /// チップグループ
 const string ProjectIniEntity::typeChipGroup = "[ChipGp]";

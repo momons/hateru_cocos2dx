@@ -9,7 +9,7 @@
 #ifndef TitleLayer_h
 #define TitleLayer_h
 
-#include "BaseLayer.h"
+#include "../Base/BaseLayer.h"
 
 /// タイトルレイヤー
 class TitleLayer final: public BaseLayer {

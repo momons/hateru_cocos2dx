@@ -9,8 +9,6 @@
 #ifndef PlayerUnitEntity_h
 #define PlayerUnitEntity_h
 
-#include "cocos2d.h"
-
 #include "picojson.h"
 
 #include "GameConst.h"
@@ -20,7 +18,7 @@ USING_NS_CC;
 using namespace std;
 
 /// プレイヤーユニットEntity
-class PlayerUnitEntity final: public Ref {
+class PlayerUnitEntity final {
 public:
 	
 	/// ユニットID

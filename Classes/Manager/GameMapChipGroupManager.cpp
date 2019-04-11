@@ -8,12 +8,15 @@
 
 #include "GameMapChipGroupManager.h"
 
+#include "cocos2d.h"
 #include <iostream>
 #include <iomanip>
 
-#include "FileConst.h"
+#include "../Const/FileConst.h"
 #include "ProjectIniManager.h"
 #include "NamesManager.h"
+
+USING_NS_CC;
 
 /**
  *  読み込み

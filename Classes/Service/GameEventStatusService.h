@@ -9,15 +9,13 @@
 #ifndef GameEventStatusService_h
 #define GameEventStatusService_h
 
-#include "BaseService.h"
-
 class GameEventService;
 class PlayerEntity;
 class GameMapEntity;
 class GameEventBaseEntity;
 
 /// ゲームイベント ステータス関連サービス
-class GameEventStatusService final: public BaseService {
+class GameEventStatusService final {
 public:
 
 #pragma mark - 初期化

@@ -21,14 +21,12 @@ public:
 	/**
 	 *  インストラクタ
 	 */
-	BaseScene() {
-	}
+	BaseScene() {}
 	
 	/**
 	 *  デストラクタ
 	 */
-	~BaseScene() {
-	}
+	~BaseScene() {}
 	
 private:
 	

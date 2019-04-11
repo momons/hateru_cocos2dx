@@ -9,8 +9,8 @@
 #ifndef GameEventService_h
 #define GameEventService_h
 
-#include "BaseService.h"
-#include "GameConst.h"
+#include <map>
+#include "../Const/GameConst.h"
 
 class GameEventStatusService;
 class GameEventVariableService;
@@ -19,8 +19,10 @@ class GameMapEntity;
 class GameEventEntity;
 class GameEventBaseEntity;
 
+using namespace std;
+
 /// ゲームイベントサービス
-class GameEventService final: public BaseService {
+class GameEventService final {
 public:
 	
 	/// プレイヤー情報

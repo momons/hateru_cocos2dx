@@ -9,9 +9,9 @@
 #ifndef Base64Util_h
 #define Base64Util_h
 
-#include "cocos2d.h"
+#include <string>
+#include <vector>
 
-USING_NS_CC;
 using namespace std;
 
 /// Base64ユーティリティ

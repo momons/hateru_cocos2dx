@@ -43,10 +43,6 @@ ProfileConst *ProfileConst::sharedInstance() {
 void ProfileConst::setupInstance() {
 	instance = new ProfileConst();
 	if (instance == nullptr) {
-		delete instance;
-		instance = nullptr;
 		return;
 	}
-	
-	instance->Ref::autorelease();
 }

@@ -9,10 +9,8 @@
 #ifndef GameEnemyItemEntity_h
 #define GameEnemyItemEntity_h
 
-#include "BaseGameEntity.h"
-
 /// 敵 獲得アイテムEntity
-class GameEnemyItemEntity final: public BaseGameEntity {
+class GameEnemyItemEntity final {
 public:
 	
 	/// 獲得フラグ

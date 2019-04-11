@@ -9,7 +9,11 @@
 #ifndef GameEventMoveMobUnitEntity_h
 #define GameEventMoveMobUnitEntity_h
 
+#include <vector>
+
 #include "GameEventBaseEntity.h"
+
+using namespace std;
 
 /// イベント キャラ移動Entity
 class GameEventMoveMobUnitEntity final: public GameEventBaseEntity {

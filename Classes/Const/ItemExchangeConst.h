@@ -9,7 +9,7 @@
 #ifndef ItemExchangeConst_h
 #define ItemExchangeConst_h
 
-#include <stdio.h>
+#include <string>
 
 using namespace std;
 

@@ -9,10 +9,13 @@
 #ifndef ProjectIniEntity_h
 #define ProjectIniEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+#include <map>
+
+using namespace std;
 
 /// Project.ini Entity
-class ProjectIniEntity final: public BaseGameEntity {
+class ProjectIniEntity final {
 public:
 	
 	/// チップグループ

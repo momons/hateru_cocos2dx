@@ -8,7 +8,6 @@
 
 #include "Base64Util.h"
 
-
 /**
  *  変換
  *

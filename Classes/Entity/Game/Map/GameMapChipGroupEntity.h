@@ -9,10 +9,14 @@
 #ifndef GameMapChipGroupEntity_h
 #define GameMapChipGroupEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+
+#include "../../../Const/GameConst.h"
+
+using namespace std;
 
 /// マップチップグループEntity
-class GameMapChipGroupEntity final: public BaseGameEntity {
+class GameMapChipGroupEntity final {
 public:
 	
 	/// 名前

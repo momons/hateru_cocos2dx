@@ -9,11 +9,10 @@
 #ifndef ProjectIniManager_h
 #define ProjectIniManager_h
 
-#include "BaseManager.h"
-#include "ProjectIniEntity.h"
+#include "../Entity/Game/ProjectIniEntity.h"
 
 /// Project.iniマネージャ
-class ProjectIniManager final: BaseManager {
+class ProjectIniManager final {
 public:
 	
 	/**

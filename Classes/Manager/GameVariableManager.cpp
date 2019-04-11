@@ -8,9 +8,13 @@
 
 #include "GameVariableManager.h"
 
-#include "FileConst.h"
+#include "cocos2d.h"
+
+#include "../Const/FileConst.h"
 #include "ProjectIniManager.h"
 #include "NamesManager.h"
+
+USING_NS_CC;
 
 /**
  *  読み込み

@@ -9,9 +9,8 @@
 #ifndef UUIDUtil_h
 #define UUIDUtil_h
 
-#include "cocos2d.h"
+#include <string>
 
-USING_NS_CC;
 using namespace std;
 
 /// UUIDユーティリティ

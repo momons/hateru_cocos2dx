@@ -9,13 +9,16 @@
 #ifndef GameItemEntity_h
 #define GameItemEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+
 #include "GameItemMixEntity.h"
 #include "GameItemStatusEntity.h"
-#include "GameVariableChangeEntity.h"
+#include "../Variable/GameVariableChangeEntity.h"
+
+using namespace std;
 
 /// アイテムEntity
-class GameItemEntity final: public BaseGameEntity {
+class GameItemEntity final {
 public:
 	
 	/// 名前

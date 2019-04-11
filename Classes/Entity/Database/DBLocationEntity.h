@@ -10,7 +10,7 @@
 
 #include "firebase/database.h"
 
-#include "PlayerMapEntity.h"
+class PlayerMapEntity;
 
 using namespace std;
 using namespace firebase;

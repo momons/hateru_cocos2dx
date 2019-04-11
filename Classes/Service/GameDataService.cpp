@@ -10,16 +10,16 @@
 
 #include <mutex>
 
-#include "GameInfoManager.h"
-#include "GameMapManager.h"
-#include "GameMapChipGroupManager.h"
-#include "GameEnemyManager.h"
-#include "GameEnemyEntity.h"
-#include "GameCharaManager.h"
-#include "GameItemManager.h"
-#include "GameJobManager.h"
-#include "GameSkillManager.h"
-#include "GameVariableManager.h"
+#include "../Manager/GameInfoManager.h"
+#include "../Manager/GameMapManager.h"
+#include "../Manager/GameMapChipGroupManager.h"
+#include "../Manager/GameEnemyManager.h"
+#include "../Entity/Game/Enemy/GameEnemyEntity.h"
+#include "../Manager/GameCharaManager.h"
+#include "../Manager/GameItemManager.h"
+#include "../Manager/GameJobManager.h"
+#include "../Manager/GameSkillManager.h"
+#include "../Manager/GameVariableManager.h"
 
 /// インスタンス
 GameDataService *GameDataService::instance;
@@ -56,13 +56,9 @@ GameDataService *GameDataService::sharedInstance() {
 void GameDataService::setupInstance() {
 	instance = new GameDataService();
 	if (instance == nullptr) {
-		delete instance;
-		instance = nullptr;
 		return;
 	}
-	
-	instance->Ref::autorelease();
-
+ 
 	// 初期化
 	instance->mapId = -1;
 	

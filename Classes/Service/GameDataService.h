@@ -9,19 +9,18 @@
 #ifndef GameDataService_h
 #define GameDataService_h
 
-#include "BaseService.h"
-#include "GameInfoEntity.h"
-#include "GameMapEntity.h"
-#include "GameMapChipGroupEntity.h"
-#include "GameEnemyEntity.h"
-#include "GameCharaEntity.h"
-#include "GameItemEntity.h"
-#include "GameJobEntity.h"
-#include "GameSkillEntity.h"
-#include "GameVariableEntity.h"
+#include "../Entity/Game/Info/GameInfoEntity.h"
+#include "../Entity/Game/Map/GameMapEntity.h"
+#include "../Entity/Game/Map/GameMapChipGroupEntity.h"
+#include "../Entity/Game/Enemy/GameEnemyEntity.h"
+#include "../Entity/Game/Chara/GameCharaEntity.h"
+#include "../Entity/Game/Item/GameItemEntity.h"
+#include "../Entity/Game/Job/GameJobEntity.h"
+#include "../Entity/Game/Skill/GameSkillEntity.h"
+#include "../Entity/Game/Variable/GameVariableEntity.h"
 
 /// ゲームデータサービス
-class GameDataService final: BaseService {
+class GameDataService final {
 public:
 	
 	/// ゲーム情報

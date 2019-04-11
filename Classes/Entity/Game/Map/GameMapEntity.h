@@ -9,13 +9,12 @@
 #ifndef GameMapEntity_h
 #define GameMapEntity_h
 
-#include "BaseGameEntity.h"
 #include "GameMapChipEntity.h"
 #include "GameMapAutoEntity.h"
-#include "GameEventEntity.h"
+#include "../Event/GameEventEntity.h"
 
 /// マップEntity
-class GameMapEntity final: public BaseGameEntity {
+class GameMapEntity final {
 public:
 	
 	/// マップ名

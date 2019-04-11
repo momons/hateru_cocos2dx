@@ -7,7 +7,8 @@
 
 #include "DBProfileEntity.h"
 
-#include "ProfileConst.h"
+#include "../../Const/ProfileConst.h"
+#include "../../Entity/Player/PlayerProfileEntity.h"
 
 DBProfileEntity::DBProfileEntity() {
     _username = "";

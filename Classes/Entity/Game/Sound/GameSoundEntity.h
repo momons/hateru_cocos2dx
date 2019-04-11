@@ -9,10 +9,8 @@
 #ifndef GameSoundEntity_h
 #define GameSoundEntity_h
 
-#include "BaseGameEntity.h"
-
 /// サウンドEntity
-class GameSoundEntity final: public BaseGameEntity {
+class GameSoundEntity final {
 public:
 	
 private:

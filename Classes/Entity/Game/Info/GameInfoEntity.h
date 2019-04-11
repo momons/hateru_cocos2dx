@@ -9,12 +9,10 @@
 #ifndef GameInfoEntity_h
 #define GameInfoEntity_h
 
-#include "BaseGameEntity.h"
-
 #include "PlayerEntity.h"
 
 /// ゲームEntity
-class GameInfoEntity final: public BaseGameEntity {
+class GameInfoEntity final {
 public:
 	
 	/// 初期所持金

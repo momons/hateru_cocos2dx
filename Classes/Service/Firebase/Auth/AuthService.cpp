@@ -7,10 +7,12 @@
 
 #include "AuthService.h"
 
-#include "FirebaseService.h"
+#include "../FirebaseService.h"
+#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
 #include "GoogleSignInServiceWrap.h"
 #include "FacebookSignInServiceWrap.h"
 #include "TwitterSignInServiceWrap.h"
+#endif
 
 AuthService *AuthService::instance;
 

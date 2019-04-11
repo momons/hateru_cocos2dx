@@ -8,10 +8,10 @@
 
 #include "GameEnemyEntity.h"
 
-#include "GameConst.h"
-#include "SJISUtil.h"
-#include "StringUtil.h"
-#include "PlayerEntity.h"
+#include "../../../Const/GameConst.h"
+#include "../../../Util/SJISUtil.h"
+#include "../../../Util/StringUtil.h"
+#include "../../Player/PlayerEntity.h"
 
 /**
  *  遭遇チェック

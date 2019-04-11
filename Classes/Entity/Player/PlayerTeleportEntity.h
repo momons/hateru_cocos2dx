@@ -9,17 +9,16 @@
 #ifndef PlayerTeleportEntity_h
 #define PlayerTeleportEntity_h
 
-#include "cocos2d.h"
+#include <string>
 
-#include "picojson.h"
+#include "../../Util/picojson.h"
 
-#include "PlayerMapEntity.h"
+class PlayerMapEntity;
 
-USING_NS_CC;
 using namespace std;
 
 /// プレイヤーテレポートEntity
-class PlayerTeleportEntity final: public Ref {
+class PlayerTeleportEntity final {
 public:
 	
 	/// 名前

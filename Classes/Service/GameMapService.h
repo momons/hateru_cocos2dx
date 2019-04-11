@@ -9,14 +9,12 @@
 #ifndef GameMapService_h
 #define GameMapService_h
 
-#include "BaseService.h"
-
-#include "PlayerEntity.h"
-#include "GameMapEntity.h"
-#include "GameEnemyEntity.h"
+#include "../Entity/Player/PlayerEntity.h"
+#include "../Entity/Game/Map/GameMapEntity.h"
+#include "../Entity/Game/Enemy/GameEnemyEntity.h"
 
 /// ゲームマップサービス
-class GameMapService final: BaseService {
+class GameMapService final {
 public:
 	
 	/// プレイヤーEntity

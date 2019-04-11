@@ -9,15 +9,12 @@
 #ifndef PlayerMapEntity_h
 #define PlayerMapEntity_h
 
-#include "cocos2d.h"
-
 #include "picojson.h"
 
-USING_NS_CC;
 using namespace std;
 
 /// プレイヤーマップEntity
-class PlayerMapEntity final: public Ref {
+class PlayerMapEntity final {
 public:
 	
 	/// マップID

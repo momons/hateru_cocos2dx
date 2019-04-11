@@ -23,10 +23,10 @@
  ****************************************************************************/
 
 #include "AppDelegate.h"
-#include "SplashScene.h"
-#include "GameConst.h"
+#include "Scene/Splash/SplashScene.h"
+#include "Const/GameConst.h"
 
-#include "DBBlacklistsManager.h"
+#include "Manager/Database/DBBlacklistsManager.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1

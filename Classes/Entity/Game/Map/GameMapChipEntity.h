@@ -9,10 +9,8 @@
 #ifndef GameMapChipEntity_h
 #define GameMapChipEntity_h
 
-#include "BaseGameEntity.h"
-
 /// マップチップEntity
-class GameMapChipEntity final: public BaseGameEntity {
+class GameMapChipEntity final {
 public:
 	
 	/// 下チップID

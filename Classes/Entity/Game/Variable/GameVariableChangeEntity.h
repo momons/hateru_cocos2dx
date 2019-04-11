@@ -9,10 +9,10 @@
 #ifndef GameVariableChangeEntity_h
 #define GameVariableChangeEntity_h
 
-#include "BaseGameEntity.h"
+#include "../../../Const/GameConst.h"
 
 /// 変数変化Entity
-class GameVariableChangeEntity final: public BaseGameEntity {
+class GameVariableChangeEntity final {
 public:
 	
 	/// 変数Id

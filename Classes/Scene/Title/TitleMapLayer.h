@@ -9,7 +9,7 @@
 #ifndef TitleMapLayer_h
 #define TitleMapLayer_h
 
-#include "BaseLayer.h"
+#include "../Base/BaseLayer.h"
 
 /// タイトルマップレイヤー
 class TitleMapLayer final: public BaseLayer {

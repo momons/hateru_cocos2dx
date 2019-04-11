@@ -8,7 +8,7 @@
 #ifndef RemoteConfigLatestVersionsEntity_h
 #define RemoteConfigLatestVersionsEntity_h
 
-#include "picojson.h"
+#include "../../../../Util/picojson.h"
 
 using namespace std;
 

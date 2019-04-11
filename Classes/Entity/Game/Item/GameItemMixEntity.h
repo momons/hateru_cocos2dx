@@ -9,10 +9,8 @@
 #ifndef GameItemMixEntity_h
 #define GameItemMixEntity_h
 
-#include "BaseGameEntity.h"
-
 /// アイテム合成Entity
-class GameItemMixEntity final: public BaseGameEntity {
+class GameItemMixEntity final {
 public:
 	
 	/// アイテムID

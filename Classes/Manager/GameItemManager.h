@@ -9,11 +9,10 @@
 #ifndef GameItemManager_h
 #define GameItemManager_h
 
-#include "BaseManager.h"
-#include "GameItemEntity.h"
+#include "../Entity/Game/Item/GameItemEntity.h"
 
 /// ゲームアイテムマネージャ
-class GameItemManager final: BaseManager {
+class GameItemManager final {
 public:
 	
 	/**

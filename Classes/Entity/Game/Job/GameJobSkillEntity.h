@@ -9,10 +9,8 @@
 #ifndef GameJobSkillEntity_h
 #define GameJobSkillEntity_h
 
-#include "BaseGameEntity.h"
-
 /// 職業スキルEntity
-class GameJobSkillEntity final: public BaseGameEntity {
+class GameJobSkillEntity final {
 public:
 	
 	/// 会得レベル

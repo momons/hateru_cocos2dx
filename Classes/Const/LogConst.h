@@ -9,7 +9,7 @@
 #ifndef LogConst_h
 #define LogConst_h
 
-#include <stdio.h>
+#include <string>
 
 using namespace std;
 

@@ -9,11 +9,10 @@
 #ifndef GameMapChipGroupManager_h
 #define GameMapChipGroupManager_h
 
-#include "BaseManager.h"
-#include "GameMapChipGroupEntity.h"
+#include "../Entity/Game/Map/GameMapChipGroupEntity.h"
 
 /// ゲームマップチップグループマネージャ
-class GameMapChipGroupManager final: BaseManager {
+class GameMapChipGroupManager final {
 public:
 	
 	/**

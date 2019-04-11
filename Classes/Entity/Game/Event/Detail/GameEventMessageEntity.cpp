@@ -8,7 +8,7 @@
 
 #include "GameEventMessageEntity.h"
 
-#include "SJISUtil.h"
+#include "../../../../Util/SJISUtil.h"
 
 /**
  *  バイナリデータよりEntity作成

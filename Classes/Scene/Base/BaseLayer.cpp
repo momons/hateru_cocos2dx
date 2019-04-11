@@ -38,12 +38,6 @@ BaseLayer::BaseLayer() {
 	scheduleUpdate();
 }
 
-/**
- *  デストラクタ
- */
-BaseLayer::~BaseLayer() {
-}
-
 // レイヤー破棄
 void BaseLayer::deallocLayer() {
 	// タッチ登録解除

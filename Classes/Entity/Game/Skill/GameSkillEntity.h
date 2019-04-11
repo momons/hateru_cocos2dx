@@ -9,11 +9,14 @@
 #ifndef GameSkillEntity_h
 #define GameSkillEntity_h
 
-#include "BaseGameEntity.h"
+#include <string>
+
 #include "GameVariableChangeEntity.h"
 
+using namespace std;
+
 /// スキルEntity
-class GameSkillEntity final: public BaseGameEntity {
+class GameSkillEntity final {
 public:
 	
 	/// 名前

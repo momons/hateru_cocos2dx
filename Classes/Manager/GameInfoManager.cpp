@@ -8,7 +8,7 @@
 
 #include "GameInfoManager.h"
 
-#include "FileConst.h"
+#include "../Const/FileConst.h"
 
 /**
  *  読み込み

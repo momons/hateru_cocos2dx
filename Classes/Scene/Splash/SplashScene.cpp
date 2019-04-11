@@ -10,10 +10,10 @@
 #include "SplashLayer.h"
 #include <mutex>
 
-#include "GameConst.h"
-#include "FileConst.h"
+#include "../../Const/GameConst.h"
+#include "../../Const/FileConst.h"
 
-#include "TitleScene.h"
+#include "../Title/TitleScene.h"
 
 /// インスタンス
 SplashScene *SplashScene::instance;

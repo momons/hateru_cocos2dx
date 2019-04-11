@@ -9,7 +9,7 @@
 #ifndef UnitLayer_h
 #define UnitLayer_h
 
-#include "BaseLayer.h"
+#include "../Base/BaseLayer.h"
 
 class UnitSprite;
 class PlayerEntity;

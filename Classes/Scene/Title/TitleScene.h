@@ -9,7 +9,7 @@
 #ifndef TitleScene_h
 #define TitleScene_h
 
-#include "BaseScene.h"
+#include "../Base/BaseScene.h"
 
 /// タイトルシーン
 class TitleScene final: public BaseScene {

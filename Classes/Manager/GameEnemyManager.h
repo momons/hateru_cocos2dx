@@ -9,11 +9,10 @@
 #ifndef GameEnemyManager_h
 #define GameEnemyManager_h
 
-#include "BaseManager.h"
-#include "GameEnemyEntity.h"
+#include "../Entity/Game/Enemy/GameEnemyEntity.h"
 
 /// 敵キャラマネージャ
-class GameEnemyManager final: BaseManager {
+class GameEnemyManager final {
 public:
 	
 	/**

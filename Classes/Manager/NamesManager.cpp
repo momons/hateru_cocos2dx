@@ -8,10 +8,13 @@
 
 #include "NamesManager.h"
 
+#include "cocos2d.h"
 #include <iostream>
 #include <iomanip>
 
-#include "FileConst.h"
+#include "../Const/FileConst.h"
+
+USING_NS_CC;
 
 /// マップチップ
 const string NamesManager::typeChipGroup = "ChipGpList.nmp";

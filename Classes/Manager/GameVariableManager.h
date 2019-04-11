@@ -9,11 +9,10 @@
 #ifndef GameVariableManager_h
 #define GameVariableManager_h
 
-#include "BaseManager.h"
-#include "GameVariableEntity.h"
+#include "../Entity/Game/Variable/GameVariableEntity.h"
 
 /// ゲーム変数マネージャ
-class GameVariableManager final: BaseManager {
+class GameVariableManager final {
 public:
 
 	/**

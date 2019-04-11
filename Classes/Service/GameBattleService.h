@@ -9,12 +9,10 @@
 #ifndef GameBattleService_h
 #define GameBattleService_h
 
-#include "BaseService.h"
-
-#include "GameEnemyEntity.h"
+#include "../Entity/Game/Enemy/GameEnemyEntity.h"
 
 /// ゲームバトルサービス
-class GameBattleService final: BaseService {
+class GameBattleService final {
 public:
 	
 	/**

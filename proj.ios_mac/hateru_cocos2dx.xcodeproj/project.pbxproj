@@ -132,49 +132,6 @@
 		F32BE5642237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AB2237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp */; };
 		F32BE5652237D65C00ECA798 /* GameEventJingleEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AC2237D65C00ECA798 /* GameEventJingleEntity.cpp */; };
 		F32BE5662237D65C00ECA798 /* GameEventChangeUnitEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */; };
-		F32BE5672237D65C00ECA798 /* BaseGameEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4B12237D65C00ECA798 /* BaseGameEntity.cpp */; };
-		F32BE5682237D65C00ECA798 /* ItemSendResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4B52237D65C00ECA798 /* ItemSendResponseEntity.cpp */; };
-		F32BE5692237D65C00ECA798 /* ItemSendRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4B72237D65C00ECA798 /* ItemSendRequestEntity.cpp */; };
-		F32BE56A2237D65C00ECA798 /* SaveGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4BA2237D65C00ECA798 /* SaveGetRequestEntity.cpp */; };
-		F32BE56B2237D65C00ECA798 /* SaveGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4BB2237D65C00ECA798 /* SaveGetResponseEntity.cpp */; };
-		F32BE56C2237D65C00ECA798 /* ProfileSendResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4BE2237D65C00ECA798 /* ProfileSendResponseEntity.cpp */; };
-		F32BE56D2237D65C00ECA798 /* ProfileSendRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4C02237D65C00ECA798 /* ProfileSendRequestEntity.cpp */; };
-		F32BE56E2237D65C00ECA798 /* BbsWriteRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4C42237D65C00ECA798 /* BbsWriteRequestEntity.cpp */; };
-		F32BE56F2237D65C00ECA798 /* BbsWriteResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4C52237D65C00ECA798 /* BbsWriteResponseEntity.cpp */; };
-		F32BE5702237D65C00ECA798 /* LocationSendResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4C82237D65C00ECA798 /* LocationSendResponseEntity.cpp */; };
-		F32BE5712237D65C00ECA798 /* LocationSendRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4C92237D65C00ECA798 /* LocationSendRequestEntity.cpp */; };
-		F32BE5722237D65C00ECA798 /* TokenGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4CD2237D65C00ECA798 /* TokenGetRequestEntity.cpp */; };
-		F32BE5732237D65C00ECA798 /* TokenGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4D02237D65C00ECA798 /* TokenGetResponseEntity.cpp */; };
-		F32BE5742237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4D22237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp */; };
-		F32BE5752237D65C00ECA798 /* ProfileDeleteRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4D32237D65C00ECA798 /* ProfileDeleteRequestEntity.cpp */; };
-		F32BE5762237D65C00ECA798 /* CharaDeleteRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4D72237D65C00ECA798 /* CharaDeleteRequestEntity.cpp */; };
-		F32BE5772237D65C00ECA798 /* CharaDeleteResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4DA2237D65C00ECA798 /* CharaDeleteResponseEntity.cpp */; };
-		F32BE5782237D65C00ECA798 /* UserIdGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4DD2237D65C00ECA798 /* UserIdGetResponseEntity.cpp */; };
-		F32BE5792237D65C00ECA798 /* UserIdGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4DE2237D65C00ECA798 /* UserIdGetRequestEntity.cpp */; };
-		F32BE57A2237D65C00ECA798 /* SaveSendRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4E22237D65C00ECA798 /* SaveSendRequestEntity.cpp */; };
-		F32BE57B2237D65C00ECA798 /* SaveSendResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4E32237D65C00ECA798 /* SaveSendResponseEntity.cpp */; };
-		F32BE57C2237D65C00ECA798 /* ProfileGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4E72237D65C00ECA798 /* ProfileGetRequestEntity.cpp */; };
-		F32BE57D2237D65C00ECA798 /* ProfileGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4E92237D65C00ECA798 /* ProfileGetResponseEntity.cpp */; };
-		F32BE57E2237D65C00ECA798 /* ItemListGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4EC2237D65C00ECA798 /* ItemListGetResponseEntity.cpp */; };
-		F32BE57F2237D65C00ECA798 /* ItemListGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4EE2237D65C00ECA798 /* ItemListGetRequestEntity.cpp */; };
-		F32BE5802237D65C00ECA798 /* LocationGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4F12237D65C00ECA798 /* LocationGetResponseEntity.cpp */; };
-		F32BE5812237D65C00ECA798 /* LocationGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4F22237D65C00ECA798 /* LocationGetRequestEntity.cpp */; };
-		F32BE5822237D65C00ECA798 /* ItemInfoGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4F62237D65C00ECA798 /* ItemInfoGetRequestEntity.cpp */; };
-		F32BE5832237D65C00ECA798 /* ItemInfoGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4F82237D65C00ECA798 /* ItemInfoGetResponseEntity.cpp */; };
-		F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4FC2237D65C00ECA798 /* BbsGetRequestEntity.cpp */; };
-		F32BE5852237D65C00ECA798 /* BbsGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4FD2237D65C00ECA798 /* BbsGetResponseEntity.cpp */; };
-		F32BE5862237D65C00ECA798 /* ItemCombackResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5012237D65C00ECA798 /* ItemCombackResponseEntity.cpp */; };
-		F32BE5872237D65C00ECA798 /* ItemCombackRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5022237D65C00ECA798 /* ItemCombackRequestEntity.cpp */; };
-		F32BE5882237D65C00ECA798 /* CharaSendResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5062237D65C00ECA798 /* CharaSendResponseEntity.cpp */; };
-		F32BE5892237D65C00ECA798 /* CharaSendRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5072237D65C00ECA798 /* CharaSendRequestEntity.cpp */; };
-		F32BE58A2237D65C00ECA798 /* CharaGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE50A2237D65C00ECA798 /* CharaGetRequestEntity.cpp */; };
-		F32BE58B2237D65C00ECA798 /* CharaGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE50B2237D65C00ECA798 /* CharaGetResponseEntity.cpp */; };
-		F32BE58C2237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5102237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp */; };
-		F32BE58D2237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5112237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp */; };
-		F32BE58E2237D65C00ECA798 /* BaseResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5132237D65C00ECA798 /* BaseResponseEntity.cpp */; };
-		F32BE58F2237D65C00ECA798 /* BaseRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5162237D65C00ECA798 /* BaseRequestEntity.cpp */; };
-		F32BE5902237D65C00ECA798 /* ItemGetRequestEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE5182237D65C00ECA798 /* ItemGetRequestEntity.cpp */; };
-		F32BE5912237D65C00ECA798 /* ItemGetResponseEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE51A2237D65C00ECA798 /* ItemGetResponseEntity.cpp */; };
 		F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685A22572F30005DD29F /* DBLocationsManager.cpp */; };
 		F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685D225B07D7005DD29F /* DBSaveEntity.cpp */; };
 		F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336860225B0A0E005DD29F /* DBSavesManager.cpp */; };
@@ -206,7 +163,6 @@
 		F3D887E1220E94C500B426CC /* GameConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88735220E94C400B426CC /* GameConst.cpp */; };
 		F3D887E2220E94C500B426CC /* ProfileConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88738220E94C400B426CC /* ProfileConst.cpp */; };
 		F3D887E3220E94C500B426CC /* FileConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88739220E94C400B426CC /* FileConst.cpp */; };
-		F3D887E4220E94C500B426CC /* UrlConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8873B220E94C400B426CC /* UrlConst.cpp */; };
 		F3D88857220E94DC00B426CC /* GameSkillManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D887FB220E94DB00B426CC /* GameSkillManager.cpp */; };
 		F3D88858220E94DC00B426CC /* GameVariableManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D887FD220E94DB00B426CC /* GameVariableManager.cpp */; };
 		F3D88859220E94DC00B426CC /* GameInfoManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D887FE220E94DB00B426CC /* GameInfoManager.cpp */; };
@@ -219,9 +175,7 @@
 		F3D88860220E94DC00B426CC /* GameMapChipGroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8880F220E94DB00B426CC /* GameMapChipGroupManager.cpp */; };
 		F3D88861220E94DC00B426CC /* PlayerManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88811220E94DB00B426CC /* PlayerManager.cpp */; };
 		F3D88862220E94DC00B426CC /* GameMapManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88812220E94DB00B426CC /* GameMapManager.cpp */; };
-		F3D88863220E94DC00B426CC /* BaseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88814220E94DB00B426CC /* BaseManager.cpp */; };
 		F3D88864220E94DC00B426CC /* JsonUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88816220E94DB00B426CC /* JsonUtil.cpp */; };
-		F3D88865220E94DC00B426CC /* ProjectUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88817220E94DB00B426CC /* ProjectUtil.cpp */; };
 		F3D88866220E94DC00B426CC /* SJISUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88818220E94DB00B426CC /* SJISUtil.cpp */; };
 		F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8881E220E94DB00B426CC /* EncryptUtil.cpp */; };
 		F3D88868220E94DC00B426CC /* UUIDUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8881F220E94DB00B426CC /* UUIDUtil.cpp */; };
@@ -241,34 +195,12 @@
 		F3D88877220E94DC00B426CC /* BaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88846220E94DB00B426CC /* BaseScene.cpp */; };
 		F3D88878220E94DC00B426CC /* BaseLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88847220E94DB00B426CC /* BaseLayer.cpp */; };
 		F3D88879220E94DC00B426CC /* GameMapService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88849220E94DC00B426CC /* GameMapService.cpp */; };
-		F3D8887A220E94DC00B426CC /* BaseService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8884A220E94DC00B426CC /* BaseService.cpp */; };
 		F3D8887B220E94DC00B426CC /* GameDataService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8884C220E94DC00B426CC /* GameDataService.cpp */; };
 		F3D8887C220E94DC00B426CC /* GameEventStatusService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8884E220E94DC00B426CC /* GameEventStatusService.cpp */; };
 		F3D8887D220E94DC00B426CC /* GameEventVariableService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D8884F220E94DC00B426CC /* GameEventVariableService.cpp */; };
 		F3D8887E220E94DC00B426CC /* GameBattleService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88853220E94DC00B426CC /* GameBattleService.cpp */; };
 		F3D8887F220E94DC00B426CC /* GameEventService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D88854220E94DC00B426CC /* GameEventService.cpp */; };
 		F3D88881220E959600B426CC /* game in Resources */ = {isa = PBXBuildFile; fileRef = F3D88880220E959600B426CC /* game */; };
-		F3D888E5220EB09F00B426CC /* CharaGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888B6220EB09D00B426CC /* CharaGetFetcher.cpp */; };
-		F3D888E6220EB09F00B426CC /* CharaDeleteFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888B7220EB09D00B426CC /* CharaDeleteFetcher.cpp */; };
-		F3D888E7220EB09F00B426CC /* CharaSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888B8220EB09D00B426CC /* CharaSendFetcher.cpp */; };
-		F3D888E8220EB09F00B426CC /* LocationGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888BA220EB09D00B426CC /* LocationGetFetcher.cpp */; };
-		F3D888E9220EB09F00B426CC /* LocationSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888BC220EB09D00B426CC /* LocationSendFetcher.cpp */; };
-		F3D888EA220EB09F00B426CC /* TokenGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C0220EB09E00B426CC /* TokenGetFetcher.cpp */; };
-		F3D888EB220EB09F00B426CC /* BaseFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C1220EB09E00B426CC /* BaseFetcher.cpp */; };
-		F3D888EC220EB09F00B426CC /* BbsWriteFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C4220EB09E00B426CC /* BbsWriteFetcher.cpp */; };
-		F3D888ED220EB09F00B426CC /* BbsGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C6220EB09E00B426CC /* BbsGetFetcher.cpp */; };
-		F3D888EE220EB09F00B426CC /* ProfileSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C8220EB09E00B426CC /* ProfileSendFetcher.cpp */; };
-		F3D888EF220EB09F00B426CC /* ProfileGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888C9220EB09E00B426CC /* ProfileGetFetcher.cpp */; };
-		F3D888F0220EB09F00B426CC /* ProfileDeleteFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888CA220EB09E00B426CC /* ProfileDeleteFetcher.cpp */; };
-		F3D888F1220EB09F00B426CC /* ItemListGetMyFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888D0220EB09E00B426CC /* ItemListGetMyFetcher.cpp */; };
-		F3D888F2220EB09F00B426CC /* ItemListGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888D1220EB09E00B426CC /* ItemListGetFetcher.cpp */; };
-		F3D888F3220EB09F00B426CC /* UserIdGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888D4220EB09F00B426CC /* UserIdGetFetcher.cpp */; };
-		F3D888F4220EB09F00B426CC /* SaveGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888D8220EB09F00B426CC /* SaveGetFetcher.cpp */; };
-		F3D888F5220EB09F00B426CC /* SaveSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888D9220EB09F00B426CC /* SaveSendFetcher.cpp */; };
-		F3D888F6220EB09F00B426CC /* ItemCombackFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888DE220EB09F00B426CC /* ItemCombackFetcher.cpp */; };
-		F3D888F7220EB09F00B426CC /* ItemGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888E0220EB09F00B426CC /* ItemGetFetcher.cpp */; };
-		F3D888F8220EB09F00B426CC /* ItemInfoGetFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888E1220EB09F00B426CC /* ItemInfoGetFetcher.cpp */; };
-		F3D888F9220EB09F00B426CC /* ItemSendFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D888E2220EB09F00B426CC /* ItemSendFetcher.cpp */; };
 		F3D888FD220EBECE00B426CC /* GameImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D888FB220EBECD00B426CC /* GameImages.plist */; };
 		F3D888FE220EBECE00B426CC /* GameImages.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D888FC220EBECE00B426CC /* GameImages.png */; };
 		F3D93D09225DC104001A36D6 /* firebase_remote_config.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */; };
@@ -521,92 +453,6 @@
 		F32BE4AC2237D65C00ECA798 /* GameEventJingleEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventJingleEntity.cpp; sourceTree = "<group>"; };
 		F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventChangeUnitEntity.cpp; sourceTree = "<group>"; };
 		F32BE4AE2237D65C00ECA798 /* GameEventMoveUnitEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventMoveUnitEntity.h; sourceTree = "<group>"; };
-		F32BE4B02237D65C00ECA798 /* BaseGameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameEntity.h; sourceTree = "<group>"; };
-		F32BE4B12237D65C00ECA798 /* BaseGameEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGameEntity.cpp; sourceTree = "<group>"; };
-		F32BE4B42237D65C00ECA798 /* ItemSendRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSendRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4B52237D65C00ECA798 /* ItemSendResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemSendResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4B62237D65C00ECA798 /* ItemSendResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSendResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4B72237D65C00ECA798 /* ItemSendRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemSendRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4B92237D65C00ECA798 /* SaveGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4BA2237D65C00ECA798 /* SaveGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4BB2237D65C00ECA798 /* SaveGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4BC2237D65C00ECA798 /* SaveGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4BE2237D65C00ECA798 /* ProfileSendResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileSendResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4BF2237D65C00ECA798 /* ProfileSendResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSendResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4C02237D65C00ECA798 /* ProfileSendRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileSendRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4C12237D65C00ECA798 /* ProfileSendRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSendRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4C32237D65C00ECA798 /* BbsWriteResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsWriteResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4C42237D65C00ECA798 /* BbsWriteRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsWriteRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4C52237D65C00ECA798 /* BbsWriteResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsWriteResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4C62237D65C00ECA798 /* BbsWriteRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsWriteRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4C82237D65C00ECA798 /* LocationSendResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationSendResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4C92237D65C00ECA798 /* LocationSendRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationSendRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4CA2237D65C00ECA798 /* LocationSendRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSendRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4CB2237D65C00ECA798 /* LocationSendResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSendResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4CD2237D65C00ECA798 /* TokenGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4CE2237D65C00ECA798 /* TokenGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4CF2237D65C00ECA798 /* TokenGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4D02237D65C00ECA798 /* TokenGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4D22237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileDeleteResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4D32237D65C00ECA798 /* ProfileDeleteRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileDeleteRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4D42237D65C00ECA798 /* ProfileDeleteRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDeleteRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4D52237D65C00ECA798 /* ProfileDeleteResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDeleteResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4D72237D65C00ECA798 /* CharaDeleteRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaDeleteRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4D82237D65C00ECA798 /* CharaDeleteResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaDeleteResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4D92237D65C00ECA798 /* CharaDeleteRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaDeleteRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4DA2237D65C00ECA798 /* CharaDeleteResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaDeleteResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4DC2237D65C00ECA798 /* UserIdGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4DD2237D65C00ECA798 /* UserIdGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserIdGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4DE2237D65C00ECA798 /* UserIdGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserIdGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4DF2237D65C00ECA798 /* UserIdGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4E12237D65C00ECA798 /* SaveSendResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveSendResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4E22237D65C00ECA798 /* SaveSendRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveSendRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4E32237D65C00ECA798 /* SaveSendResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveSendResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4E42237D65C00ECA798 /* SaveSendRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveSendRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4E62237D65C00ECA798 /* ProfileGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4E72237D65C00ECA798 /* ProfileGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4E82237D65C00ECA798 /* ProfileGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4E92237D65C00ECA798 /* ProfileGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4EB2237D65C00ECA798 /* ItemListGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4EC2237D65C00ECA798 /* ItemListGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4ED2237D65C00ECA798 /* ItemListGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4EE2237D65C00ECA798 /* ItemListGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4F02237D65C00ECA798 /* LocationGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4F12237D65C00ECA798 /* LocationGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4F22237D65C00ECA798 /* LocationGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4F32237D65C00ECA798 /* LocationGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4F52237D65C00ECA798 /* ItemInfoGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4F62237D65C00ECA798 /* ItemInfoGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInfoGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4F72237D65C00ECA798 /* ItemInfoGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4F82237D65C00ECA798 /* ItemInfoGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInfoGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4FA2237D65C00ECA798 /* BbsGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE4FB2237D65C00ECA798 /* BbsGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE4FC2237D65C00ECA798 /* BbsGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE4FD2237D65C00ECA798 /* BbsGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE4FF2237D65C00ECA798 /* ItemCombackResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCombackResponseEntity.h; sourceTree = "<group>"; };
-		F32BE5002237D65C00ECA798 /* ItemCombackRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCombackRequestEntity.h; sourceTree = "<group>"; };
-		F32BE5012237D65C00ECA798 /* ItemCombackResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemCombackResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE5022237D65C00ECA798 /* ItemCombackRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemCombackRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE5042237D65C00ECA798 /* CharaSendResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaSendResponseEntity.h; sourceTree = "<group>"; };
-		F32BE5052237D65C00ECA798 /* CharaSendRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaSendRequestEntity.h; sourceTree = "<group>"; };
-		F32BE5062237D65C00ECA798 /* CharaSendResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaSendResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE5072237D65C00ECA798 /* CharaSendRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaSendRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE5092237D65C00ECA798 /* CharaGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE50A2237D65C00ECA798 /* CharaGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE50B2237D65C00ECA798 /* CharaGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE50C2237D65C00ECA798 /* CharaGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaGetRequestEntity.h; sourceTree = "<group>"; };
-		F32BE50E2237D65C00ECA798 /* ItemListGetMyRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetMyRequestEntity.h; sourceTree = "<group>"; };
-		F32BE50F2237D65C00ECA798 /* ItemListGetMyResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetMyResponseEntity.h; sourceTree = "<group>"; };
-		F32BE5102237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetMyRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE5112237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetMyResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE5132237D65C00ECA798 /* BaseResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE5142237D65C00ECA798 /* BaseResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponseEntity.h; sourceTree = "<group>"; };
-		F32BE5152237D65C00ECA798 /* BaseRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestEntity.h; sourceTree = "<group>"; };
-		F32BE5162237D65C00ECA798 /* BaseRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE5182237D65C00ECA798 /* ItemGetRequestEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemGetRequestEntity.cpp; sourceTree = "<group>"; };
-		F32BE5192237D65C00ECA798 /* ItemGetResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGetResponseEntity.h; sourceTree = "<group>"; };
-		F32BE51A2237D65C00ECA798 /* ItemGetResponseEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemGetResponseEntity.cpp; sourceTree = "<group>"; };
-		F32BE51B2237D65C00ECA798 /* ItemGetRequestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGetRequestEntity.h; sourceTree = "<group>"; };
 		F333685822572F26005DD29F /* DBLocationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLocationsManager.h; sourceTree = "<group>"; };
 		F333685A22572F30005DD29F /* DBLocationsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBLocationsManager.cpp; sourceTree = "<group>"; };
 		F333685C225B07CE005DD29F /* DBSaveEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSaveEntity.h; sourceTree = "<group>"; };
@@ -655,7 +501,6 @@
 		F3D88730220E94C400B426CC /* EncryptConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EncryptConst.cpp; sourceTree = "<group>"; };
 		F3D88731220E94C400B426CC /* ItemExchangeConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemExchangeConst.cpp; sourceTree = "<group>"; };
 		F3D88732220E94C400B426CC /* ItemExchangeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemExchangeConst.h; sourceTree = "<group>"; };
-		F3D88733220E94C400B426CC /* UrlConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlConst.h; sourceTree = "<group>"; };
 		F3D88734220E94C400B426CC /* LogConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogConst.cpp; sourceTree = "<group>"; };
 		F3D88735220E94C400B426CC /* GameConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameConst.cpp; sourceTree = "<group>"; };
 		F3D88736220E94C400B426CC /* ProfileConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileConst.h; sourceTree = "<group>"; };
@@ -663,7 +508,6 @@
 		F3D88738220E94C400B426CC /* ProfileConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileConst.cpp; sourceTree = "<group>"; };
 		F3D88739220E94C400B426CC /* FileConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileConst.cpp; sourceTree = "<group>"; };
 		F3D8873A220E94C400B426CC /* FileConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileConst.h; sourceTree = "<group>"; };
-		F3D8873B220E94C400B426CC /* UrlConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UrlConst.cpp; sourceTree = "<group>"; };
 		F3D8873C220E94C400B426CC /* LogConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogConst.h; sourceTree = "<group>"; };
 		F3D887FB220E94DB00B426CC /* GameSkillManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSkillManager.cpp; sourceTree = "<group>"; };
 		F3D887FC220E94DB00B426CC /* NamesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamesManager.h; sourceTree = "<group>"; };
@@ -684,17 +528,13 @@
 		F3D8880B220E94DB00B426CC /* GameEnemyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEnemyManager.h; sourceTree = "<group>"; };
 		F3D8880C220E94DB00B426CC /* GameMapChipGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMapChipGroupManager.h; sourceTree = "<group>"; };
 		F3D8880D220E94DB00B426CC /* NamesManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NamesManager.cpp; sourceTree = "<group>"; };
-		F3D8880E220E94DB00B426CC /* BaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
 		F3D8880F220E94DB00B426CC /* GameMapChipGroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMapChipGroupManager.cpp; sourceTree = "<group>"; };
 		F3D88810220E94DB00B426CC /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
 		F3D88811220E94DB00B426CC /* PlayerManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerManager.cpp; sourceTree = "<group>"; };
 		F3D88812220E94DB00B426CC /* GameMapManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMapManager.cpp; sourceTree = "<group>"; };
 		F3D88813220E94DB00B426CC /* GameSkillManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSkillManager.h; sourceTree = "<group>"; };
-		F3D88814220E94DB00B426CC /* BaseManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseManager.cpp; sourceTree = "<group>"; };
 		F3D88816220E94DB00B426CC /* JsonUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JsonUtil.cpp; sourceTree = "<group>"; };
-		F3D88817220E94DB00B426CC /* ProjectUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectUtil.cpp; sourceTree = "<group>"; };
 		F3D88818220E94DB00B426CC /* SJISUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SJISUtil.cpp; sourceTree = "<group>"; };
-		F3D88819220E94DB00B426CC /* ProjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectUtil.h; sourceTree = "<group>"; };
 		F3D8881A220E94DB00B426CC /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		F3D8881B220E94DB00B426CC /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		F3D8881C220E94DB00B426CC /* SJISUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJISUtil.h; sourceTree = "<group>"; };
@@ -733,7 +573,6 @@
 		F3D88846220E94DB00B426CC /* BaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseScene.cpp; sourceTree = "<group>"; };
 		F3D88847220E94DB00B426CC /* BaseLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLayer.cpp; sourceTree = "<group>"; };
 		F3D88849220E94DC00B426CC /* GameMapService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMapService.cpp; sourceTree = "<group>"; };
-		F3D8884A220E94DC00B426CC /* BaseService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseService.cpp; sourceTree = "<group>"; };
 		F3D8884B220E94DC00B426CC /* GameBattleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBattleService.h; sourceTree = "<group>"; };
 		F3D8884C220E94DC00B426CC /* GameDataService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameDataService.cpp; sourceTree = "<group>"; };
 		F3D8884D220E94DC00B426CC /* GameMapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMapService.h; sourceTree = "<group>"; };
@@ -741,54 +580,11 @@
 		F3D8884F220E94DC00B426CC /* GameEventVariableService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventVariableService.cpp; sourceTree = "<group>"; };
 		F3D88850220E94DC00B426CC /* GameEventService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventService.h; sourceTree = "<group>"; };
 		F3D88851220E94DC00B426CC /* GameDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDataService.h; sourceTree = "<group>"; };
-		F3D88852220E94DC00B426CC /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
 		F3D88853220E94DC00B426CC /* GameBattleService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameBattleService.cpp; sourceTree = "<group>"; };
 		F3D88854220E94DC00B426CC /* GameEventService.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventService.cpp; sourceTree = "<group>"; };
 		F3D88855220E94DC00B426CC /* GameEventStatusService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventStatusService.h; sourceTree = "<group>"; };
 		F3D88856220E94DC00B426CC /* GameEventVariableService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventVariableService.h; sourceTree = "<group>"; };
 		F3D88880220E959600B426CC /* game */ = {isa = PBXFileReference; lastKnownFileType = folder; path = game; sourceTree = "<group>"; };
-		F3D888B3220EB09D00B426CC /* CharaDeleteFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaDeleteFetcher.h; sourceTree = "<group>"; };
-		F3D888B4220EB09D00B426CC /* CharaGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaGetFetcher.h; sourceTree = "<group>"; };
-		F3D888B5220EB09D00B426CC /* CharaSendFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharaSendFetcher.h; sourceTree = "<group>"; };
-		F3D888B6220EB09D00B426CC /* CharaGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888B7220EB09D00B426CC /* CharaDeleteFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaDeleteFetcher.cpp; sourceTree = "<group>"; };
-		F3D888B8220EB09D00B426CC /* CharaSendFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharaSendFetcher.cpp; sourceTree = "<group>"; };
-		F3D888BA220EB09D00B426CC /* LocationGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888BB220EB09D00B426CC /* LocationGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationGetFetcher.h; sourceTree = "<group>"; };
-		F3D888BC220EB09D00B426CC /* LocationSendFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LocationSendFetcher.cpp; sourceTree = "<group>"; };
-		F3D888BD220EB09D00B426CC /* LocationSendFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSendFetcher.h; sourceTree = "<group>"; };
-		F3D888BF220EB09E00B426CC /* TokenGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenGetFetcher.h; sourceTree = "<group>"; };
-		F3D888C0220EB09E00B426CC /* TokenGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TokenGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888C1220EB09E00B426CC /* BaseFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseFetcher.cpp; sourceTree = "<group>"; };
-		F3D888C3220EB09E00B426CC /* BbsWriteFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsWriteFetcher.h; sourceTree = "<group>"; };
-		F3D888C4220EB09E00B426CC /* BbsWriteFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsWriteFetcher.cpp; sourceTree = "<group>"; };
-		F3D888C5220EB09E00B426CC /* BbsGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BbsGetFetcher.h; sourceTree = "<group>"; };
-		F3D888C6220EB09E00B426CC /* BbsGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BbsGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888C8220EB09E00B426CC /* ProfileSendFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileSendFetcher.cpp; sourceTree = "<group>"; };
-		F3D888C9220EB09E00B426CC /* ProfileGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888CA220EB09E00B426CC /* ProfileDeleteFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfileDeleteFetcher.cpp; sourceTree = "<group>"; };
-		F3D888CB220EB09E00B426CC /* ProfileSendFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSendFetcher.h; sourceTree = "<group>"; };
-		F3D888CC220EB09E00B426CC /* ProfileDeleteFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDeleteFetcher.h; sourceTree = "<group>"; };
-		F3D888CD220EB09E00B426CC /* ProfileGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileGetFetcher.h; sourceTree = "<group>"; };
-		F3D888CF220EB09E00B426CC /* ItemListGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetFetcher.h; sourceTree = "<group>"; };
-		F3D888D0220EB09E00B426CC /* ItemListGetMyFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetMyFetcher.cpp; sourceTree = "<group>"; };
-		F3D888D1220EB09E00B426CC /* ItemListGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemListGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888D2220EB09E00B426CC /* ItemListGetMyFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListGetMyFetcher.h; sourceTree = "<group>"; };
-		F3D888D4220EB09F00B426CC /* UserIdGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UserIdGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888D5220EB09F00B426CC /* UserIdGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserIdGetFetcher.h; sourceTree = "<group>"; };
-		F3D888D7220EB09F00B426CC /* SaveGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveGetFetcher.h; sourceTree = "<group>"; };
-		F3D888D8220EB09F00B426CC /* SaveGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888D9220EB09F00B426CC /* SaveSendFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveSendFetcher.cpp; sourceTree = "<group>"; };
-		F3D888DA220EB09F00B426CC /* SaveSendFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveSendFetcher.h; sourceTree = "<group>"; };
-		F3D888DC220EB09F00B426CC /* ItemGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemGetFetcher.h; sourceTree = "<group>"; };
-		F3D888DD220EB09F00B426CC /* ItemCombackFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCombackFetcher.h; sourceTree = "<group>"; };
-		F3D888DE220EB09F00B426CC /* ItemCombackFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemCombackFetcher.cpp; sourceTree = "<group>"; };
-		F3D888DF220EB09F00B426CC /* ItemSendFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSendFetcher.h; sourceTree = "<group>"; };
-		F3D888E0220EB09F00B426CC /* ItemGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888E1220EB09F00B426CC /* ItemInfoGetFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemInfoGetFetcher.cpp; sourceTree = "<group>"; };
-		F3D888E2220EB09F00B426CC /* ItemSendFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemSendFetcher.cpp; sourceTree = "<group>"; };
-		F3D888E3220EB09F00B426CC /* ItemInfoGetFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemInfoGetFetcher.h; sourceTree = "<group>"; };
-		F3D888E4220EB09F00B426CC /* BaseFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFetcher.h; sourceTree = "<group>"; };
 		F3D888FB220EBECD00B426CC /* GameImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameImages.plist; sourceTree = "<group>"; };
 		F3D888FC220EBECE00B426CC /* GameImages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameImages.png; sourceTree = "<group>"; };
 		F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_remote_config.framework; sourceTree = "<group>"; };
@@ -952,13 +748,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
+				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				F3D88825220E94DB00B426CC /* Scene */,
 				F3D88848220E94DC00B426CC /* Service */,
 				F3D8872E220E94C400B426CC /* Const */,
 				F3D887FA220E94DB00B426CC /* Manager */,
-				F3D8873D220E94C400B426CC /* Fetcher */,
 				F3D88641220E94C300B426CC /* Entity */,
 				F3D88815220E94DB00B426CC /* Util */,
 			);
@@ -1023,7 +818,6 @@
 			children = (
 				F32BE4092237D65B00ECA798 /* ProjectIniEntity.h */,
 				F32BE40C2237D65B00ECA798 /* ProjectIniEntity.cpp */,
-				F32BE4AF2237D65C00ECA798 /* Base */,
 				F32BE42D2237D65B00ECA798 /* Info */,
 				F32BE41E2237D65B00ECA798 /* Chara */,
 				F32BE4212237D65B00ECA798 /* Enemy */,
@@ -1160,8 +954,8 @@
 		F32BE44F2237D65B00ECA798 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				F32BE4512237D65B00ECA798 /* GameEventBaseEntity.h */,
-				F32BE4502237D65B00ECA798 /* GameEventBaseEntity.cpp */,
+				F32BE4922237D65C00ECA798 /* GameEventEntity.h */,
+				F32BE4892237D65C00ECA798 /* GameEventEntity.cpp */,
 				F32BE4522237D65B00ECA798 /* Detail */,
 			);
 			path = Event;
@@ -1170,368 +964,100 @@
 		F32BE4522237D65B00ECA798 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F32BE4512237D65B00ECA798 /* GameEventBaseEntity.h */,
+				F32BE4502237D65B00ECA798 /* GameEventBaseEntity.cpp */,
+				F32BE49C2237D65C00ECA798 /* GameEventMessageEntity.h */,
+				F32BE45C2237D65B00ECA798 /* GameEventMessageEntity.cpp */,
+				F32BE4582237D65B00ECA798 /* GameEventFluctuateHPEntity.h */,
+				F32BE4A52237D65C00ECA798 /* GameEventFluctuateHPEntity.cpp */,
+				F32BE4992237D65C00ECA798 /* GameEventFluctuateMPEntity.h */,
+				F32BE49B2237D65C00ECA798 /* GameEventFluctuateMPEntity.cpp */,
+				F32BE4932237D65C00ECA798 /* GameEventFluctuateGoldEntity.h */,
+				F32BE4A82237D65C00ECA798 /* GameEventFluctuateGoldEntity.cpp */,
+				F32BE46D2237D65B00ECA798 /* GameEventFluctuateEXPEntity.h */,
+				F32BE4682237D65B00ECA798 /* GameEventFluctuateEXPEntity.cpp */,
+				F32BE4622237D65B00ECA798 /* GameEventFluctuateItemEntity.h */,
+				F32BE4AB2237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp */,
+				F32BE4662237D65B00ECA798 /* GameEventFluctuateTeleportEntity.h */,
+				F32BE47B2237D65B00ECA798 /* GameEventFluctuateTeleportEntity.cpp */,
+				F32BE49A2237D65C00ECA798 /* GameEventOperateVariableEntity.h */,
+				F32BE4A02237D65C00ECA798 /* GameEventOperateVariableEntity.cpp */,
+				F32BE4952237D65C00ECA798 /* GameEventChangeBGMEntity.h */,
+				F32BE4752237D65B00ECA798 /* GameEventChangeBGMEntity.cpp */,
+				F32BE4972237D65C00ECA798 /* GameEventChangeChipEntity.h */,
+				F32BE4902237D65C00ECA798 /* GameEventChangeChipEntity.cpp */,
+				F32BE4562237D65B00ECA798 /* GameEventChangeUnitEntity.h */,
+				F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */,
+				F32BE45E2237D65B00ECA798 /* GameEventChangeEscapeEntity.h */,
+				F32BE4722237D65B00ECA798 /* GameEventChangeEscapeEntity.cpp */,
+				F32BE45A2237D65B00ECA798 /* GameEventChangeTeleportEntity.h */,
+				F32BE4652237D65B00ECA798 /* GameEventChangeJobEntity.h */,
+				F32BE4782237D65B00ECA798 /* GameEventChangeJobEntity.cpp */,
+				F32BE4AE2237D65C00ECA798 /* GameEventMoveUnitEntity.h */,
+				F32BE46A2237D65B00ECA798 /* GameEventMoveUnitEntity.cpp */,
+				F32BE4822237D65C00ECA798 /* GameEventMoveMobUnitEntity.h */,
+				F32BE4A92237D65C00ECA798 /* GameEventMoveMobUnitEntity.cpp */,
+				F32BE4882237D65C00ECA798 /* GameEventMoveLocationEntity.h */,
+				F32BE4A32237D65C00ECA798 /* GameEventMoveLocationEntity.cpp */,
+				F32BE4712237D65B00ECA798 /* GameEventIfVariableEntity.h */,
+				F32BE4852237D65C00ECA798 /* GameEventIfVariableEntity.cpp */,
+				F32BE47A2237D65B00ECA798 /* GameEventEndIfEntity.h */,
+				F32BE4612237D65B00ECA798 /* GameEventEndIfEntity.cpp */,
+				F32BE4572237D65B00ECA798 /* GameEventIfStatusEntity.h */,
+				F32BE45B2237D65B00ECA798 /* GameEventIfStatusEntity.cpp */,
+				F32BE4762237D65B00ECA798 /* GameEventIfItemEntity.h */,
+				F32BE47D2237D65C00ECA798 /* GameEventIfItemEntity.cpp */,
+				F32BE4672237D65B00ECA798 /* GameEventIfSkillEntity.h */,
+				F32BE4592237D65B00ECA798 /* GameEventIfSkillEntity.cpp */,
+				F32BE4812237D65C00ECA798 /* GameEventIfTerminalEntity.h */,
+				F32BE4832237D65C00ECA798 /* GameEventIfTerminalEntity.cpp */,
+				F32BE4A62237D65C00ECA798 /* GameEventIfTimeEntity.h */,
+				F32BE4842237D65C00ECA798 /* GameEventIfTimeEntity.cpp */,
+				F32BE4A22237D65C00ECA798 /* GameEventSaveEntity.h */,
+				F32BE48C2237D65C00ECA798 /* GameEventSaveEntity.cpp */,
+				F32BE48A2237D65C00ECA798 /* GameEventSaveEscapeLocationEntity.h */,
+				F32BE4962237D65C00ECA798 /* GameEventSaveEscapeLocationEntity.cpp */,
 				F32BE4532237D65B00ECA798 /* GameEventSelectYesNoEntity.h */,
 				F32BE4542237D65B00ECA798 /* GameEventGettingOnOffEntity.h */,
 				F32BE4552237D65B00ECA798 /* GameEventChurchEntity.h */,
-				F32BE4562237D65B00ECA798 /* GameEventChangeUnitEntity.h */,
-				F32BE4572237D65B00ECA798 /* GameEventIfStatusEntity.h */,
-				F32BE4582237D65B00ECA798 /* GameEventFluctuateHPEntity.h */,
-				F32BE4592237D65B00ECA798 /* GameEventIfSkillEntity.cpp */,
-				F32BE45A2237D65B00ECA798 /* GameEventChangeTeleportEntity.h */,
-				F32BE45B2237D65B00ECA798 /* GameEventIfStatusEntity.cpp */,
-				F32BE45C2237D65B00ECA798 /* GameEventMessageEntity.cpp */,
 				F32BE45D2237D65B00ECA798 /* GameEventWipeEntity.cpp */,
-				F32BE45E2237D65B00ECA798 /* GameEventChangeEscapeEntity.h */,
 				F32BE45F2237D65B00ECA798 /* GameEventGettingOnOffEntity.cpp */,
 				F32BE4602237D65B00ECA798 /* GameEventItemBazaarEntity.cpp */,
-				F32BE4612237D65B00ECA798 /* GameEventEndIfEntity.cpp */,
-				F32BE4622237D65B00ECA798 /* GameEventFluctuateItemEntity.h */,
 				F32BE4632237D65B00ECA798 /* GameEventSelectYesNoEntity.cpp */,
 				F32BE4642237D65B00ECA798 /* GameEventJingleEntity.h */,
-				F32BE4652237D65B00ECA798 /* GameEventChangeJobEntity.h */,
-				F32BE4662237D65B00ECA798 /* GameEventFluctuateTeleportEntity.h */,
-				F32BE4672237D65B00ECA798 /* GameEventIfSkillEntity.h */,
-				F32BE4682237D65B00ECA798 /* GameEventFluctuateEXPEntity.cpp */,
+				F32BE4702237D65B00ECA798 /* GameEventExitEntity.h */,
 				F32BE4692237D65B00ECA798 /* GameEventExitEntity.cpp */,
-				F32BE46A2237D65B00ECA798 /* GameEventMoveUnitEntity.cpp */,
 				F32BE46B2237D65B00ECA798 /* GameEventMixShopEntity.h */,
 				F32BE46C2237D65B00ECA798 /* GameEventShowImageEntity.cpp */,
-				F32BE46D2237D65B00ECA798 /* GameEventFluctuateEXPEntity.h */,
 				F32BE46E2237D65B00ECA798 /* GameEventShowImageEntity.h */,
 				F32BE46F2237D65B00ECA798 /* GameEventItemShopEntity.cpp */,
-				F32BE4702237D65B00ECA798 /* GameEventExitEntity.h */,
-				F32BE4712237D65B00ECA798 /* GameEventIfVariableEntity.h */,
-				F32BE4722237D65B00ECA798 /* GameEventChangeEscapeEntity.cpp */,
 				F32BE4732237D65B00ECA798 /* GameEventExchangeUnitEntity.cpp */,
 				F32BE4742237D65B00ECA798 /* GameEventExchangeUnitEntity.h */,
-				F32BE4752237D65B00ECA798 /* GameEventChangeBGMEntity.cpp */,
-				F32BE4762237D65B00ECA798 /* GameEventIfItemEntity.h */,
 				F32BE4772237D65B00ECA798 /* GameEventCloakroomEntity.h */,
-				F32BE4782237D65B00ECA798 /* GameEventChangeJobEntity.cpp */,
 				F32BE4792237D65B00ECA798 /* GameEventBarEntity.h */,
-				F32BE47A2237D65B00ECA798 /* GameEventEndIfEntity.h */,
-				F32BE47B2237D65B00ECA798 /* GameEventFluctuateTeleportEntity.cpp */,
 				F32BE47C2237D65C00ECA798 /* GameEventBBSEntity.cpp */,
-				F32BE47D2237D65C00ECA798 /* GameEventIfItemEntity.cpp */,
 				F32BE47E2237D65C00ECA798 /* GameEventEncountRateEntity.cpp */,
 				F32BE47F2237D65C00ECA798 /* GameEventItemShopEntity.h */,
 				F32BE4802237D65C00ECA798 /* GameEventBattleEntity.cpp */,
-				F32BE4812237D65C00ECA798 /* GameEventIfTerminalEntity.h */,
-				F32BE4822237D65C00ECA798 /* GameEventMoveMobUnitEntity.h */,
-				F32BE4832237D65C00ECA798 /* GameEventIfTerminalEntity.cpp */,
-				F32BE4842237D65C00ECA798 /* GameEventIfTimeEntity.cpp */,
-				F32BE4852237D65C00ECA798 /* GameEventIfVariableEntity.cpp */,
 				F32BE4862237D65C00ECA798 /* GameEventRandomEntity.cpp */,
 				F32BE4872237D65C00ECA798 /* GameEventINNEntity.h */,
-				F32BE4882237D65C00ECA798 /* GameEventMoveLocationEntity.h */,
-				F32BE4892237D65C00ECA798 /* GameEventEntity.cpp */,
-				F32BE48A2237D65C00ECA798 /* GameEventSaveEscapeLocationEntity.h */,
 				F32BE48B2237D65C00ECA798 /* GameEventCloakroomEntity.cpp */,
-				F32BE48C2237D65C00ECA798 /* GameEventSaveEntity.cpp */,
 				F32BE48D2237D65C00ECA798 /* GameEventBattleEntity.h */,
 				F32BE48E2237D65C00ECA798 /* GameEventSettingShipEntity.h */,
 				F32BE48F2237D65C00ECA798 /* GameEventEncountRateEntity.h */,
-				F32BE4902237D65C00ECA798 /* GameEventChangeChipEntity.cpp */,
 				F32BE4912237D65C00ECA798 /* GameEventSettingShipEntity.cpp */,
-				F32BE4922237D65C00ECA798 /* GameEventEntity.h */,
-				F32BE4932237D65C00ECA798 /* GameEventFluctuateGoldEntity.h */,
 				F32BE4942237D65C00ECA798 /* GameEventRandomEntity.h */,
-				F32BE4952237D65C00ECA798 /* GameEventChangeBGMEntity.h */,
-				F32BE4962237D65C00ECA798 /* GameEventSaveEscapeLocationEntity.cpp */,
-				F32BE4972237D65C00ECA798 /* GameEventChangeChipEntity.h */,
 				F32BE4982237D65C00ECA798 /* GameEventBarEntity.cpp */,
-				F32BE4992237D65C00ECA798 /* GameEventFluctuateMPEntity.h */,
-				F32BE49A2237D65C00ECA798 /* GameEventOperateVariableEntity.h */,
-				F32BE49B2237D65C00ECA798 /* GameEventFluctuateMPEntity.cpp */,
-				F32BE49C2237D65C00ECA798 /* GameEventMessageEntity.h */,
 				F32BE49D2237D65C00ECA798 /* GameEventItemBazaarEntity.h */,
 				F32BE49E2237D65C00ECA798 /* GameEventChurchEntity.cpp */,
 				F32BE49F2237D65C00ECA798 /* GameEventINNEntity.cpp */,
-				F32BE4A02237D65C00ECA798 /* GameEventOperateVariableEntity.cpp */,
 				F32BE4A12237D65C00ECA798 /* GameEventWipeEntity.h */,
-				F32BE4A22237D65C00ECA798 /* GameEventSaveEntity.h */,
-				F32BE4A32237D65C00ECA798 /* GameEventMoveLocationEntity.cpp */,
 				F32BE4A42237D65C00ECA798 /* GameEventMixShopEntity.cpp */,
-				F32BE4A52237D65C00ECA798 /* GameEventFluctuateHPEntity.cpp */,
-				F32BE4A62237D65C00ECA798 /* GameEventIfTimeEntity.h */,
 				F32BE4A72237D65C00ECA798 /* GameEventChangeTeleportEntity.cpp */,
-				F32BE4A82237D65C00ECA798 /* GameEventFluctuateGoldEntity.cpp */,
-				F32BE4A92237D65C00ECA798 /* GameEventMoveMobUnitEntity.cpp */,
 				F32BE4AA2237D65C00ECA798 /* GameEventBBSEntity.h */,
-				F32BE4AB2237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp */,
 				F32BE4AC2237D65C00ECA798 /* GameEventJingleEntity.cpp */,
-				F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */,
-				F32BE4AE2237D65C00ECA798 /* GameEventMoveUnitEntity.h */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		F32BE4AF2237D65C00ECA798 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4B02237D65C00ECA798 /* BaseGameEntity.h */,
-				F32BE4B12237D65C00ECA798 /* BaseGameEntity.cpp */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		F32BE4B22237D65C00ECA798 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE5122237D65C00ECA798 /* Base */,
-				F32BE4DB2237D65C00ECA798 /* UserIdGet */,
-				F32BE4CC2237D65C00ECA798 /* TokenGet */,
-				F32BE4B32237D65C00ECA798 /* ItemSend */,
-				F32BE4B82237D65C00ECA798 /* SaveGet */,
-				F32BE4BD2237D65C00ECA798 /* ProfileSend */,
-				F32BE4C22237D65C00ECA798 /* BbsWrite */,
-				F32BE4C72237D65C00ECA798 /* LocationSend */,
-				F32BE4D12237D65C00ECA798 /* ProfileDelete */,
-				F32BE4D62237D65C00ECA798 /* CharaDelete */,
-				F32BE4E02237D65C00ECA798 /* SaveSend */,
-				F32BE4E52237D65C00ECA798 /* ProfileGet */,
-				F32BE4EA2237D65C00ECA798 /* ItemListGet */,
-				F32BE4EF2237D65C00ECA798 /* LocationGet */,
-				F32BE4F42237D65C00ECA798 /* ItemInfoGet */,
-				F32BE4F92237D65C00ECA798 /* BbsGet */,
-				F32BE4FE2237D65C00ECA798 /* ItemComback */,
-				F32BE5032237D65C00ECA798 /* CharaSend */,
-				F32BE5082237D65C00ECA798 /* CharaGet */,
-				F32BE50D2237D65C00ECA798 /* ItemListGetMy */,
-				F32BE5172237D65C00ECA798 /* ItemGet */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		F32BE4B32237D65C00ECA798 /* ItemSend */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4B42237D65C00ECA798 /* ItemSendRequestEntity.h */,
-				F32BE4B72237D65C00ECA798 /* ItemSendRequestEntity.cpp */,
-				F32BE4B62237D65C00ECA798 /* ItemSendResponseEntity.h */,
-				F32BE4B52237D65C00ECA798 /* ItemSendResponseEntity.cpp */,
-			);
-			path = ItemSend;
-			sourceTree = "<group>";
-		};
-		F32BE4B82237D65C00ECA798 /* SaveGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4B92237D65C00ECA798 /* SaveGetResponseEntity.h */,
-				F32BE4BA2237D65C00ECA798 /* SaveGetRequestEntity.cpp */,
-				F32BE4BB2237D65C00ECA798 /* SaveGetResponseEntity.cpp */,
-				F32BE4BC2237D65C00ECA798 /* SaveGetRequestEntity.h */,
-			);
-			path = SaveGet;
-			sourceTree = "<group>";
-		};
-		F32BE4BD2237D65C00ECA798 /* ProfileSend */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4BE2237D65C00ECA798 /* ProfileSendResponseEntity.cpp */,
-				F32BE4BF2237D65C00ECA798 /* ProfileSendResponseEntity.h */,
-				F32BE4C02237D65C00ECA798 /* ProfileSendRequestEntity.cpp */,
-				F32BE4C12237D65C00ECA798 /* ProfileSendRequestEntity.h */,
-			);
-			path = ProfileSend;
-			sourceTree = "<group>";
-		};
-		F32BE4C22237D65C00ECA798 /* BbsWrite */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4C32237D65C00ECA798 /* BbsWriteResponseEntity.h */,
-				F32BE4C42237D65C00ECA798 /* BbsWriteRequestEntity.cpp */,
-				F32BE4C52237D65C00ECA798 /* BbsWriteResponseEntity.cpp */,
-				F32BE4C62237D65C00ECA798 /* BbsWriteRequestEntity.h */,
-			);
-			path = BbsWrite;
-			sourceTree = "<group>";
-		};
-		F32BE4C72237D65C00ECA798 /* LocationSend */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4C82237D65C00ECA798 /* LocationSendResponseEntity.cpp */,
-				F32BE4C92237D65C00ECA798 /* LocationSendRequestEntity.cpp */,
-				F32BE4CA2237D65C00ECA798 /* LocationSendRequestEntity.h */,
-				F32BE4CB2237D65C00ECA798 /* LocationSendResponseEntity.h */,
-			);
-			path = LocationSend;
-			sourceTree = "<group>";
-		};
-		F32BE4CC2237D65C00ECA798 /* TokenGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4CE2237D65C00ECA798 /* TokenGetRequestEntity.h */,
-				F32BE4CD2237D65C00ECA798 /* TokenGetRequestEntity.cpp */,
-				F32BE4CF2237D65C00ECA798 /* TokenGetResponseEntity.h */,
-				F32BE4D02237D65C00ECA798 /* TokenGetResponseEntity.cpp */,
-			);
-			path = TokenGet;
-			sourceTree = "<group>";
-		};
-		F32BE4D12237D65C00ECA798 /* ProfileDelete */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4D22237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp */,
-				F32BE4D32237D65C00ECA798 /* ProfileDeleteRequestEntity.cpp */,
-				F32BE4D42237D65C00ECA798 /* ProfileDeleteRequestEntity.h */,
-				F32BE4D52237D65C00ECA798 /* ProfileDeleteResponseEntity.h */,
-			);
-			path = ProfileDelete;
-			sourceTree = "<group>";
-		};
-		F32BE4D62237D65C00ECA798 /* CharaDelete */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4D72237D65C00ECA798 /* CharaDeleteRequestEntity.cpp */,
-				F32BE4D82237D65C00ECA798 /* CharaDeleteResponseEntity.h */,
-				F32BE4D92237D65C00ECA798 /* CharaDeleteRequestEntity.h */,
-				F32BE4DA2237D65C00ECA798 /* CharaDeleteResponseEntity.cpp */,
-			);
-			path = CharaDelete;
-			sourceTree = "<group>";
-		};
-		F32BE4DB2237D65C00ECA798 /* UserIdGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4DC2237D65C00ECA798 /* UserIdGetRequestEntity.h */,
-				F32BE4DE2237D65C00ECA798 /* UserIdGetRequestEntity.cpp */,
-				F32BE4DF2237D65C00ECA798 /* UserIdGetResponseEntity.h */,
-				F32BE4DD2237D65C00ECA798 /* UserIdGetResponseEntity.cpp */,
-			);
-			path = UserIdGet;
-			sourceTree = "<group>";
-		};
-		F32BE4E02237D65C00ECA798 /* SaveSend */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4E12237D65C00ECA798 /* SaveSendResponseEntity.h */,
-				F32BE4E22237D65C00ECA798 /* SaveSendRequestEntity.cpp */,
-				F32BE4E32237D65C00ECA798 /* SaveSendResponseEntity.cpp */,
-				F32BE4E42237D65C00ECA798 /* SaveSendRequestEntity.h */,
-			);
-			path = SaveSend;
-			sourceTree = "<group>";
-		};
-		F32BE4E52237D65C00ECA798 /* ProfileGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4E62237D65C00ECA798 /* ProfileGetResponseEntity.h */,
-				F32BE4E72237D65C00ECA798 /* ProfileGetRequestEntity.cpp */,
-				F32BE4E82237D65C00ECA798 /* ProfileGetRequestEntity.h */,
-				F32BE4E92237D65C00ECA798 /* ProfileGetResponseEntity.cpp */,
-			);
-			path = ProfileGet;
-			sourceTree = "<group>";
-		};
-		F32BE4EA2237D65C00ECA798 /* ItemListGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4EB2237D65C00ECA798 /* ItemListGetResponseEntity.h */,
-				F32BE4EC2237D65C00ECA798 /* ItemListGetResponseEntity.cpp */,
-				F32BE4ED2237D65C00ECA798 /* ItemListGetRequestEntity.h */,
-				F32BE4EE2237D65C00ECA798 /* ItemListGetRequestEntity.cpp */,
-			);
-			path = ItemListGet;
-			sourceTree = "<group>";
-		};
-		F32BE4EF2237D65C00ECA798 /* LocationGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4F02237D65C00ECA798 /* LocationGetResponseEntity.h */,
-				F32BE4F12237D65C00ECA798 /* LocationGetResponseEntity.cpp */,
-				F32BE4F22237D65C00ECA798 /* LocationGetRequestEntity.cpp */,
-				F32BE4F32237D65C00ECA798 /* LocationGetRequestEntity.h */,
-			);
-			path = LocationGet;
-			sourceTree = "<group>";
-		};
-		F32BE4F42237D65C00ECA798 /* ItemInfoGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4F52237D65C00ECA798 /* ItemInfoGetResponseEntity.h */,
-				F32BE4F62237D65C00ECA798 /* ItemInfoGetRequestEntity.cpp */,
-				F32BE4F72237D65C00ECA798 /* ItemInfoGetRequestEntity.h */,
-				F32BE4F82237D65C00ECA798 /* ItemInfoGetResponseEntity.cpp */,
-			);
-			path = ItemInfoGet;
-			sourceTree = "<group>";
-		};
-		F32BE4F92237D65C00ECA798 /* BbsGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4FA2237D65C00ECA798 /* BbsGetResponseEntity.h */,
-				F32BE4FB2237D65C00ECA798 /* BbsGetRequestEntity.h */,
-				F32BE4FC2237D65C00ECA798 /* BbsGetRequestEntity.cpp */,
-				F32BE4FD2237D65C00ECA798 /* BbsGetResponseEntity.cpp */,
-			);
-			path = BbsGet;
-			sourceTree = "<group>";
-		};
-		F32BE4FE2237D65C00ECA798 /* ItemComback */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE4FF2237D65C00ECA798 /* ItemCombackResponseEntity.h */,
-				F32BE5002237D65C00ECA798 /* ItemCombackRequestEntity.h */,
-				F32BE5012237D65C00ECA798 /* ItemCombackResponseEntity.cpp */,
-				F32BE5022237D65C00ECA798 /* ItemCombackRequestEntity.cpp */,
-			);
-			path = ItemComback;
-			sourceTree = "<group>";
-		};
-		F32BE5032237D65C00ECA798 /* CharaSend */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE5042237D65C00ECA798 /* CharaSendResponseEntity.h */,
-				F32BE5052237D65C00ECA798 /* CharaSendRequestEntity.h */,
-				F32BE5062237D65C00ECA798 /* CharaSendResponseEntity.cpp */,
-				F32BE5072237D65C00ECA798 /* CharaSendRequestEntity.cpp */,
-			);
-			path = CharaSend;
-			sourceTree = "<group>";
-		};
-		F32BE5082237D65C00ECA798 /* CharaGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE5092237D65C00ECA798 /* CharaGetResponseEntity.h */,
-				F32BE50A2237D65C00ECA798 /* CharaGetRequestEntity.cpp */,
-				F32BE50B2237D65C00ECA798 /* CharaGetResponseEntity.cpp */,
-				F32BE50C2237D65C00ECA798 /* CharaGetRequestEntity.h */,
-			);
-			path = CharaGet;
-			sourceTree = "<group>";
-		};
-		F32BE50D2237D65C00ECA798 /* ItemListGetMy */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE50E2237D65C00ECA798 /* ItemListGetMyRequestEntity.h */,
-				F32BE50F2237D65C00ECA798 /* ItemListGetMyResponseEntity.h */,
-				F32BE5102237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp */,
-				F32BE5112237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp */,
-			);
-			path = ItemListGetMy;
-			sourceTree = "<group>";
-		};
-		F32BE5122237D65C00ECA798 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE5152237D65C00ECA798 /* BaseRequestEntity.h */,
-				F32BE5162237D65C00ECA798 /* BaseRequestEntity.cpp */,
-				F32BE5142237D65C00ECA798 /* BaseResponseEntity.h */,
-				F32BE5132237D65C00ECA798 /* BaseResponseEntity.cpp */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		F32BE5172237D65C00ECA798 /* ItemGet */ = {
-			isa = PBXGroup;
-			children = (
-				F32BE5182237D65C00ECA798 /* ItemGetRequestEntity.cpp */,
-				F32BE5192237D65C00ECA798 /* ItemGetResponseEntity.h */,
-				F32BE51A2237D65C00ECA798 /* ItemGetResponseEntity.cpp */,
-				F32BE51B2237D65C00ECA798 /* ItemGetRequestEntity.h */,
-			);
-			path = ItemGet;
 			sourceTree = "<group>";
 		};
 		F3336875225C3921005DD29F /* Service */ = {
@@ -1565,8 +1091,8 @@
 		F34A3C3822549C070041D565 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				F34A3C3A22549C570041D565 /* AuthService.cpp */,
 				F34A3C3922549C460041D565 /* AuthService.h */,
+				F34A3C3A22549C570041D565 /* AuthService.cpp */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1574,18 +1100,18 @@
 		F358626A2256EA02007F2966 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */,
 				F358626B2256EA31007F2966 /* DBProfileEntity.h */,
-				F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */,
+				F358626C2256EA3E007F2966 /* DBProfileEntity.cpp */,
 				F333686E225B41C0005DD29F /* DBCharacterEntity.h */,
-				F358627622572B58007F2966 /* DBLocationEntity.cpp */,
+				F333686F225B41D6005DD29F /* DBCharacterEntity.cpp */,
 				F358627522572B45007F2966 /* DBLocationEntity.h */,
-				F333685D225B07D7005DD29F /* DBSaveEntity.cpp */,
+				F358627622572B58007F2966 /* DBLocationEntity.cpp */,
 				F333685C225B07CE005DD29F /* DBSaveEntity.h */,
-				F3336863225B0C42005DD29F /* DBBBSEntity.cpp */,
+				F333685D225B07D7005DD29F /* DBSaveEntity.cpp */,
 				F3336862225B0C35005DD29F /* DBBBSEntity.h */,
-				F3336869225B1A25005DD29F /* DBBlacklistEntity.cpp */,
+				F3336863225B0C42005DD29F /* DBBBSEntity.cpp */,
 				F3336868225B1A1C005DD29F /* DBBlacklistEntity.h */,
+				F3336869225B1A25005DD29F /* DBBlacklistEntity.cpp */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1593,20 +1119,20 @@
 		F358626E2256F078007F2966 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				F35862732256F185007F2966 /* DBBaseManager.cpp */,
 				F35862722256F17B007F2966 /* DBBaseManager.h */,
-				F35862702256F0A8007F2966 /* DBProfilesManager.cpp */,
+				F35862732256F185007F2966 /* DBBaseManager.cpp */,
 				F358626F2256F09E007F2966 /* DBProfilesManager.h */,
-				F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */,
+				F35862702256F0A8007F2966 /* DBProfilesManager.cpp */,
 				F3336871225C2DCE005DD29F /* DBCharactersManager.h */,
-				F333685A22572F30005DD29F /* DBLocationsManager.cpp */,
+				F3336872225C2DD9005DD29F /* DBCharactersManager.cpp */,
 				F333685822572F26005DD29F /* DBLocationsManager.h */,
-				F3336860225B0A0E005DD29F /* DBSavesManager.cpp */,
+				F333685A22572F30005DD29F /* DBLocationsManager.cpp */,
 				F333685F225B0A03005DD29F /* DBSavesManager.h */,
-				F3336866225B13B9005DD29F /* DBBBSManager.cpp */,
+				F3336860225B0A0E005DD29F /* DBSavesManager.cpp */,
 				F3336865225B13AF005DD29F /* DBBBSManager.h */,
-				F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */,
+				F3336866225B13B9005DD29F /* DBBBSManager.cpp */,
 				F333686B225B1F2C005DD29F /* DBBlacklistsManager.h */,
+				F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1626,7 +1152,6 @@
 		F3D88641220E94C300B426CC /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F32BE4B22237D65C00ECA798 /* API */,
 				F32BE4132237D65B00ECA798 /* Game */,
 				F32BE4082237D65B00ECA798 /* Player */,
 				F358626A2256EA02007F2966 /* Database */,
@@ -1637,50 +1162,28 @@
 		F3D8872E220E94C400B426CC /* Const */ = {
 			isa = PBXGroup;
 			children = (
-				F3D8873B220E94C400B426CC /* UrlConst.cpp */,
-				F3D88733220E94C400B426CC /* UrlConst.h */,
-				F3D88731220E94C400B426CC /* ItemExchangeConst.cpp */,
 				F3D88732220E94C400B426CC /* ItemExchangeConst.h */,
-				F3D88739220E94C400B426CC /* FileConst.cpp */,
+				F3D88731220E94C400B426CC /* ItemExchangeConst.cpp */,
 				F3D8873A220E94C400B426CC /* FileConst.h */,
-				F3D88735220E94C400B426CC /* GameConst.cpp */,
+				F3D88739220E94C400B426CC /* FileConst.cpp */,
 				F3D8872F220E94C400B426CC /* GameConst.h */,
-				F3D88734220E94C400B426CC /* LogConst.cpp */,
+				F3D88735220E94C400B426CC /* GameConst.cpp */,
 				F3D8873C220E94C400B426CC /* LogConst.h */,
-				F3D88738220E94C400B426CC /* ProfileConst.cpp */,
+				F3D88734220E94C400B426CC /* LogConst.cpp */,
 				F3D88736220E94C400B426CC /* ProfileConst.h */,
-				F3D88730220E94C400B426CC /* EncryptConst.cpp */,
+				F3D88738220E94C400B426CC /* ProfileConst.cpp */,
 				F3D88737220E94C400B426CC /* EncryptConst.h */,
-				F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */,
+				F3D88730220E94C400B426CC /* EncryptConst.cpp */,
 				F31FE8C0225D8B8A0074AE3D /* TwitterConst.h */,
+				F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */,
 			);
 			path = Const;
-			sourceTree = "<group>";
-		};
-		F3D8873D220E94C400B426CC /* Fetcher */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888E4220EB09F00B426CC /* BaseFetcher.h */,
-				F3D888C1220EB09E00B426CC /* BaseFetcher.cpp */,
-				F3D888D3220EB09F00B426CC /* User */,
-				F3D888BE220EB09E00B426CC /* Token */,
-				F3D888C2220EB09E00B426CC /* Bbs */,
-				F3D888B2220EB09D00B426CC /* Chara */,
-				F3D888DB220EB09F00B426CC /* Item */,
-				F3D888CE220EB09E00B426CC /* ItemList */,
-				F3D888B9220EB09D00B426CC /* Location */,
-				F3D888C7220EB09E00B426CC /* Profile */,
-				F3D888D6220EB09F00B426CC /* Save */,
-			);
-			path = Fetcher;
 			sourceTree = "<group>";
 		};
 		F3D887FA220E94DB00B426CC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				F358626E2256F078007F2966 /* Database */,
-				F3D8880E220E94DB00B426CC /* BaseManager.h */,
-				F3D88814220E94DB00B426CC /* BaseManager.cpp */,
 				F3D88804220E94DB00B426CC /* ProjectIniManager.h */,
 				F3D88805220E94DB00B426CC /* ProjectIniManager.cpp */,
 				F3D88808220E94DB00B426CC /* GameInfoManager.h */,
@@ -1714,8 +1217,6 @@
 		F3D88815220E94DB00B426CC /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				F3D88819220E94DB00B426CC /* ProjectUtil.h */,
-				F3D88817220E94DB00B426CC /* ProjectUtil.cpp */,
 				F3D88820220E94DB00B426CC /* JsonUtil.h */,
 				F3D88816220E94DB00B426CC /* JsonUtil.cpp */,
 				F3D8881C220E94DB00B426CC /* SJISUtil.h */,
@@ -1749,8 +1250,8 @@
 		F3D88826220E94DB00B426CC /* Battle */ = {
 			isa = PBXGroup;
 			children = (
-				F3D88827220E94DB00B426CC /* BattleLayer.cpp */,
 				F3D88828220E94DB00B426CC /* BattleLayer.h */,
+				F3D88827220E94DB00B426CC /* BattleLayer.cpp */,
 			);
 			path = Battle;
 			sourceTree = "<group>";
@@ -1782,14 +1283,14 @@
 		F3D88837220E94DB00B426CC /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				F3D88838220E94DB00B426CC /* MapLayer.cpp */,
 				F3D8883E220E94DB00B426CC /* MapLayer.h */,
-				F3D8883B220E94DB00B426CC /* MapUpLayer.cpp */,
+				F3D88838220E94DB00B426CC /* MapLayer.cpp */,
 				F3D8883F220E94DB00B426CC /* MapUpLayer.h */,
-				F3D8883C220E94DB00B426CC /* UnitSprite.cpp */,
-				F3D88839220E94DB00B426CC /* UnitSprite.h */,
-				F3D8883D220E94DB00B426CC /* UnitLayer.cpp */,
+				F3D8883B220E94DB00B426CC /* MapUpLayer.cpp */,
 				F3D8883A220E94DB00B426CC /* UnitLayer.h */,
+				F3D8883D220E94DB00B426CC /* UnitLayer.cpp */,
+				F3D88839220E94DB00B426CC /* UnitSprite.h */,
+				F3D8883C220E94DB00B426CC /* UnitSprite.cpp */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -1797,8 +1298,8 @@
 		F3D88840220E94DB00B426CC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F3D88841220E94DB00B426CC /* MainScene.cpp */,
 				F3D88842220E94DB00B426CC /* MainScene.h */,
+				F3D88841220E94DB00B426CC /* MainScene.cpp */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1818,8 +1319,6 @@
 			isa = PBXGroup;
 			children = (
 				F3D93D0E225DC3AC001A36D6 /* Firebase */,
-				F3D88852220E94DC00B426CC /* BaseService.h */,
-				F3D8884A220E94DC00B426CC /* BaseService.cpp */,
 				F3D8884D220E94DC00B426CC /* GameMapService.h */,
 				F3D88849220E94DC00B426CC /* GameMapService.cpp */,
 				F3D8884B220E94DC00B426CC /* GameBattleService.h */,
@@ -1836,115 +1335,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		F3D888B2220EB09D00B426CC /* Chara */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888B4220EB09D00B426CC /* CharaGetFetcher.h */,
-				F3D888B6220EB09D00B426CC /* CharaGetFetcher.cpp */,
-				F3D888B5220EB09D00B426CC /* CharaSendFetcher.h */,
-				F3D888B8220EB09D00B426CC /* CharaSendFetcher.cpp */,
-				F3D888B3220EB09D00B426CC /* CharaDeleteFetcher.h */,
-				F3D888B7220EB09D00B426CC /* CharaDeleteFetcher.cpp */,
-			);
-			path = Chara;
-			sourceTree = "<group>";
-		};
-		F3D888B9220EB09D00B426CC /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888BB220EB09D00B426CC /* LocationGetFetcher.h */,
-				F3D888BA220EB09D00B426CC /* LocationGetFetcher.cpp */,
-				F3D888BD220EB09D00B426CC /* LocationSendFetcher.h */,
-				F3D888BC220EB09D00B426CC /* LocationSendFetcher.cpp */,
-			);
-			path = Location;
-			sourceTree = "<group>";
-		};
-		F3D888BE220EB09E00B426CC /* Token */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888BF220EB09E00B426CC /* TokenGetFetcher.h */,
-				F3D888C0220EB09E00B426CC /* TokenGetFetcher.cpp */,
-			);
-			path = Token;
-			sourceTree = "<group>";
-		};
-		F3D888C2220EB09E00B426CC /* Bbs */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888C3220EB09E00B426CC /* BbsWriteFetcher.h */,
-				F3D888C4220EB09E00B426CC /* BbsWriteFetcher.cpp */,
-				F3D888C5220EB09E00B426CC /* BbsGetFetcher.h */,
-				F3D888C6220EB09E00B426CC /* BbsGetFetcher.cpp */,
-			);
-			path = Bbs;
-			sourceTree = "<group>";
-		};
-		F3D888C7220EB09E00B426CC /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888CD220EB09E00B426CC /* ProfileGetFetcher.h */,
-				F3D888C9220EB09E00B426CC /* ProfileGetFetcher.cpp */,
-				F3D888CB220EB09E00B426CC /* ProfileSendFetcher.h */,
-				F3D888C8220EB09E00B426CC /* ProfileSendFetcher.cpp */,
-				F3D888CC220EB09E00B426CC /* ProfileDeleteFetcher.h */,
-				F3D888CA220EB09E00B426CC /* ProfileDeleteFetcher.cpp */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		F3D888CE220EB09E00B426CC /* ItemList */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888CF220EB09E00B426CC /* ItemListGetFetcher.h */,
-				F3D888D1220EB09E00B426CC /* ItemListGetFetcher.cpp */,
-				F3D888D2220EB09E00B426CC /* ItemListGetMyFetcher.h */,
-				F3D888D0220EB09E00B426CC /* ItemListGetMyFetcher.cpp */,
-			);
-			path = ItemList;
-			sourceTree = "<group>";
-		};
-		F3D888D3220EB09F00B426CC /* User */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888D5220EB09F00B426CC /* UserIdGetFetcher.h */,
-				F3D888D4220EB09F00B426CC /* UserIdGetFetcher.cpp */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		F3D888D6220EB09F00B426CC /* Save */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888D7220EB09F00B426CC /* SaveGetFetcher.h */,
-				F3D888D8220EB09F00B426CC /* SaveGetFetcher.cpp */,
-				F3D888DA220EB09F00B426CC /* SaveSendFetcher.h */,
-				F3D888D9220EB09F00B426CC /* SaveSendFetcher.cpp */,
-			);
-			path = Save;
-			sourceTree = "<group>";
-		};
-		F3D888DB220EB09F00B426CC /* Item */ = {
-			isa = PBXGroup;
-			children = (
-				F3D888DC220EB09F00B426CC /* ItemGetFetcher.h */,
-				F3D888E0220EB09F00B426CC /* ItemGetFetcher.cpp */,
-				F3D888DD220EB09F00B426CC /* ItemCombackFetcher.h */,
-				F3D888DE220EB09F00B426CC /* ItemCombackFetcher.cpp */,
-				F3D888DF220EB09F00B426CC /* ItemSendFetcher.h */,
-				F3D888E2220EB09F00B426CC /* ItemSendFetcher.cpp */,
-				F3D888E3220EB09F00B426CC /* ItemInfoGetFetcher.h */,
-				F3D888E1220EB09F00B426CC /* ItemInfoGetFetcher.cpp */,
-			);
-			path = Item;
-			sourceTree = "<group>";
-		};
 		F3D93D0A225DC10A001A36D6 /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
 				F3D93D12225DE2E0001A36D6 /* Entity */,
-				F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */,
 				F3D93D0B225DC15C001A36D6 /* RemoteConfigService.h */,
+				F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */,
 			);
 			path = RemoteConfig;
 			sourceTree = "<group>";
@@ -1952,8 +1348,8 @@
 		F3D93D0E225DC3AC001A36D6 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */,
 				F3D93D0F225DC3D2001A36D6 /* FirebaseService.h */,
+				F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */,
 				F34A3C3822549C070041D565 /* Auth */,
 				F3D93D0A225DC10A001A36D6 /* RemoteConfig */,
 			);
@@ -1963,8 +1359,8 @@
 		F3D93D12225DE2E0001A36D6 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */,
 				F3D93D13225DE310001A36D6 /* RemoteConfigLatestVersionsEntity.h */,
+				F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -2229,91 +1625,60 @@
 			files = (
 				F32BE5612237D65C00ECA798 /* GameEventChangeTeleportEntity.cpp in Sources */,
 				F32BE5222237D65C00ECA798 /* GameSkillEntity.cpp in Sources */,
-				F3D888E7220EB09F00B426CC /* CharaSendFetcher.cpp in Sources */,
 				F3D88864220E94DC00B426CC /* JsonUtil.cpp in Sources */,
 				F32BE5462237D65C00ECA798 /* GameEventChangeEscapeEntity.cpp in Sources */,
 				F32BE5412237D65C00ECA798 /* GameEventFluctuateEXPEntity.cpp in Sources */,
-				F3D888EF220EB09F00B426CC /* ProfileGetFetcher.cpp in Sources */,
-				F3D888F8220EB09F00B426CC /* ItemInfoGetFetcher.cpp in Sources */,
-				F32BE5902237D65C00ECA798 /* ItemGetRequestEntity.cpp in Sources */,
-				F32BE5862237D65C00ECA798 /* ItemCombackResponseEntity.cpp in Sources */,
 				F32BE52E2237D65C00ECA798 /* GameMapEntity.cpp in Sources */,
 				F32BE5632237D65C00ECA798 /* GameEventMoveMobUnitEntity.cpp in Sources */,
-				F3D888ED220EB09F00B426CC /* BbsGetFetcher.cpp in Sources */,
 				F3D88866220E94DC00B426CC /* SJISUtil.cpp in Sources */,
 				F32BE5472237D65C00ECA798 /* GameEventExchangeUnitEntity.cpp in Sources */,
 				F32BE53C2237D65C00ECA798 /* GameEventWipeEntity.cpp in Sources */,
 				F3336864225B0C42005DD29F /* DBBBSEntity.cpp in Sources */,
-				F32BE5882237D65C00ECA798 /* CharaSendResponseEntity.cpp in Sources */,
 				F32BE5332237D65C00ECA798 /* GameJobSkillEntity.cpp in Sources */,
 				F3336867225B13B9005DD29F /* DBBBSManager.cpp in Sources */,
 				F3D88860220E94DC00B426CC /* GameMapChipGroupManager.cpp in Sources */,
 				F32BE5542237D65C00ECA798 /* GameEventCloakroomEntity.cpp in Sources */,
 				F3D88858220E94DC00B426CC /* GameVariableManager.cpp in Sources */,
-				F32BE58C2237D65C00ECA798 /* ItemListGetMyRequestEntity.cpp in Sources */,
 				F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */,
-				F3D888E5220EB09F00B426CC /* CharaGetFetcher.cpp in Sources */,
-				F3D888F3220EB09F00B426CC /* UserIdGetFetcher.cpp in Sources */,
 				F32BE55D2237D65C00ECA798 /* GameEventOperateVariableEntity.cpp in Sources */,
 				F3D88877220E94DC00B426CC /* BaseScene.cpp in Sources */,
 				F32BE53A2237D65C00ECA798 /* GameEventIfStatusEntity.cpp in Sources */,
-				F32BE5802237D65C00ECA798 /* LocationGetResponseEntity.cpp in Sources */,
-				F3D888E8220EB09F00B426CC /* LocationGetFetcher.cpp in Sources */,
 				F32BE5362237D65C00ECA798 /* PlayerTeleportEntity.cpp in Sources */,
 				F3D88859220E94DC00B426CC /* GameInfoManager.cpp in Sources */,
-				F32BE57A2237D65C00ECA798 /* SaveSendRequestEntity.cpp in Sources */,
 				F32BE5382237D65C00ECA798 /* GameEventBaseEntity.cpp in Sources */,
 				F3D887E3220E94C500B426CC /* FileConst.cpp in Sources */,
-				F32BE56C2237D65C00ECA798 /* ProfileSendResponseEntity.cpp in Sources */,
 				F34A3C3B22549C570041D565 /* AuthService.cpp in Sources */,
 				F3D88875220E94DC00B426CC /* UnitLayer.cpp in Sources */,
-				F32BE58A2237D65C00ECA798 /* CharaGetRequestEntity.cpp in Sources */,
-				F3D888F5220EB09F00B426CC /* SaveSendFetcher.cpp in Sources */,
 				F3D88879220E94DC00B426CC /* GameMapService.cpp in Sources */,
 				F32BE5312237D65C00ECA798 /* GameItemStatusEntity.cpp in Sources */,
-				F32BE58B2237D65C00ECA798 /* CharaGetResponseEntity.cpp in Sources */,
 				F32BE5592237D65C00ECA798 /* GameEventBarEntity.cpp in Sources */,
 				F32BE52B2237D65C00ECA798 /* GameInfoEntity.cpp in Sources */,
-				F32BE5682237D65C00ECA798 /* ItemSendResponseEntity.cpp in Sources */,
-				F3D88863220E94DC00B426CC /* BaseManager.cpp in Sources */,
 				F3D88870220E94DC00B426CC /* TitleMapLayer.cpp in Sources */,
 				F32BE5552237D65C00ECA798 /* GameEventSaveEntity.cpp in Sources */,
 				F3D93D0D225DC213001A36D6 /* RemoteConfigService.cpp in Sources */,
-				F3D888F9220EB09F00B426CC /* ItemSendFetcher.cpp in Sources */,
 				F32BE5302237D65C00ECA798 /* GameItemEntity.cpp in Sources */,
-				F32BE56F2237D65C00ECA798 /* BbsWriteResponseEntity.cpp in Sources */,
 				F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */,
 				F3D8885B220E94DC00B426CC /* ProjectIniManager.cpp in Sources */,
 				F3D8886A220E94DC00B426CC /* StringUtil.cpp in Sources */,
 				F3D887DE220E94C500B426CC /* EncryptConst.cpp in Sources */,
-				F32BE5752237D65C00ECA798 /* ProfileDeleteRequestEntity.cpp in Sources */,
 				F32BE5522237D65C00ECA798 /* GameEventRandomEntity.cpp in Sources */,
 				F32BE51E2237D65C00ECA798 /* PlayerEntity.cpp in Sources */,
-				F3D888EB220EB09F00B426CC /* BaseFetcher.cpp in Sources */,
 				F3D8885A220E94DC00B426CC /* GameEnemyManager.cpp in Sources */,
-				F3D888F7220EB09F00B426CC /* ItemGetFetcher.cpp in Sources */,
 				F32BE54D2237D65C00ECA798 /* GameEventEncountRateEntity.cpp in Sources */,
-				F32BE56D2237D65C00ECA798 /* ProfileSendRequestEntity.cpp in Sources */,
 				F32BE5432237D65C00ECA798 /* GameEventMoveUnitEntity.cpp in Sources */,
 				F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */,
-				F32BE5822237D65C00ECA798 /* ItemInfoGetRequestEntity.cpp in Sources */,
 				F32BE51F2237D65C00ECA798 /* PlayerProfileEntity.cpp in Sources */,
 				F3D8885D220E94DC00B426CC /* GameItemManager.cpp in Sources */,
 				F3D88869220E94DC00B426CC /* Base64Util.cpp in Sources */,
 				F3D8886E220E94DC00B426CC /* TitleLayer.cpp in Sources */,
-				F32BE5812237D65C00ECA798 /* LocationGetRequestEntity.cpp in Sources */,
-				F32BE58E2237D65C00ECA798 /* BaseResponseEntity.cpp in Sources */,
-				F32BE5912237D65C00ECA798 /* ItemGetResponseEntity.cpp in Sources */,
 				F3D8885C220E94DC00B426CC /* GameCharaManager.cpp in Sources */,
 				F333686A225B1A25005DD29F /* DBBlacklistEntity.cpp in Sources */,
 				F32BE53F2237D65C00ECA798 /* GameEventEndIfEntity.cpp in Sources */,
 				F32BE5502237D65C00ECA798 /* GameEventIfTimeEntity.cpp in Sources */,
 				F358627722572B58007F2966 /* DBLocationEntity.cpp in Sources */,
-				F3D888F2220EB09F00B426CC /* ItemListGetFetcher.cpp in Sources */,
 				F3D8887B220E94DC00B426CC /* GameDataService.cpp in Sources */,
 				F3D93D11225DC3DF001A36D6 /* FirebaseService.cpp in Sources */,
 				F3D8885E220E94DC00B426CC /* GameJobManager.cpp in Sources */,
-				F3D8887A220E94DC00B426CC /* BaseService.cpp in Sources */,
 				F32BE5482237D65C00ECA798 /* GameEventChangeBGMEntity.cpp in Sources */,
 				F32BE54A2237D65C00ECA798 /* GameEventFluctuateTeleportEntity.cpp in Sources */,
 				F32BE5232237D65C00ECA798 /* GameVariableEntity.cpp in Sources */,
@@ -2321,8 +1686,6 @@
 				F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */,
 				F3D8887F220E94DC00B426CC /* GameEventService.cpp in Sources */,
 				F32BE52F2237D65C00ECA798 /* GameMapChipEntity.cpp in Sources */,
-				F32BE5702237D65C00ECA798 /* LocationSendResponseEntity.cpp in Sources */,
-				F32BE56B2237D65C00ECA798 /* SaveGetResponseEntity.cpp in Sources */,
 				F32BE55C2237D65C00ECA798 /* GameEventINNEntity.cpp in Sources */,
 				F32BE5342237D65C00ECA798 /* GameJobEntity.cpp in Sources */,
 				F3D93D15225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp in Sources */,
@@ -2330,8 +1693,6 @@
 				F3D8886C220E94DC00B426CC /* SplashScene.cpp in Sources */,
 				F32BE5262237D65C00ECA798 /* GameEnemyEncountEntity.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
-				F32BE56E2237D65C00ECA798 /* BbsWriteRequestEntity.cpp in Sources */,
-				F32BE57C2237D65C00ECA798 /* ProfileGetRequestEntity.cpp in Sources */,
 				F3D8886D220E94DC00B426CC /* SplashLayer.cpp in Sources */,
 				F3D887E1220E94C500B426CC /* GameConst.cpp in Sources */,
 				F3D8886B220E94DC00B426CC /* BattleLayer.cpp in Sources */,
@@ -2343,12 +1704,9 @@
 				F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */,
 				F3336879225C3957005DD29F /* GoogleSignInService.mm in Sources */,
 				F3D88867220E94DC00B426CC /* EncryptUtil.cpp in Sources */,
-				F32BE5842237D65C00ECA798 /* BbsGetRequestEntity.cpp in Sources */,
-				F3D88865220E94DC00B426CC /* ProjectUtil.cpp in Sources */,
 				F3D887DF220E94C500B426CC /* ItemExchangeConst.cpp in Sources */,
 				F32BE5602237D65C00ECA798 /* GameEventFluctuateHPEntity.cpp in Sources */,
 				F32BE5572237D65C00ECA798 /* GameEventSettingShipEntity.cpp in Sources */,
-				F32BE5852237D65C00ECA798 /* BbsGetResponseEntity.cpp in Sources */,
 				F32BE5212237D65C00ECA798 /* PlayerUnitEntity.cpp in Sources */,
 				F32BE5322237D65C00ECA798 /* GameItemMixEntity.cpp in Sources */,
 				F32BE51D2237D65C00ECA798 /* ProjectIniEntity.cpp in Sources */,
@@ -2362,30 +1720,19 @@
 				F32BE55F2237D65C00ECA798 /* GameEventMixShopEntity.cpp in Sources */,
 				F3D88872220E94DC00B426CC /* MapLayer.cpp in Sources */,
 				F3D88873220E94DC00B426CC /* MapUpLayer.cpp in Sources */,
-				F32BE5732237D65C00ECA798 /* TokenGetResponseEntity.cpp in Sources */,
-				F32BE5832237D65C00ECA798 /* ItemInfoGetResponseEntity.cpp in Sources */,
 				F32BE54C2237D65C00ECA798 /* GameEventIfItemEntity.cpp in Sources */,
-				F3D888EA220EB09F00B426CC /* TokenGetFetcher.cpp in Sources */,
-				F32BE5722237D65C00ECA798 /* TokenGetRequestEntity.cpp in Sources */,
 				F32BE55E2237D65C00ECA798 /* GameEventMoveLocationEntity.cpp in Sources */,
 				F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */,
 				F32BE5642237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp in Sources */,
 				F32BE5252237D65C00ECA798 /* GameCharaEntity.cpp in Sources */,
-				F32BE5742237D65C00ECA798 /* ProfileDeleteResponseEntity.cpp in Sources */,
 				F32BE53B2237D65C00ECA798 /* GameEventMessageEntity.cpp in Sources */,
 				F32BE5282237D65C00ECA798 /* GameEnemyEntity.cpp in Sources */,
-				F3D888F0220EB09F00B426CC /* ProfileDeleteFetcher.cpp in Sources */,
 				F3D887E2220E94C500B426CC /* ProfileConst.cpp in Sources */,
-				F32BE5692237D65C00ECA798 /* ItemSendRequestEntity.cpp in Sources */,
 				F32BE52D2237D65C00ECA798 /* GameMapChipGroupEntity.cpp in Sources */,
-				F3D888EE220EB09F00B426CC /* ProfileSendFetcher.cpp in Sources */,
 				F32BE54F2237D65C00ECA798 /* GameEventIfTerminalEntity.cpp in Sources */,
 				F32BE5512237D65C00ECA798 /* GameEventIfVariableEntity.cpp in Sources */,
 				F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */,
-				F32BE58D2237D65C00ECA798 /* ItemListGetMyResponseEntity.cpp in Sources */,
-				F32BE56A2237D65C00ECA798 /* SaveGetRequestEntity.cpp in Sources */,
 				F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */,
-				F32BE57B2237D65C00ECA798 /* SaveSendResponseEntity.cpp in Sources */,
 				F32BE5202237D65C00ECA798 /* PlayerItemEntity.cpp in Sources */,
 				F32BE55A2237D65C00ECA798 /* GameEventFluctuateMPEntity.cpp in Sources */,
 				F32BE54B2237D65C00ECA798 /* GameEventBBSEntity.cpp in Sources */,
@@ -2394,50 +1741,31 @@
 				F32BE5452237D65C00ECA798 /* GameEventItemShopEntity.cpp in Sources */,
 				F32BE5352237D65C00ECA798 /* PlayerMapEntity.cpp in Sources */,
 				F32BE5442237D65C00ECA798 /* GameEventShowImageEntity.cpp in Sources */,
-				F32BE57F2237D65C00ECA798 /* ItemListGetRequestEntity.cpp in Sources */,
 				F3336873225C2DD9005DD29F /* DBCharactersManager.cpp in Sources */,
-				F3D888E6220EB09F00B426CC /* CharaDeleteFetcher.cpp in Sources */,
-				F32BE5772237D65C00ECA798 /* CharaDeleteResponseEntity.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				F3D888F6220EB09F00B426CC /* ItemCombackFetcher.cpp in Sources */,
 				F32BE5492237D65C00ECA798 /* GameEventChangeJobEntity.cpp in Sources */,
 				F32BE5422237D65C00ECA798 /* GameEventExitEntity.cpp in Sources */,
-				F32BE5872237D65C00ECA798 /* ItemCombackRequestEntity.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
-				F3D888F1220EB09F00B426CC /* ItemListGetMyFetcher.cpp in Sources */,
 				F3D8887E220E94DC00B426CC /* GameBattleService.cpp in Sources */,
 				F32BE5272237D65C00ECA798 /* GameEnemyItemEntity.cpp in Sources */,
-				F3D888EC220EB09F00B426CC /* BbsWriteFetcher.cpp in Sources */,
 				F32BE53D2237D65C00ECA798 /* GameEventGettingOnOffEntity.cpp in Sources */,
-				F32BE5892237D65C00ECA798 /* CharaSendRequestEntity.cpp in Sources */,
 				F3D8887D220E94DC00B426CC /* GameEventVariableService.cpp in Sources */,
 				F3D88861220E94DC00B426CC /* PlayerManager.cpp in Sources */,
 				F32BE5392237D65C00ECA798 /* GameEventIfSkillEntity.cpp in Sources */,
-				F3D888F4220EB09F00B426CC /* SaveGetFetcher.cpp in Sources */,
 				F32BE5562237D65C00ECA798 /* GameEventChangeChipEntity.cpp in Sources */,
-				F32BE58F2237D65C00ECA798 /* BaseRequestEntity.cpp in Sources */,
-				F3D887E4220E94C500B426CC /* UrlConst.cpp in Sources */,
 				F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */,
 				F32BE5532237D65C00ECA798 /* GameEventEntity.cpp in Sources */,
 				F3D88857220E94DC00B426CC /* GameSkillManager.cpp in Sources */,
-				F32BE5782237D65C00ECA798 /* UserIdGetResponseEntity.cpp in Sources */,
-				F32BE5762237D65C00ECA798 /* CharaDeleteRequestEntity.cpp in Sources */,
 				F3D887E0220E94C500B426CC /* LogConst.cpp in Sources */,
 				F3D88878220E94DC00B426CC /* BaseLayer.cpp in Sources */,
 				F32BE53E2237D65C00ECA798 /* GameEventItemBazaarEntity.cpp in Sources */,
-				F3D888E9220EB09F00B426CC /* LocationSendFetcher.cpp in Sources */,
 				F32BE55B2237D65C00ECA798 /* GameEventChurchEntity.cpp in Sources */,
 				F3D88874220E94DC00B426CC /* UnitSprite.cpp in Sources */,
-				F32BE5792237D65C00ECA798 /* UserIdGetRequestEntity.cpp in Sources */,
 				F32BE5662237D65C00ECA798 /* GameEventChangeUnitEntity.cpp in Sources */,
-				F32BE57D2237D65C00ECA798 /* ProfileGetResponseEntity.cpp in Sources */,
 				F3504FEF225C99A500F6C11E /* FacebookSignInService.mm in Sources */,
-				F32BE5712237D65C00ECA798 /* LocationSendRequestEntity.cpp in Sources */,
 				F3D8885F220E94DC00B426CC /* NamesManager.cpp in Sources */,
 				F32BE52A2237D65C00ECA798 /* GameImageEntity.cpp in Sources */,
 				F3D88876220E94DC00B426CC /* MainScene.cpp in Sources */,
-				F32BE57E2237D65C00ECA798 /* ItemListGetResponseEntity.cpp in Sources */,
-				F32BE5672237D65C00ECA798 /* BaseGameEntity.cpp in Sources */,
 				F3D8886F220E94DC00B426CC /* TitleScene.cpp in Sources */,
 				F3D88862220E94DC00B426CC /* GameMapManager.cpp in Sources */,
 				F3D88868220E94DC00B426CC /* UUIDUtil.cpp in Sources */,
