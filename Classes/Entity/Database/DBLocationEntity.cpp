@@ -7,8 +7,8 @@
 
 #include "DBLocationEntity.h"
 
-#include "../../Const/ProfileConst.h"
-#include "../../Entity/Player/PlayerMapEntity.h"
+#include "Const/ProfileConst.h"
+#include "Entity/Player/PlayerMapEntity.h"
 
 DBLocationEntity::DBLocationEntity() {
     _username = "";

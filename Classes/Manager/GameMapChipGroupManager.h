@@ -9,7 +9,11 @@
 #ifndef GameMapChipGroupManager_h
 #define GameMapChipGroupManager_h
 
-#include "../Entity/Game/Map/GameMapChipGroupEntity.h"
+#include <map>
+
+#include "Entity/Game/Map/GameMapChipGroupEntity.h"
+
+using namespace std;
 
 /// ゲームマップチップグループマネージャ
 class GameMapChipGroupManager final {

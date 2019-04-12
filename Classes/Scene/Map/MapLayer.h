@@ -9,7 +9,7 @@
 #ifndef MapLayer_h
 #define MapLayer_h
 
-#include "../Base/BaseLayer.h"
+#include "Scene/Base/BaseLayer.h"
 
 class GameMapEntity;
 class GameMapChipEntity;

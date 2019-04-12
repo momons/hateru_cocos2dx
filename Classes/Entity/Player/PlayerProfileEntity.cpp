@@ -8,8 +8,8 @@
 
 #include "PlayerProfileEntity.h"
 
-#include "LogConst.h"
-#include "ProfileConst.h"
+#include "Const/LogConst.h"
+#include "Const/ProfileConst.h"
 
 PlayerProfileEntity::PlayerProfileEntity() {
 	_gender = 0;

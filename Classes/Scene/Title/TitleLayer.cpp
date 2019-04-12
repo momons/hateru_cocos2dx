@@ -8,9 +8,9 @@
 
 #include "TitleLayer.h"
 
-#include "../../Const/GameConst.h"
-#include "../../Manager/GameCharaManager.h"
-#include "../../Manager/GameEtcManager.h"
+#include "Const/GameConst.h"
+#include "Manager/GameCharaManager.h"
+#include "Manager/GameEtcManager.h"
 
 /**
  *  クラス作成

@@ -9,7 +9,10 @@
 #ifndef GameInfoEntity_h
 #define GameInfoEntity_h
 
-#include "PlayerEntity.h"
+#include <string>
+#include <vector>
+
+using namespace std;
 
 /// ゲームEntity
 class GameInfoEntity final {

@@ -9,7 +9,11 @@
 #ifndef GameSkillManager_h
 #define GameSkillManager_h
 
-#include "../Entity/Game/Skill/GameSkillEntity.h"
+#include <map>
+
+#include "Entity/Game/Skill/GameSkillEntity.h"
+
+using namespace std;
 
 /// ゲームスキルマネージャ
 class GameSkillManager final {

@@ -9,7 +9,7 @@
 #ifndef GameBattleService_h
 #define GameBattleService_h
 
-#include "../Entity/Game/Enemy/GameEnemyEntity.h"
+#include "Entity/Game/Enemy/GameEnemyEntity.h"
 
 /// ゲームバトルサービス
 class GameBattleService final {

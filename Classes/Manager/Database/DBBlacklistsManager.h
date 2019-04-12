@@ -9,7 +9,7 @@
 #define DBBlacklistsManager_h
 
 #include "DBBaseManager.h"
-#include "../../Entity/Database/DBBlacklistEntity.h"
+#include "Entity/Database/DBBlacklistEntity.h"
 
 using namespace std;
 

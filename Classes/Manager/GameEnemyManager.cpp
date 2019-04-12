@@ -12,8 +12,9 @@
 #include <iostream>
 #include <iomanip>
 
-#include "../Const/FileConst.h"
+#include "Const/FileConst.h"
 #include "ProjectIniManager.h"
+#include "Entity/Game/Enemy/GameEnemyEntity.h"
 
 USING_NS_CC;
 

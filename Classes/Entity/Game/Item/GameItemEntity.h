@@ -10,10 +10,13 @@
 #define GameItemEntity_h
 
 #include <string>
+#include <vector>
+#include <map>
 
+#include "Const/GameConst.h"
 #include "GameItemMixEntity.h"
 #include "GameItemStatusEntity.h"
-#include "../Variable/GameVariableChangeEntity.h"
+#include "Entity/Game/Variable/GameVariableChangeEntity.h"
 
 using namespace std;
 

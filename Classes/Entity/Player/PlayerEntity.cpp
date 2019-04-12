@@ -8,10 +8,10 @@
 
 #include "PlayerEntity.h"
 
-#include "LogConst.h"
-#include "GameConst.h"
-#include "GameDataService.h"
-
+#include "Const/LogConst.h"
+#include "Const/GameConst.h"
+#include "Service/GameDataService.h"
+#include "Entity/Game/Job/GameJobSkillEntity.h"
 
 /**
  *  初期化

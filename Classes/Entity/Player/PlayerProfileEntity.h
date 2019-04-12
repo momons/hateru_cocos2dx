@@ -11,7 +11,7 @@
 
 #include "cocos2d.h"
 
-#include "picojson.h"
+#include "Util/picojson.h"
 
 USING_NS_CC;
 using namespace std;

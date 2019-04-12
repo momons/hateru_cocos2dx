@@ -8,8 +8,6 @@
 #ifndef RemoteConfigService_h
 #define RemoteConfigService_h
 
-using namespace std;
-
 /// RemoteConfigサービスクラス
 class RemoteConfigService final {
 public:

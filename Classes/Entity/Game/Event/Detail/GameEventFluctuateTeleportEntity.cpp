@@ -8,8 +8,8 @@
 
 #include "GameEventFluctuateTeleportEntity.h"
 
-#include "../../../../Util/SJISUtil.h"
-#include "../../../../Util/StringUtil.h"
+#include "Util/SJISUtil.h"
+#include "Util/StringUtil.h"
 
 /**
  *  バイナリデータよりEntity作成

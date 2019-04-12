@@ -8,8 +8,8 @@
 
 #include "SplashLayer.h"
 
-#include "../../Const/GameConst.h"
-#include "../Title/TitleScene.h"
+#include "Const/GameConst.h"
+#include "Scene/Title/TitleScene.h"
 
 /**
  *  クラス作成

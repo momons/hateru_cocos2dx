@@ -9,7 +9,7 @@
 #ifndef SplashScene_h
 #define SplashScene_h
 
-#include "../Base/BaseScene.h"
+#include "Scene/Base/BaseScene.h"
 
 /// スプラッシュシーン
 class SplashScene final: public BaseScene {

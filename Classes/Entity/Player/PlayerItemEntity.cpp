@@ -8,10 +8,10 @@
 
 #include "PlayerItemEntity.h"
 
-#include "LogConst.h"
-#include "UUIDUtil.h"
-#include "GameDataService.h"
-#include "PlayerUnitEntity.h"
+#include "Const/LogConst.h"
+#include "Util/UUIDUtil.h"
+#include "Service/GameDataService.h"
+#include "Entity/Player/PlayerUnitEntity.h"
 
 /**
  *  アイテムEntity作成

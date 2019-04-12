@@ -14,7 +14,7 @@
 #include <openssl/md5.h>
 #include <openssl/evp.h>
 
-#include "EncryptConst.h"
+#include "Const/EncryptConst.h"
 #include "Base64Util.h"
 
 USING_NS_CC;

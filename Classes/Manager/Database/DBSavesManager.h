@@ -9,7 +9,7 @@
 #define DBSavesManager_h
 
 #include "DBBaseManager.h"
-#include "../../Entity/Database/DBSaveEntity.h"
+#include "Entity/Database/DBSaveEntity.h"
 
 using namespace std;
 

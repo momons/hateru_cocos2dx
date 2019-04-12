@@ -9,7 +9,7 @@
 #ifndef ProjectIniManager_h
 #define ProjectIniManager_h
 
-#include "../Entity/Game/ProjectIniEntity.h"
+#include "Entity/Game/ProjectIniEntity.h"
 
 /// Project.iniマネージャ
 class ProjectIniManager final {

@@ -7,7 +7,7 @@
 
 #include "DBBaseManager.h"
 
-#include "../../Service/Firebase/FirebaseService.h"
+#include "Service/Firebase/FirebaseService.h"
 
 const string DBBaseManager::topFieldName = "hateru";
 

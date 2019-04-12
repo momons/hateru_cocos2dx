@@ -9,7 +9,7 @@
 #include "GameMapService.h"
 
 #include "GameDataService.h"
-#include "../Manager/PlayerManager.h"
+#include "Manager/PlayerManager.h"
 
 /// インスタンス
 GameMapService *GameMapService::instance;

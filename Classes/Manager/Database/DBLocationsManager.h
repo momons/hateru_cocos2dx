@@ -9,8 +9,8 @@
 #define DBLocationsManager_h
 
 #include "DBBaseManager.h"
-#include "../../Entity/Database/DBLocationEntity.h"
-#include "../../Entity/Player/PlayerMapEntity.h"
+#include "Entity/Database/DBLocationEntity.h"
+#include "Entity/Player/PlayerMapEntity.h"
 
 using namespace std;
 

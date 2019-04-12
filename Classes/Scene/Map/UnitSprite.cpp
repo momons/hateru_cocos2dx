@@ -11,8 +11,8 @@
 #include <iostream>
 #include <iomanip>
 
-#include "../../Manager/GameCharaManager.h"
-#include "../../Const/GameConst.h"
+#include "Manager/GameCharaManager.h"
+#include "Const/GameConst.h"
 
 /**
  *  クラス作成

@@ -7,8 +7,10 @@
 
 #include "AuthService.h"
 
-#include "../FirebaseService.h"
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#include <mutex>
+
+#include "Service/Firebase/FirebaseService.h"
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 #include "GoogleSignInServiceWrap.h"
 #include "FacebookSignInServiceWrap.h"
 #include "TwitterSignInServiceWrap.h"
@@ -59,7 +61,7 @@ void AuthService::signInByEmail(const string email, const string password, const
 }
 
 void AuthService::signInByGoogle(const function<void(bool)> handler) {
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
     auto service = GoogleSignInServiceWrap();
     service.signIn(handler);
 #else
@@ -68,7 +70,7 @@ void AuthService::signInByGoogle(const function<void(bool)> handler) {
 }
 
 void AuthService::signInByFacebook(const function<void(bool)> handler) {
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
     auto service = FacebookSignInServiceWrap();
     service.signIn(handler);
 #else
@@ -77,7 +79,7 @@ void AuthService::signInByFacebook(const function<void(bool)> handler) {
 }
 
 void AuthService::signInByTwitter(const function<void(bool)> handler) {
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
     auto service = TwitterSignInServiceWrap();
     service.signIn(handler);
 #else

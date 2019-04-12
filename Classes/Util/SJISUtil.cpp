@@ -22,6 +22,7 @@ string SJISUtil::convertUTF8(const unsigned char *buff, const size_t buffLen) {
 
 	string outputStr = "";
 
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 	size_t inputLen = buffLen;
 	char *inputBuff = (char *)malloc(inputLen + 1);
 	memset(inputBuff, 0x00, inputLen + 1);
@@ -46,6 +47,7 @@ string SJISUtil::convertUTF8(const unsigned char *buff, const size_t buffLen) {
 	
 	free(inputBuff);
 	free(outputBuff);
+#endif
 	
 	return outputStr;
 }

@@ -9,7 +9,7 @@
 #ifndef GameEventVariableService_h
 #define GameEventVariableService_h
 
-#include "../Const/GameConst.h"
+#include "Const/GameConst.h"
 
 class GameEventService;
 class PlayerEntity;

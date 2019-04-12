@@ -9,7 +9,7 @@
 #ifndef GameItemManager_h
 #define GameItemManager_h
 
-#include "../Entity/Game/Item/GameItemEntity.h"
+#include "Entity/Game/Item/GameItemEntity.h"
 
 /// ゲームアイテムマネージャ
 class GameItemManager final {

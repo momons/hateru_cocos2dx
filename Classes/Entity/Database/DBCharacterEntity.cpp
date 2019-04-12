@@ -7,7 +7,7 @@
 
 #include "DBCharacterEntity.h"
 
-#include "../../Const/ProfileConst.h"
+#include "Const/ProfileConst.h"
 
 DBCharacterEntity::DBCharacterEntity() {
     _statusData = "";

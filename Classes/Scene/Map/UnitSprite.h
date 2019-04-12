@@ -11,8 +11,8 @@
 
 #include "cocos2d.h"
 
-#include "../../Const/GameConst.h"
-#include "../../Entity/Game/Chara/GameCharaEntity.h"
+#include "Const/GameConst.h"
+#include "Entity/Game/Chara/GameCharaEntity.h"
 
 USING_NS_CC;
 using namespace std;

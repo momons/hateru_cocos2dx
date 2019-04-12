@@ -8,9 +8,8 @@
 
 #include "GameJobEntity.h"
 
-#include "GameConst.h"
-#include "SJISUtil.h"
-#include "StringUtil.h"
+#include "Util/SJISUtil.h"
+#include "Util/StringUtil.h"
 
 /**
  *  バイナリデータよりEntity作成

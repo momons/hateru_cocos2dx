@@ -8,7 +8,12 @@
 
 #include "GameInfoManager.h"
 
-#include "../Const/FileConst.h"
+#include "cocos2d.h"
+#include <sstream>
+
+#include "Const/FileConst.h"
+
+USING_NS_CC;
 
 /**
  *  読み込み

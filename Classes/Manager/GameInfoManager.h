@@ -9,7 +9,7 @@
 #ifndef GameInfoManager_h
 #define GameInfoManager_h
 
-#include "../Entity/Game/Info/GameInfoEntity.h"
+#include "Entity/Game/Info/GameInfoEntity.h"
 
 /// ゲーム情報マネージャ
 class GameInfoManager final {

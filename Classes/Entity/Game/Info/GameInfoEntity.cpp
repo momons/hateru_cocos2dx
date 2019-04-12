@@ -8,7 +8,8 @@
 
 #include "GameInfoEntity.h"
 
-#include "../../../Util/SJISUtil.h"
+#include "Const/GameConst.h"
+#include "Util/SJISUtil.h"
 
 /**
  *  コンストラクタ

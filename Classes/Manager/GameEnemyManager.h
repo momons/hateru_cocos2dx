@@ -9,7 +9,11 @@
 #ifndef GameEnemyManager_h
 #define GameEnemyManager_h
 
-#include "../Entity/Game/Enemy/GameEnemyEntity.h"
+#include <map>
+
+using namespace std;
+
+class GameEnemyEntity;
 
 /// 敵キャラマネージャ
 class GameEnemyManager final {

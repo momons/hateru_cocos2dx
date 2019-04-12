@@ -10,7 +10,8 @@
 #define GameEventService_h
 
 #include <map>
-#include "../Const/GameConst.h"
+#include <vector>
+#include "Const/GameConst.h"
 
 class GameEventStatusService;
 class GameEventVariableService;

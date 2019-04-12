@@ -8,6 +8,10 @@
 
 #include "ProfileConst.h"
 
+#include <mutex>
+
+using namespace std;
+
 /// インスタンス
 ProfileConst *ProfileConst::instance;
 

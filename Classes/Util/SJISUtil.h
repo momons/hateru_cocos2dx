@@ -9,7 +9,7 @@
 #ifndef SJISUtil_h
 #define SJISUtil_h
 
-#include <stdio.h>
+#include <string>
 
 using namespace std;
 

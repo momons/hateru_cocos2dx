@@ -8,10 +8,10 @@
 
 #include "UnitLayer.h"
 
-#include "../../Service/GameMapService.h"
-#include "../../Service/GameDataService.h"
-#include "../../Entity/Player/PlayerEntity.h"
-#include "../../Entity/Game/Map/GameMapEntity.h"
+#include "Service/GameMapService.h"
+#include "Service/GameDataService.h"
+#include "Entity/Player/PlayerEntity.h"
+#include "Entity/Game/Map/GameMapEntity.h"
 #include "UnitSprite.h"
 
 /**

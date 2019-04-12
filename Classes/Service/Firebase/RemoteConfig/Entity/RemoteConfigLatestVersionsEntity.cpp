@@ -8,7 +8,7 @@
 #include "RemoteConfigLatestVersionsEntity.h"
 
 #include "cocos2d.h"
-#include "../../../../Const/LogConst.h"
+#include "Const/LogConst.h"
 
 USING_NS_CC;
 

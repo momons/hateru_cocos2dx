@@ -12,7 +12,7 @@
 #include <iostream>
 #include <iomanip>
 
-#include "../Const/FileConst.h"
+#include "Const/FileConst.h"
 #include "ProjectIniManager.h"
 
 USING_NS_CC;

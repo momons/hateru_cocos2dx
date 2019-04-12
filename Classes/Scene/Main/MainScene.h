@@ -9,7 +9,7 @@
 #ifndef MainScene_h
 #define MainScene_h
 
-#include "../Base/BaseScene.h"
+#include "Scene/Base/BaseScene.h"
 
 /** ゲームステータス */
 typedef enum {

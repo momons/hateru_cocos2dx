@@ -10,8 +10,9 @@
 #define GameSkillEntity_h
 
 #include <string>
+#include <vector>
 
-#include "GameVariableChangeEntity.h"
+#include "Entity/Game/Variable/GameVariableChangeEntity.h"
 
 using namespace std;
 

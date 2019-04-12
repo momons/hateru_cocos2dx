@@ -9,12 +9,11 @@
 #ifndef PlayerUnitEntity_h
 #define PlayerUnitEntity_h
 
-#include "picojson.h"
+#include "Util/picojson.h"
 
-#include "GameConst.h"
+#include "Const/GameConst.h"
 #include "PlayerItemEntity.h"
 
-USING_NS_CC;
 using namespace std;
 
 /// プレイヤーユニットEntity

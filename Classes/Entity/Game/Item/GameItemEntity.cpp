@@ -8,10 +8,9 @@
 
 #include "GameItemEntity.h"
 
-#include "../../../Const/GameConst.h"
-#include "../../../Manager/ProjectIniManager.h"
-#include "../../../Util/SJISUtil.h"
-#include "../../../Util/StringUtil.h"
+#include "Manager/ProjectIniManager.h"
+#include "Util/SJISUtil.h"
+#include "Util/StringUtil.h"
 
 /**
  *  アイテム数が調合に規定数に達しているか？

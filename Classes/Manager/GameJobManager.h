@@ -9,7 +9,11 @@
 #ifndef GameJobManager_h
 #define GameJobManager_h
 
-#include "../Entity/Game/Job/GameJobEntity.h"
+#include <map>
+
+using namespace std;
+
+class GameJobEntity;
 
 /// ゲーム職業マネージャ
 class GameJobManager final {

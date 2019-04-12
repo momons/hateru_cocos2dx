@@ -53,7 +53,7 @@
 #include "Detail/GameEventIfTerminalEntity.h"
 #include "Detail/GameEventJingleEntity.h"
 #include "Detail/GameEventRandomEntity.h"
-#include "../../../Scene/Map/UnitSprite.h"
+#include "Scene/Map/UnitSprite.h"
 
 #pragma mark - 初期化
 

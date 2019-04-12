@@ -9,7 +9,11 @@
 #ifndef GameCharaManager_h
 #define GameCharaManager_h
 
-#include "../Entity/Game/Chara/GameCharaEntity.h"
+#include <map>
+
+#include "Entity/Game/Chara/GameCharaEntity.h"
+
+using namespace std;
 
 /// ゲームキャラマネージャ
 class GameCharaManager final {

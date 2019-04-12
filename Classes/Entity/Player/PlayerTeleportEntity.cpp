@@ -10,8 +10,8 @@
 
 #include "cocos2d.h"
 
-#include "../../Const/LogConst.h"
-#include "../../Entity/Player/PlayerMapEntity.h"
+#include "Const/LogConst.h"
+#include "Entity/Player/PlayerMapEntity.h"
 
 USING_NS_CC;
 

@@ -9,7 +9,7 @@
 #ifndef GameVariableChangeEntity_h
 #define GameVariableChangeEntity_h
 
-#include "../../../Const/GameConst.h"
+#include "Const/GameConst.h"
 
 /// 変数変化Entity
 class GameVariableChangeEntity final {

@@ -11,7 +11,7 @@
 
 #include <string>
 
-#include "../../../Const/GameConst.h"
+#include "Const/GameConst.h"
 
 using namespace std;
 

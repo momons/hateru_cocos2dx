@@ -9,7 +9,7 @@
 #ifndef NamesManager_h
 #define NamesManager_h
 
-#include "../Entity/Game/Image/NamesEntity.h"
+#include "Entity/Game/Image/NamesEntity.h"
 
 /// 名前リストマネージャ
 class NamesManager final {

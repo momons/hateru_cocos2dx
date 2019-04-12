@@ -11,7 +11,7 @@
 #include "cocos2d.h"
 #include <mutex>
 
-#include "../Const/FileConst.h"
+#include "Const/FileConst.h"
 
 USING_NS_CC;
 

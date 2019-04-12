@@ -8,7 +8,9 @@
 
 #include "UUIDUtil.h"
 
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 #include <uuid/uuid.h>
+#endif
 
 /**
  *  UUID生成
@@ -17,6 +19,7 @@
  */
 string UUIDUtil::create() {
 
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 	uuid_t value;
 	uuid_string_t string;
 	
@@ -24,4 +27,8 @@ string UUIDUtil::create() {
 	uuid_unparse_upper(value, string);
 	
 	return string;
+#else
+    // TODO: Androidは考える
+    return "";
+#endif
 }

@@ -10,8 +10,9 @@
 #define GameJobEntity_h
 
 #include <string>
+#include <vector>
 
-#include "../../../Const/GameConst.h"
+#include "Const/GameConst.h"
 #include "GameJobSkillEntity.h"
 
 using namespace std;

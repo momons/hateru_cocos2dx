@@ -1,8 +1,6 @@
 ._*
 CMakeLists.txt
 cocos2d
-proj.android
-proj.android-studio
 proj.ios_mac/Firebase
 proj.ios_mac/Pods
 proj.linux

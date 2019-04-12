@@ -9,7 +9,7 @@
 #ifndef BattleLayer_h
 #define BattleLayer_h
 
-#include "../Base/BaseLayer.h"
+#include "Scene/Base/BaseLayer.h"
 
 /// バトルレイヤー
 class BattleLayer final: public BaseLayer {

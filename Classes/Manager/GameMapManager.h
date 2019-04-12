@@ -9,7 +9,7 @@
 #ifndef GameMapManager_h
 #define GameMapManager_h
 
-#include "../Entity/Game/Map/GameMapEntity.h"
+#include "Entity/Game/Map/GameMapEntity.h"
 
 /// ゲームマップマネージャ
 class GameMapManager final {

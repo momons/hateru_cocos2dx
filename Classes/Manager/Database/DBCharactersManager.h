@@ -10,7 +10,7 @@
 
 #include "DBBaseManager.h"
 
-#include "../../Entity/Database/DBCharacterEntity.h"
+#include "Entity/Database/DBCharacterEntity.h"
 
 using namespace std;
 

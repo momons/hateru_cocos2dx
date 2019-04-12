@@ -8,9 +8,10 @@
 
 #include "PlayerUnitEntity.h"
 
-#include "LogConst.h"
-#include "GameConst.h"
-#include "GameDataService.h"
+#include "Const/LogConst.h"
+#include "Const/GameConst.h"
+#include "Service/GameDataService.h"
+#include "Entity/Game/Item/GameItemStatusEntity.h"
 
 #pragma mark - ステータス
 

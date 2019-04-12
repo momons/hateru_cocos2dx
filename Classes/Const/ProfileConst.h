@@ -12,7 +12,6 @@
 #include <string>
 #include <vector>
 
-USING_NS_CC;
 using namespace std;
 
 /// プロフィール定数

@@ -10,7 +10,7 @@
 
 #include "cocos2d.h"
 
-#include "../Const/FileConst.h"
+#include "Const/FileConst.h"
 #include "ProjectIniManager.h"
 #include "NamesManager.h"
 

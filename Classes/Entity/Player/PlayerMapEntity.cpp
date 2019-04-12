@@ -10,10 +10,9 @@
 
 #include "cocos2d.h"
 
-#include "LogConst.h"
+#include "Const/LogConst.h"
 
 USING_NS_CC;
-
 
 /**
  *  コンストラクタ

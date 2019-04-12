@@ -9,9 +9,13 @@
 #ifndef GameMapEntity_h
 #define GameMapEntity_h
 
+#include <map>
+
 #include "GameMapChipEntity.h"
 #include "GameMapAutoEntity.h"
-#include "../Event/GameEventEntity.h"
+#include "Entity/Game/Event/GameEventEntity.h"
+
+using namespace std;
 
 /// マップEntity
 class GameMapEntity final {

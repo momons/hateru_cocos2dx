@@ -7,14 +7,19 @@
 
 #include "FirebaseService.h"
 
+#include "cocos2d.h"
+#include <mutex>
+
+USING_NS_CC;
+
 FirebaseService *FirebaseService::instance;
 
 FirebaseService::FirebaseService() {
     
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
     _app = App::Create(firebase::AppOptions());
 #else
-    _app = App::Create(firebase::AppOptions(), my_jni_env, my_activity);
+    _app = App::Create(firebase::AppOptions(), JniHelper::getEnv(), JniHelper::getActivity());
 #endif
 }
 

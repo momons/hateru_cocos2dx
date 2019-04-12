@@ -7,7 +7,7 @@
 
 #include "DBLocationsManager.h"
 
-#include "AuthService.h"
+#include "Service/Firebase/Auth/AuthService.h"
 
 database::DatabaseReference DBLocationsManager::ref() {
     return database->GetReference().Child(DBBaseManager::topFieldName.c_str()).Child("locations");

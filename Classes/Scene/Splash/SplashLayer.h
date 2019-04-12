@@ -9,7 +9,7 @@
 #ifndef SplashLayer_h
 #define SplashLayer_h
 
-#include "../Base/BaseLayer.h"
+#include "Scene/Base/BaseLayer.h"
 
 /// スプラッシュレイヤー
 class SplashLayer final: public BaseLayer {

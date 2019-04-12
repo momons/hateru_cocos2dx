@@ -9,7 +9,7 @@
 #ifndef GameItemStatusEntity_h
 #define GameItemStatusEntity_h
 
-#include "../../../Const/GameConst.h"
+#include "Const/GameConst.h"
 
 /// アイテムステータスEntity
 class GameItemStatusEntity final {

@@ -9,8 +9,8 @@
 #ifndef PlayerManager_h
 #define PlayerManager_h
 
-#include "../Entity/Player/PlayerEntity.h"
-#include "../Entity/Player/PlayerEncryptEntity.h"
+#include "Entity/Player/PlayerEntity.h"
+#include "Entity/Player/PlayerEncryptEntity.h"
 
 /// プレイヤーマネージャ
 class PlayerManager final {

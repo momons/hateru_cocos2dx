@@ -9,10 +9,10 @@
 
 #include "firebase/remote_config.h"
 
-#include "../../../Const/LogConst.h"
-#include "../FirebaseService.h"
-#include "../../../Util/picojson.h"
-#include "../../../Util/JsonUtil.h"
+#include "Const/LogConst.h"
+#include "Service/Firebase/FirebaseService.h"
+#include "Util/picojson.h"
+#include "Util/JsonUtil.h"
 #include "Entity/RemoteConfigLatestVersionsEntity.h"
 
 using namespace firebase;
@@ -62,7 +62,7 @@ int RemoteConfigService::latestVersions() {
         return -1;
     }
 
-#if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
     return entity.ios();
 #else
     return entity.android();

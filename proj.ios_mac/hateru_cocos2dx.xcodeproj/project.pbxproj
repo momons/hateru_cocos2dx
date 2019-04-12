@@ -1829,6 +1829,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../cocos2d/external/openssl/include/ios",
 					"$(inherited)",
+					"$(SRCROOT)/../Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1878,6 +1879,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../cocos2d/external/openssl/include/ios",
 					"$(inherited)",
+					"$(SRCROOT)/../Classes",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

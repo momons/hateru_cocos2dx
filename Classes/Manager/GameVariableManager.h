@@ -9,7 +9,11 @@
 #ifndef GameVariableManager_h
 #define GameVariableManager_h
 
-#include "../Entity/Game/Variable/GameVariableEntity.h"
+#include <map>
+
+#include "Entity/Game/Variable/GameVariableEntity.h"
+
+using namespace std;
 
 /// ゲーム変数マネージャ
 class GameVariableManager final {

@@ -9,7 +9,7 @@
 #ifndef PlayerEntity_h
 #define PlayerEntity_h
 
-#include "picojson.h"
+#include "Util/picojson.h"
 
 #include "PlayerUnitEntity.h"
 #include "PlayerTeleportEntity.h"
@@ -18,7 +18,6 @@
 
 class GameDataService;
 
-USING_NS_CC;
 using namespace std;
 
 /// プレイヤーEntity

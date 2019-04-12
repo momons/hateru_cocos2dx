@@ -7,7 +7,7 @@
 
 #include "DBBlacklistsManager.h"
 
-#include "AuthService.h"
+#include "Service/Firebase/Auth/AuthService.h"
 
 database::DatabaseReference DBBlacklistsManager::ref() {
     return database->GetReference().Child(DBBaseManager::topFieldName.c_str()).Child("blacklists");

@@ -10,16 +10,16 @@
 
 #include <mutex>
 
-#include "../Manager/GameInfoManager.h"
-#include "../Manager/GameMapManager.h"
-#include "../Manager/GameMapChipGroupManager.h"
-#include "../Manager/GameEnemyManager.h"
-#include "../Entity/Game/Enemy/GameEnemyEntity.h"
-#include "../Manager/GameCharaManager.h"
-#include "../Manager/GameItemManager.h"
-#include "../Manager/GameJobManager.h"
-#include "../Manager/GameSkillManager.h"
-#include "../Manager/GameVariableManager.h"
+#include "Manager/GameInfoManager.h"
+#include "Manager/GameMapManager.h"
+#include "Manager/GameMapChipGroupManager.h"
+#include "Manager/GameEnemyManager.h"
+#include "Entity/Game/Enemy/GameEnemyEntity.h"
+#include "Manager/GameCharaManager.h"
+#include "Manager/GameItemManager.h"
+#include "Manager/GameJobManager.h"
+#include "Manager/GameSkillManager.h"
+#include "Manager/GameVariableManager.h"
 
 /// インスタンス
 GameDataService *GameDataService::instance;

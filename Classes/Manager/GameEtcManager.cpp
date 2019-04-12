@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <sstream>
 
 /**
  *  ファイルパス取得
