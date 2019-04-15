@@ -7,7 +7,14 @@
 
 #include "AuthService.h"
 
+#include "cocos2d.h"
 #include <mutex>
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#include <jni.h>
+#endif
+#include "Service/Jni/JniCallback.h"
+
+USING_NS_CC;
 
 #include "Service/Firebase/FirebaseService.h"
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
@@ -74,8 +81,24 @@ void AuthService::signInByFacebook(const function<void(bool)> handler) {
     auto service = FacebookSignInServiceWrap();
     service.signIn(handler);
 #else
-    handler(false);
+    // 退避
+    _handler = handler;
+    // デリゲート設定
+    JniCallback::delegate = this;
+
+    auto env = JniHelper::getEnv();
+    auto vm = JniHelper::getJavaVM();
+
+    auto clazz = env->FindClass("org/cocos2dx/cpp/AppActivity");
+    auto methodId = env->GetMethodID(clazz, "facebookLogin", "()V");
+    env->CallVoidMethod(JniHelper::getActivity(), methodId);
 #endif
+}
+
+void AuthService::onCompletionFacebookAuth(const bool success) {
+    if (_handler != nullptr) {
+        _handler(success);
+    }
 }
 
 void AuthService::signInByTwitter(const function<void(bool)> handler) {

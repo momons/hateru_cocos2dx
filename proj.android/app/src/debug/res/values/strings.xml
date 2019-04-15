@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">果てしなき道標(開発)</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">117902875492666</string>
+    <string name="fb_login_protocol_scheme">fb117902875492666</string>
+</resources>

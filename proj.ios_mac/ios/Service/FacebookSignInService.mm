@@ -39,7 +39,7 @@
 - (void)signInWithCompletion:(signInHandler)completion {
     AppController* appController = (AppController *)[UIApplication sharedApplication].delegate;
     UIViewController* viewController = (UIViewController *)appController.viewController;
-    [_loginManager logInWithReadPermissions:@[@"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+    [_loginManager logInWithReadPermissions:@[@"public_profile", @"email"] fromViewController:viewController handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error != nil) {
             LOG(@"ERROR: Facebook sign in. %@", error.description);
             completion(NO);

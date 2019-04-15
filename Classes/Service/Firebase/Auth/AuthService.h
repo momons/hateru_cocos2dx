@@ -10,11 +10,13 @@
 
 #include "firebase/auth.h"
 
+#include "AuthDelegate.h"
+
 using namespace std;
 using namespace firebase;
 
 /// 認証サービスクラス
-class AuthService final {
+class AuthService final: AuthDelegate {
 public:
     
     /**
@@ -87,6 +89,13 @@ public:
      */
     string userId();
 
+    /**
+     *  Facebook認証完了通知
+     *
+     *  @param success true:認証OK、false:認証NG
+     */
+     void onCompletionFacebookAuth(const bool success) override;
+
 private:
     
     /// インスタンス
@@ -94,6 +103,9 @@ private:
     
     /// 認証インスタンス
     auth::Auth *_auth;
+
+    /// 認証用コールバック
+    function<void(bool)> _handler;
     
     /**
      *  インストラクタ
