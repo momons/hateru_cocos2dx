@@ -7,6 +7,11 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     defaultConfig {
         applicationId "com.nikuq.hateru"
         minSdkVersion PROP_MIN_SDK_VERSION
@@ -142,6 +147,10 @@ dependencies {
 
     // Google
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    // Twitter
+    implementation 'com.twitter.sdk.android:twitter-core:3.3.0'
+
 }
 
 apply plugin: 'com.google.gms.google-services'

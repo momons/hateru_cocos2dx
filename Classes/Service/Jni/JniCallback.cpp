@@ -26,7 +26,9 @@ Java_com_nikuq_hateru_firebase_auth_FacebookAuth_onCompletion(JNIEnv *env, jobje
 
 JNIEXPORT void JNICALL
 Java_com_nikuq_hateru_firebase_auth_TwitterAuth_onCompletion(JNIEnv *env, jobject thiz, jboolean success) {
-
+    if (JniCallback::delegate != nullptr) {
+        JniCallback::delegate->onCompletionTwitterAuth(success == JNI_TRUE);
+    }
 }
 
 }

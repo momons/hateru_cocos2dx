@@ -29,7 +29,7 @@ class GoogleAuth(val activity: Activity) {
     }
 
     /** 認証クライアント */
-    private lateinit var client: GoogleSignInClient
+    private var client: GoogleSignInClient
 
     init {
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -49,7 +49,6 @@ class GoogleAuth(val activity: Activity) {
         val signInIntent = client.getSignInIntent()
         activity.startActivityForResult(signInIntent, REQUEST_CODE)
     }
-
 
     /**
      * Activityの終了イベントをハンドルする

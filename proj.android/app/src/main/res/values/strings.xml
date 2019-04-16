@@ -4,4 +4,8 @@
     <!-- Facebook -->
     <string name="facebook_app_id">558820207838914</string>
     <string name="fb_login_protocol_scheme">fb558820207838914</string>
+
+    <!-- TwitterコールバックカスタムURLスキーム -->
+    <string name="twitter_callback_url">twittersdk://</string>
+
 </resources>

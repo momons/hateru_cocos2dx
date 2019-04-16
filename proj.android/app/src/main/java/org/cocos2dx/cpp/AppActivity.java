@@ -29,6 +29,7 @@ import android.os.Bundle;
 
 import com.nikuq.hateru.firebase.auth.FacebookAuth;
 import com.nikuq.hateru.firebase.auth.GoogleAuth;
+import com.nikuq.hateru.firebase.auth.TwitterAuth;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
@@ -39,6 +40,9 @@ public class AppActivity extends Cocos2dxActivity {
 
     /** Facebook認証 */
     private FacebookAuth facebookAuth;
+
+    /** Twitter認証 */
+    private TwitterAuth twitterAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,20 +66,30 @@ public class AppActivity extends Cocos2dxActivity {
 
         Boolean success;
 
-        success = googleAuth.onActivityResult(requestCode, resultCode, data);
-        if (success) {
-            return;
+        if (googleAuth != null) {
+            success = googleAuth.onActivityResult(requestCode, resultCode, data);
+            if (success) {
+                return;
+            }
         }
 
-        success = facebookAuth.getCallbackManager().onActivityResult(requestCode, resultCode, data);
-        if (success) {
-            return;
+        if (facebookAuth != null) {
+            success = facebookAuth.getCallbackManager().onActivityResult(requestCode, resultCode, data);
+            if (success) {
+                return;
+            }
+        }
+
+        if (twitterAuth != null) {
+            // Twitterは処理したかわからない
+            twitterAuth.onActivityResult(requestCode, resultCode, data);
         }
     }
 
     /**
      * Googleサインイン
      */
+    @SuppressWarnings("UnusedDeclaration")
     public void googleSignIn() {
         googleAuth = new GoogleAuth(this);
         googleAuth.signIn();
@@ -84,6 +98,7 @@ public class AppActivity extends Cocos2dxActivity {
     /**
      * Facebookサインイン
      */
+    @SuppressWarnings("UnusedDeclaration")
     public void facebookSignIn() {
         facebookAuth = new FacebookAuth(this);
         facebookAuth.signIn();
@@ -92,6 +107,9 @@ public class AppActivity extends Cocos2dxActivity {
     /**
      * Twitterサインイン
      */
-    public void twitterLogin() {
+    @SuppressWarnings("UnusedDeclaration")
+    public void twitterSignIn() {
+        twitterAuth = new TwitterAuth(this);
+        twitterAuth.login();
     }
 }
