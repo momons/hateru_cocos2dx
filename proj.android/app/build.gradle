@@ -128,6 +128,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':libcocos2dx')
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
     // Firebase
     implementation 'com.google.firebase:firebase-auth:16.2.0'
     implementation 'com.google.firebase:firebase-core:16.0.7'
@@ -137,7 +139,9 @@ dependencies {
     // Facebook
     implementation 'com.facebook.android:facebook-android-sdk:4.42.0'
     implementation 'com.facebook.android:facebook-login:4.42.0'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Google
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

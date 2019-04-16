@@ -1,6 +1,7 @@
 package com.nikuq.hateru.firebase.auth;
 
 import android.app.Activity
+import android.util.Log
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -9,7 +10,6 @@ import com.facebook.login.LoginResult
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 
-
 /** Facebook認証 */
 class FacebookAuth(val activity: Activity) {
 
@@ -17,18 +17,21 @@ class FacebookAuth(val activity: Activity) {
         init {
             System.loadLibrary("MyGame")
         }
+
+        /** タグ */
+        private val TAG = GoogleAuth::class.java.simpleName
     }
 
-    /** ログイン完了ハンドラ true:成功、false:失敗 */
+    /** サインイン完了ハンドラ true:成功、false:失敗 */
     var handler: ((Boolean) -> Unit)? = null
 
     /** Facebookログインコールバックマネージャ */
     val callbackManager = CallbackManager.Factory.create()
 
     /**
-     * Facebookログイン
+     * Facebookサインイン
      */
-    fun login() {
+    fun signIn() {
         val manager = LoginManager.getInstance()
         manager.registerCallback(callbackManager, object: FacebookCallback<LoginResult> {
             override fun onSuccess(loginResult: LoginResult) {
@@ -36,11 +39,13 @@ class FacebookAuth(val activity: Activity) {
             }
 
             override fun onCancel() {
+                Log.w(TAG, "canceled facebook sign in.")
                 handler?.let { it(false) }
                 onCompletion(false)
             }
 
             override fun onError(error: FacebookException?) {
+                Log.w(TAG, "failed facebook sign in. " + error.toString())
                 handler?.let { it(false) }
                 onCompletion(false)
             }
@@ -57,10 +62,13 @@ class FacebookAuth(val activity: Activity) {
         val credential = FacebookAuthProvider.getCredential(token)
         FirebaseAuth.getInstance().signInWithCredential(credential)
                 .addOnCompleteListener(activity) { task ->
+                    if (!task.isSuccessful) {
+                        Log.w(TAG, "facebook sign in. " + task.result.toString())
+                    }
                     handler?.let {
                         it(task.isSuccessful)
                     }
-                    onCompletion(true)
+                    onCompletion(task.isSuccessful)
                 }
     }
 

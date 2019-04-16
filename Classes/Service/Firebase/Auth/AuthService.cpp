@@ -27,6 +27,8 @@ AuthService *AuthService::instance;
 
 AuthService::AuthService() {
     _auth = auth::Auth::GetAuth(FirebaseService::sharedInstance()->app());
+    // デリゲート設定
+    JniCallback::delegate = this;
 }
 
 AuthService *AuthService::sharedInstance() {
@@ -72,8 +74,21 @@ void AuthService::signInByGoogle(const function<void(bool)> handler) {
     auto service = GoogleSignInServiceWrap();
     service.signIn(handler);
 #else
-    handler(false);
+    _handler = handler;
+
+    auto env = JniHelper::getEnv();
+    auto vm = JniHelper::getJavaVM();
+
+    auto clazz = env->FindClass("org/cocos2dx/cpp/AppActivity");
+    auto methodId = env->GetMethodID(clazz, "googleSignIn", "()V");
+    env->CallVoidMethod(JniHelper::getActivity(), methodId);
 #endif
+}
+
+void AuthService::onCompletionGoogleAuth(const bool success) {
+    if (_handler != nullptr) {
+        _handler(success);
+    }
 }
 
 void AuthService::signInByFacebook(const function<void(bool)> handler) {
@@ -81,16 +96,13 @@ void AuthService::signInByFacebook(const function<void(bool)> handler) {
     auto service = FacebookSignInServiceWrap();
     service.signIn(handler);
 #else
-    // 退避
     _handler = handler;
-    // デリゲート設定
-    JniCallback::delegate = this;
 
     auto env = JniHelper::getEnv();
     auto vm = JniHelper::getJavaVM();
 
     auto clazz = env->FindClass("org/cocos2dx/cpp/AppActivity");
-    auto methodId = env->GetMethodID(clazz, "facebookLogin", "()V");
+    auto methodId = env->GetMethodID(clazz, "facebookSignIn", "()V");
     env->CallVoidMethod(JniHelper::getActivity(), methodId);
 #endif
 }
@@ -106,8 +118,21 @@ void AuthService::signInByTwitter(const function<void(bool)> handler) {
     auto service = TwitterSignInServiceWrap();
     service.signIn(handler);
 #else
-    handler(false);
+    _handler = handler;
+
+    auto env = JniHelper::getEnv();
+    auto vm = JniHelper::getJavaVM();
+
+    auto clazz = env->FindClass("org/cocos2dx/cpp/AppActivity");
+    auto methodId = env->GetMethodID(clazz, "twitterSignIn", "()V");
+    env->CallVoidMethod(JniHelper::getActivity(), methodId);
 #endif
+}
+
+void AuthService::onCompletionTwitterAuth(const bool success) {
+    if (_handler != nullptr) {
+        _handler(success);
+    }
 }
 
 // MARK:- サインアウト

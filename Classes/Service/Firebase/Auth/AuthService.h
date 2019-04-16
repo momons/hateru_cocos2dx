@@ -90,11 +90,25 @@ public:
     string userId();
 
     /**
+     *  Google認証完了通知
+     *
+     *  @param success true:認証OK、false:認証NG
+     */
+    void onCompletionGoogleAuth(const bool success) override;
+
+    /**
      *  Facebook認証完了通知
      *
      *  @param success true:認証OK、false:認証NG
      */
      void onCompletionFacebookAuth(const bool success) override;
+
+    /**
+     *  Twitter認証完了通知
+     *
+     *  @param success true:認証OK、false:認証NG
+     */
+    void onCompletionTwitterAuth(const bool success) override;
 
 private:
     

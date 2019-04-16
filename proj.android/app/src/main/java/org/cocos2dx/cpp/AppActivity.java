@@ -28,18 +28,17 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.nikuq.hateru.firebase.auth.FacebookAuth;
+import com.nikuq.hateru.firebase.auth.GoogleAuth;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
-import kotlin.Unit;
-import kotlin.jvm.functions.Function1;
-
 public class AppActivity extends Cocos2dxActivity {
 
-    /**
-     * Facebook認証
-     */
-    FacebookAuth facebookAuth;
+    /** Google認証 */
+    private GoogleAuth googleAuth;
+
+    /** Facebook認証 */
+    private FacebookAuth facebookAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,23 +60,38 @@ public class AppActivity extends Cocos2dxActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Boolean success = facebookAuth.getCallbackManager().onActivityResult(requestCode, resultCode, data);
+        Boolean success;
+
+        success = googleAuth.onActivityResult(requestCode, resultCode, data);
+        if (success) {
+            return;
+        }
+
+        success = facebookAuth.getCallbackManager().onActivityResult(requestCode, resultCode, data);
         if (success) {
             return;
         }
     }
 
     /**
-     * Facebookログイン
+     * Googleサインイン
      */
-    public void facebookLogin() {
+    public void googleSignIn() {
+        googleAuth = new GoogleAuth(this);
+        googleAuth.signIn();
+    }
+
+    /**
+     * Facebookサインイン
+     */
+    public void facebookSignIn() {
         facebookAuth = new FacebookAuth(this);
-        facebookAuth.setHandler(new Function1<Boolean, Unit>() {
-            @Override
-            public Unit invoke(Boolean aBoolean) {
-                return null;
-            }
-        });
-        facebookAuth.login();
+        facebookAuth.signIn();
+    }
+
+    /**
+     * Twitterサインイン
+     */
+    public void twitterLogin() {
     }
 }
