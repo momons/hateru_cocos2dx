@@ -4,10 +4,13 @@
 
 #include "JniCallback.h"
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include <jni.h>
+#endif
 
 AuthDelegate *JniCallback::delegate = nullptr;
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 extern "C" {
 
 JNIEXPORT void JNICALL
@@ -32,3 +35,4 @@ Java_com_nikuq_hateru_firebase_auth_TwitterAuth_onCompletion(JNIEnv *env, jobjec
 }
 
 }
+#endif

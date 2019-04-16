@@ -132,6 +132,7 @@
 		F32BE5642237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AB2237D65C00ECA798 /* GameEventFluctuateItemEntity.cpp */; };
 		F32BE5652237D65C00ECA798 /* GameEventJingleEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AC2237D65C00ECA798 /* GameEventJingleEntity.cpp */; };
 		F32BE5662237D65C00ECA798 /* GameEventChangeUnitEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */; };
+		F32E94EF2265CABB000A21BB /* JniCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32E94ED2265CABB000A21BB /* JniCallback.cpp */; };
 		F333685B22572F30005DD29F /* DBLocationsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685A22572F30005DD29F /* DBLocationsManager.cpp */; };
 		F333685E225B07D7005DD29F /* DBSaveEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F333685D225B07D7005DD29F /* DBSaveEntity.cpp */; };
 		F3336861225B0A0E005DD29F /* DBSavesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3336860225B0A0E005DD29F /* DBSavesManager.cpp */; };
@@ -453,6 +454,8 @@
 		F32BE4AC2237D65C00ECA798 /* GameEventJingleEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventJingleEntity.cpp; sourceTree = "<group>"; };
 		F32BE4AD2237D65C00ECA798 /* GameEventChangeUnitEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEventChangeUnitEntity.cpp; sourceTree = "<group>"; };
 		F32BE4AE2237D65C00ECA798 /* GameEventMoveUnitEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventMoveUnitEntity.h; sourceTree = "<group>"; };
+		F32E94EC2265CABB000A21BB /* JniCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JniCallback.h; sourceTree = "<group>"; };
+		F32E94ED2265CABB000A21BB /* JniCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JniCallback.cpp; sourceTree = "<group>"; };
 		F333685822572F26005DD29F /* DBLocationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLocationsManager.h; sourceTree = "<group>"; };
 		F333685A22572F30005DD29F /* DBLocationsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBLocationsManager.cpp; sourceTree = "<group>"; };
 		F333685C225B07CE005DD29F /* DBSaveEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSaveEntity.h; sourceTree = "<group>"; };
@@ -1060,6 +1063,15 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		F32E94EB2265CABB000A21BB /* Jni */ = {
+			isa = PBXGroup;
+			children = (
+				F32E94EC2265CABB000A21BB /* JniCallback.h */,
+				F32E94ED2265CABB000A21BB /* JniCallback.cpp */,
+			);
+			path = Jni;
+			sourceTree = "<group>";
+		};
 		F3336875225C3921005DD29F /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -1319,6 +1331,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D93D0E225DC3AC001A36D6 /* Firebase */,
+				F32E94EB2265CABB000A21BB /* Jni */,
 				F3D8884D220E94DC00B426CC /* GameMapService.h */,
 				F3D88849220E94DC00B426CC /* GameMapService.cpp */,
 				F3D8884B220E94DC00B426CC /* GameBattleService.h */,
@@ -1733,6 +1746,7 @@
 				F32BE5512237D65C00ECA798 /* GameEventIfVariableEntity.cpp in Sources */,
 				F333687F225C76A9005DD29F /* GoogleSignInServiceWrap.mm in Sources */,
 				F3336870225B41D6005DD29F /* DBCharacterEntity.cpp in Sources */,
+				F32E94EF2265CABB000A21BB /* JniCallback.cpp in Sources */,
 				F32BE5202237D65C00ECA798 /* PlayerItemEntity.cpp in Sources */,
 				F32BE55A2237D65C00ECA798 /* GameEventFluctuateMPEntity.cpp in Sources */,
 				F32BE54B2237D65C00ECA798 /* GameEventBBSEntity.cpp in Sources */,
