@@ -32,8 +32,14 @@
 #import "GoogleSignInService.h"
 #import "FacebookSignInService.h"
 #import "TwitterSignInService.h"
+#import "FCMService.h"
 
-#import <Firebase.h>
+@interface AppController() {
+
+    /// FCMサービス
+    FCMService* _fcmService;
+}
+@end
 
 @implementation AppController
 
@@ -49,6 +55,9 @@ static AppDelegate s_sharedApplication;
     
     // Firebase初期化
     [FIRApp configure];
+    
+    // Notification初期化
+    [self configureNotification];
 
     cocos2d::Application *app = cocos2d::Application::getInstance();
     
@@ -148,6 +157,7 @@ static AppDelegate s_sharedApplication;
 - (void)dealloc {
     [window release];
     [_viewController release];
+    [_fcmService release];
     [super dealloc];
 }
 #endif
@@ -177,4 +187,56 @@ static AppDelegate s_sharedApplication;
     return NO;
 }
 
+- (void)configureNotification {
+    
+    _fcmService = [FCMService new];
+
+    [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+    UNAuthorizationOptions authOptions = UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge;
+    [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:authOptions completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (error != nil) {
+            LOG(@"%@", error.localizedDescription);
+            return;
+        }
+        LOG(@"granted = %d", granted);
+    }];
+}
+
+// Receive displayed notifications for iOS 10 devices.
+// Handle incoming notification messages while app is in the foreground.
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+    NSDictionary *userInfo = notification.request.content.userInfo;
+    
+    // With swizzling disabled you must let Messaging know about the message, for Analytics
+    // [[FIRMessaging messaging] appDidReceiveMessage:userInfo];
+    
+    // Print full message.
+    NSLog(@"%@", userInfo);
+    
+    // Change this to your preferred presentation option
+    completionHandler(UNNotificationPresentationOptionNone);
+}
+
+// Handle notification messages after display notification is tapped by the user.
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response
+         withCompletionHandler:(void(^)(void))completionHandler {
+
+    NSDictionary *userInfo = response.notification.request.content.userInfo;
+    
+    // Print full message.
+    NSLog(@"%@", userInfo);
+    
+    completionHandler();
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [FCMService registerAPNSToken:deviceToken];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    LOG(@"%@", error.localizedDescription);
+}
 @end

@@ -208,6 +208,8 @@
 		F3D93D0D225DC213001A36D6 /* RemoteConfigService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D0C225DC213001A36D6 /* RemoteConfigService.cpp */; };
 		F3D93D11225DC3DF001A36D6 /* FirebaseService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */; };
 		F3D93D15225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */; };
+		F3EC542D226711F8008A7581 /* FCMService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3EC542C226711F8008A7581 /* FCMService.mm */; };
+		F3EC5430226714A0008A7581 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EC542F226714A0008A7581 /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -456,6 +458,7 @@
 		F32BE4AE2237D65C00ECA798 /* GameEventMoveUnitEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameEventMoveUnitEntity.h; sourceTree = "<group>"; };
 		F32E94EC2265CABB000A21BB /* JniCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JniCallback.h; sourceTree = "<group>"; };
 		F32E94ED2265CABB000A21BB /* JniCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JniCallback.cpp; sourceTree = "<group>"; };
+		F32E94F222671014000A21BB /* hateru_cocos2dx-mobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "hateru_cocos2dx-mobile.entitlements"; path = "../hateru_cocos2dx-mobile.entitlements"; sourceTree = "<group>"; };
 		F333685822572F26005DD29F /* DBLocationsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLocationsManager.h; sourceTree = "<group>"; };
 		F333685A22572F30005DD29F /* DBLocationsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBLocationsManager.cpp; sourceTree = "<group>"; };
 		F333685C225B07CE005DD29F /* DBSaveEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSaveEntity.h; sourceTree = "<group>"; };
@@ -597,6 +600,9 @@
 		F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FirebaseService.cpp; sourceTree = "<group>"; };
 		F3D93D13225DE310001A36D6 /* RemoteConfigLatestVersionsEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteConfigLatestVersionsEntity.h; sourceTree = "<group>"; };
 		F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoteConfigLatestVersionsEntity.cpp; sourceTree = "<group>"; };
+		F3EC542B226711F8008A7581 /* FCMService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCMService.h; sourceTree = "<group>"; };
+		F3EC542C226711F8008A7581 /* FCMService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FCMService.mm; sourceTree = "<group>"; };
+		F3EC542F226714A0008A7581 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +610,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EC5430226714A0008A7581 /* UserNotifications.framework in Frameworks */,
 				F34A3C372254994A0041D565 /* MediaPlayer.framework in Frameworks */,
 				F3D88640220E913E00B426CC /* libcocos2d iOS.a in Frameworks */,
 				294D0D641D0D56D500F7F5D4 /* CoreText.framework in Frameworks */,
@@ -682,6 +689,7 @@
 				1AF87B5A1F6F77D6007BE51C /* LaunchScreenBackground.png */,
 				1AF87B5B1F6F77D6007BE51C /* main.m */,
 				1AF87B5C1F6F77D6007BE51C /* Prefix.pch */,
+				F32E94F222671014000A21BB /* hateru_cocos2dx-mobile.entitlements */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -705,6 +713,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3EC542F226714A0008A7581 /* UserNotifications.framework */,
 				F34A3C362254994A0041D565 /* MediaPlayer.framework */,
 				F3D8863E220E913E00B426CC /* libcocos2d iOS.a */,
 				294D0D631D0D56D500F7F5D4 /* CoreText.framework */,
@@ -1087,6 +1096,8 @@
 				F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */,
 				F31FE8C3225D920B0074AE3D /* TwitterSignInServiceWrap.h */,
 				F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */,
+				F3EC542B226711F8008A7581 /* FCMService.h */,
+				F3EC542C226711F8008A7581 /* FCMService.mm */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1429,6 +1440,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = BJHQQ4D4GE;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "hateru_cocos2dx" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1769,6 +1790,7 @@
 				F32BE5562237D65C00ECA798 /* GameEventChangeChipEntity.cpp in Sources */,
 				F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */,
 				F32BE5532237D65C00ECA798 /* GameEventEntity.cpp in Sources */,
+				F3EC542D226711F8008A7581 /* FCMService.mm in Sources */,
 				F3D88857220E94DC00B426CC /* GameSkillManager.cpp in Sources */,
 				F3D887E0220E94C500B426CC /* LogConst.cpp in Sources */,
 				F3D88878220E94DC00B426CC /* BaseLayer.cpp in Sources */,
@@ -1820,8 +1842,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = "hateru_cocos2dx-mobile.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = BJHQQ4D4GE;
 				ENABLE_BITCODE = NO;
 				FACEBOOK_APP_ID = 117902875492666;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1871,8 +1895,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CODE_SIGN_ENTITLEMENTS = "hateru_cocos2dx-mobile.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = BJHQQ4D4GE;
 				ENABLE_BITCODE = NO;
 				FACEBOOK_APP_ID = 558820207838914;
 				FRAMEWORK_SEARCH_PATHS = (
