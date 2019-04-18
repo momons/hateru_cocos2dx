@@ -1,5 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">果てしなき道標</string>
+
+    <!-- Firebase -->
+    <string name="default_notification_channel_id">1</string>
 
     <!-- Facebook -->
     <string name="facebook_app_id">558820207838914</string>
