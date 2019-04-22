@@ -17,3 +17,4 @@ const string FileConst::saveFileName = "save.txt";
 /// 画像ファイル名
 const string FileConst::gameImagesFileName = "GameImages.plist";
 
+

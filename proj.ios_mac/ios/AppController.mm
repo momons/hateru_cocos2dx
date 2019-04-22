@@ -37,7 +37,7 @@
 @interface AppController() {
 
     /// FCMサービス
-    FCMService* _fcmService;
+    FCMService *_fcmService;
 }
 @end
 
@@ -57,7 +57,7 @@ static AppDelegate s_sharedApplication;
     [FIRApp configure];
     
     // Notification初期化
-    [self configureNotification];
+    [self configureNotificationWithApplication:application];
 
     cocos2d::Application *app = cocos2d::Application::getInstance();
     
@@ -187,7 +187,7 @@ static AppDelegate s_sharedApplication;
     return NO;
 }
 
-- (void)configureNotification {
+- (void)configureNotificationWithApplication:(UIApplication *)application {
     
     _fcmService = [FCMService new];
 
@@ -199,44 +199,10 @@ static AppDelegate s_sharedApplication;
             return;
         }
         LOG(@"granted = %d", granted);
+        dispatch_async(dispatch_get_main_queue(),^{
+            [application registerForRemoteNotifications];
+        });
     }];
 }
 
-// Receive displayed notifications for iOS 10 devices.
-// Handle incoming notification messages while app is in the foreground.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-       willPresentNotification:(UNNotification *)notification
-         withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
-    NSDictionary *userInfo = notification.request.content.userInfo;
-    
-    // With swizzling disabled you must let Messaging know about the message, for Analytics
-    // [[FIRMessaging messaging] appDidReceiveMessage:userInfo];
-    
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    
-    // Change this to your preferred presentation option
-    completionHandler(UNNotificationPresentationOptionNone);
-}
-
-// Handle notification messages after display notification is tapped by the user.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-didReceiveNotificationResponse:(UNNotificationResponse *)response
-         withCompletionHandler:(void(^)(void))completionHandler {
-
-    NSDictionary *userInfo = response.notification.request.content.userInfo;
-    
-    // Print full message.
-    NSLog(@"%@", userInfo);
-    
-    completionHandler();
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [FCMService registerAPNSToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    LOG(@"%@", error.localizedDescription);
-}
 @end

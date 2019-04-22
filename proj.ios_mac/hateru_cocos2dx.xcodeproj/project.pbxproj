@@ -57,6 +57,7 @@
 		F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */; };
 		F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		F3293C63226D5BF1009EE69A /* ConfigManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3293C62226D5BF1009EE69A /* ConfigManager.cpp */; };
 		F32BE51C2237D65C00ECA798 /* PlayerEncryptEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40A2237D65B00ECA798 /* PlayerEncryptEntity.cpp */; };
 		F32BE51D2237D65C00ECA798 /* ProjectIniEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40C2237D65B00ECA798 /* ProjectIniEntity.cpp */; };
 		F32BE51E2237D65C00ECA798 /* PlayerEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32BE40D2237D65B00ECA798 /* PlayerEntity.cpp */; };
@@ -210,6 +211,8 @@
 		F3D93D15225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3D93D14225DE31B001A36D6 /* RemoteConfigLatestVersionsEntity.cpp */; };
 		F3EC542D226711F8008A7581 /* FCMService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F3EC542C226711F8008A7581 /* FCMService.mm */; };
 		F3EC5430226714A0008A7581 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EC542F226714A0008A7581 /* UserNotifications.framework */; };
+		F3EC5433226819DB008A7581 /* DBDevicesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EC5432226819DB008A7581 /* DBDevicesManager.cpp */; };
+		F3EC543622681A0D008A7581 /* DBDeviceEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EC543522681A0D008A7581 /* DBDeviceEntity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +309,8 @@
 		F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwitterConst.cpp; sourceTree = "<group>"; };
 		F31FE8C3225D920B0074AE3D /* TwitterSignInServiceWrap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterSignInServiceWrap.h; sourceTree = "<group>"; };
 		F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TwitterSignInServiceWrap.mm; sourceTree = "<group>"; };
+		F3293C61226D5BE5009EE69A /* ConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigManager.h; sourceTree = "<group>"; };
+		F3293C62226D5BF1009EE69A /* ConfigManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigManager.cpp; sourceTree = "<group>"; };
 		F32BE4092237D65B00ECA798 /* ProjectIniEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectIniEntity.h; sourceTree = "<group>"; };
 		F32BE40A2237D65B00ECA798 /* PlayerEncryptEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayerEncryptEntity.cpp; sourceTree = "<group>"; };
 		F32BE40B2237D65B00ECA798 /* PlayerItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerItemEntity.h; sourceTree = "<group>"; };
@@ -603,6 +608,10 @@
 		F3EC542B226711F8008A7581 /* FCMService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCMService.h; sourceTree = "<group>"; };
 		F3EC542C226711F8008A7581 /* FCMService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FCMService.mm; sourceTree = "<group>"; };
 		F3EC542F226714A0008A7581 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		F3EC5431226819D1008A7581 /* DBDevicesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDevicesManager.h; sourceTree = "<group>"; };
+		F3EC5432226819DB008A7581 /* DBDevicesManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBDevicesManager.cpp; sourceTree = "<group>"; };
+		F3EC543422681A03008A7581 /* DBDeviceEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDeviceEntity.h; sourceTree = "<group>"; };
+		F3EC543522681A0D008A7581 /* DBDeviceEntity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DBDeviceEntity.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -802,6 +811,15 @@
 				B6165D77C2B3FBFCF502BC57 /* Pods-hateru_cocos2dx-mobile.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3293C60226D5BD2009EE69A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F3293C61226D5BE5009EE69A /* ConfigManager.h */,
+				F3293C62226D5BF1009EE69A /* ConfigManager.cpp */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		F32BE4082237D65B00ECA798 /* Player */ = {
@@ -1135,6 +1153,8 @@
 				F3336863225B0C42005DD29F /* DBBBSEntity.cpp */,
 				F3336868225B1A1C005DD29F /* DBBlacklistEntity.h */,
 				F3336869225B1A25005DD29F /* DBBlacklistEntity.cpp */,
+				F3EC543422681A03008A7581 /* DBDeviceEntity.h */,
+				F3EC543522681A0D008A7581 /* DBDeviceEntity.cpp */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1156,6 +1176,8 @@
 				F3336866225B13B9005DD29F /* DBBBSManager.cpp */,
 				F333686B225B1F2C005DD29F /* DBBlacklistsManager.h */,
 				F333686C225B1F37005DD29F /* DBBlacklistsManager.cpp */,
+				F3EC5431226819D1008A7581 /* DBDevicesManager.h */,
+				F3EC5432226819DB008A7581 /* DBDevicesManager.cpp */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -1206,6 +1228,7 @@
 		F3D887FA220E94DB00B426CC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F3293C60226D5BD2009EE69A /* Config */,
 				F358626E2256F078007F2966 /* Database */,
 				F3D88804220E94DB00B426CC /* ProjectIniManager.h */,
 				F3D88805220E94DB00B426CC /* ProjectIniManager.cpp */,
@@ -1443,7 +1466,11 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = BJHQQ4D4GE;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1673,6 +1700,7 @@
 				F3D88860220E94DC00B426CC /* GameMapChipGroupManager.cpp in Sources */,
 				F32BE5542237D65C00ECA798 /* GameEventCloakroomEntity.cpp in Sources */,
 				F3D88858220E94DC00B426CC /* GameVariableManager.cpp in Sources */,
+				F3EC543622681A0D008A7581 /* DBDeviceEntity.cpp in Sources */,
 				F3504FF3225D7B0B00F6C11E /* FacebookSignInServiceWrap.mm in Sources */,
 				F32BE55D2237D65C00ECA798 /* GameEventOperateVariableEntity.cpp in Sources */,
 				F3D88877220E94DC00B426CC /* BaseScene.cpp in Sources */,
@@ -1700,6 +1728,7 @@
 				F3D8885A220E94DC00B426CC /* GameEnemyManager.cpp in Sources */,
 				F32BE54D2237D65C00ECA798 /* GameEventEncountRateEntity.cpp in Sources */,
 				F32BE5432237D65C00ECA798 /* GameEventMoveUnitEntity.cpp in Sources */,
+				F3293C63226D5BF1009EE69A /* ConfigManager.cpp in Sources */,
 				F333686D225B1F37005DD29F /* DBBlacklistsManager.cpp in Sources */,
 				F32BE51F2237D65C00ECA798 /* PlayerProfileEntity.cpp in Sources */,
 				F3D8885D220E94DC00B426CC /* GameItemManager.cpp in Sources */,
@@ -1718,6 +1747,7 @@
 				F32BE5232237D65C00ECA798 /* GameVariableEntity.cpp in Sources */,
 				F32BE5652237D65C00ECA798 /* GameEventJingleEntity.cpp in Sources */,
 				F3369DAF22240FF100CAA8F7 /* GameEtcManager.cpp in Sources */,
+				F3EC5433226819DB008A7581 /* DBDevicesManager.cpp in Sources */,
 				F3D8887F220E94DC00B426CC /* GameEventService.cpp in Sources */,
 				F32BE52F2237D65C00ECA798 /* GameMapChipEntity.cpp in Sources */,
 				F32BE55C2237D65C00ECA798 /* GameEventINNEntity.cpp in Sources */,
@@ -1844,6 +1874,7 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CODE_SIGN_ENTITLEMENTS = "hateru_cocos2dx-mobile.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = BJHQQ4D4GE;
 				ENABLE_BITCODE = NO;
@@ -1878,6 +1909,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikuq.hateru;
+				PROVISIONING_PROFILE_SPECIFIER = HateruDev;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1896,7 +1928,8 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CODE_SIGN_ENTITLEMENTS = "hateru_cocos2dx-mobile.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = BJHQQ4D4GE;
 				ENABLE_BITCODE = NO;
@@ -1930,6 +1963,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikuq.hateru;
+				PROVISIONING_PROFILE_SPECIFIER = HateruDis;
 				SDKROOT = iphoneos;
 				STRIP_PNG_TEXT = NO;
 				TARGETED_DEVICE_FAMILY = 1;

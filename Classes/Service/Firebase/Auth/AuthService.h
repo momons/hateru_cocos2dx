@@ -16,7 +16,7 @@ using namespace std;
 using namespace firebase;
 
 /// 認証サービスクラス
-class AuthService final: AuthDelegate {
+class AuthService final: AuthDelegate, auth::AuthStateListener {
 public:
     
     /**
@@ -110,6 +110,13 @@ public:
      */
     void onCompletionTwitterAuth(const bool success) override;
 
+    /**
+     *  認証状態が変わったときのコールバック
+     *
+     *  @param auth 認証情報
+     */
+    void OnAuthStateChanged(auth::Auth *auth) override;
+
 private:
     
     /// インスタンス
@@ -130,6 +137,13 @@ private:
      *  インスタンス設定
      */
     static void setupInstance();
+
+    /**
+     *  トークン取得
+     *
+     *  @param handler トークン、""は失敗
+     */
+    void fetchToken(const function<void(string)> handler);
 };
 
 #endif /* AuthService_h */

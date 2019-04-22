@@ -25,7 +25,7 @@ public:
 	
 	/// 画像ファイル名
 	static const string gameImagesFileName;
-	
+    
 private:
 	
 	/**

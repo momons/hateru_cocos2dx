@@ -17,6 +17,8 @@
 USING_NS_CC;
 
 #include "Service/Firebase/FirebaseService.h"
+#include "Manager/Database/DBDevicesManager.h"
+#include "Manager/Config/ConfigManager.h"
 #if (CC_TARGET_PLATFORM != CC_PLATFORM_ANDROID)
 #include "GoogleSignInServiceWrap.h"
 #include "FacebookSignInServiceWrap.h"
@@ -27,6 +29,7 @@ AuthService *AuthService::instance;
 
 AuthService::AuthService() {
     _auth = auth::Auth::GetAuth(FirebaseService::sharedInstance()->app());
+    _auth->AddAuthStateListener(this);
     // デリゲート設定
     JniCallback::delegate = this;
 }
@@ -132,6 +135,23 @@ void AuthService::signInByTwitter(const function<void(bool)> handler) {
 void AuthService::onCompletionTwitterAuth(const bool success) {
     if (_handler != nullptr) {
         _handler(success);
+    }
+}
+
+void AuthService::OnAuthStateChanged(auth::Auth *auth) {
+    auto user = auth->current_user();
+    if (user != nullptr) {
+        log("OnAuthStateChanged: signed_in %s", user->uid().c_str());
+        
+        // FCMトークンが取れていれば登録する
+        auto token = ConfigManager::sharedInstance()->firebaseRegisterToken();
+        if (!token.empty()) {
+            DBDevicesManager manager;
+            manager.writeMy(token);
+        }
+        
+    } else {
+        log("OnAuthStateChanged: signed_out");
     }
 }
 

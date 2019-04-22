@@ -12,13 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FCMService : NSObject<FIRMessagingDelegate>
 
-/**
- APNsデバイストークンをFirebaseに登録する
-
- @param token APNsデバイストークン
- */
-+ (void)registerAPNSToken:(NSData *)token;
-
 @end
 
 NS_ASSUME_NONNULL_END

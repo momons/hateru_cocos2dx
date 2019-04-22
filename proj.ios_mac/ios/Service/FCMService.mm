@@ -7,6 +7,12 @@
 
 #import "FCMService.h"
 
+#import "ConfigManager.h"
+
+@interface FCMService() {
+}
+@end
+
 @implementation FCMService
 
 - (instancetype)init {
@@ -16,12 +22,12 @@
     return self;
 }
 
-- (void)configure {
-    [FIRMessaging messaging].delegate = self;
+- (void)dealloc {
+    [super dealloc];
 }
 
-+ (void)registerAPNSToken:(NSData *)token {
-    [FIRMessaging messaging].APNSToken = token;
+- (void)configure {
+    [FIRMessaging messaging].delegate = self;
 }
 
 // MARK:- FIRMessagingDelegate
@@ -31,7 +37,8 @@
 }
 
 - (void)messaging:(FIRMessaging *)messaging didReceiveRegistrationToken:(NSString *)fcmToken {
-    NSLog(@"FCM registration token: %@", fcmToken);
+    LOG(@"FCM registration token: %@", fcmToken);
+    ConfigManager::sharedInstance()->setFirebaseRegisterToken([fcmToken UTF8String]);
 }
 
 @end
