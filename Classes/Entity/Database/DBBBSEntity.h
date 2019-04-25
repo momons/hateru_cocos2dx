@@ -79,6 +79,12 @@ public:
     void setCreatedAt(const time_t createdAt);
     time_t createdAt();
 
+    /**
+     *  更新日時 setter/getter
+     */
+    void setUpdatedAt(const time_t updatedAt);
+    time_t updatedAt();
+    
 private:
     
     /// メッセージID
@@ -91,6 +97,8 @@ private:
     string _message;
     /// 作成日時
     time_t _createdAt;
+    /// 更新日時
+    time_t _updatedAt;
 
 };
 

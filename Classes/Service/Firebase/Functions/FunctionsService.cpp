@@ -32,14 +32,14 @@ void FunctionsService::setupInstance() {
     instance = new FunctionsService();
 }
 
-void FunctionsService::bbsAddMessage(const string &userId, const string &username, const string &message, const function<void(const bool)> handler) {
+void FunctionsService::bbsAddMessage(const string &bbsId, const string &username, const string &message, const function<void(const bool)> handler) {
     // データ作成
     auto data = Variant::EmptyMap();
-    data.map()["userId"] = Variant(userId);
+    data.map()["bbsId"] = Variant(bbsId);
     data.map()["username"] = Variant(username);
     data.map()["message"] = Variant(message);
     
-    auto method = _functions->GetHttpsCallable("bbsPutMessage");
+    auto method = _functions->GetHttpsCallable("bbsAddMessage");
     auto retValue = method.Call(data);
     retValue.OnCompletion([handler](const Future<functions::HttpsCallableResult> &future){
         if (future.error() != functions::kErrorNone) {
@@ -47,7 +47,44 @@ void FunctionsService::bbsAddMessage(const string &userId, const string &usernam
             handler(false);
             return;
         }
-        log("%s", future.result()->data().string_value());
+        handler(true);
+    });
+}
+
+void FunctionsService::bbsUpdateMessage(const string &bbsId, const string &messageId, const string &username, const string &message, const function<void(const bool)> handler) {
+    // データ作成
+    auto data = Variant::EmptyMap();
+    data.map()["bbsId"] = Variant(bbsId);
+    data.map()["messageId"] = Variant(messageId);
+    data.map()["username"] = Variant(username);
+    data.map()["message"] = Variant(message);
+    
+    auto method = _functions->GetHttpsCallable("bbsUpdateMessage");
+    auto retValue = method.Call(data);
+    retValue.OnCompletion([handler](const Future<functions::HttpsCallableResult> &future){
+        if (future.error() != functions::kErrorNone) {
+            log("%s", future.error_message());
+            handler(false);
+            return;
+        }
+        handler(true);
+    });
+}
+
+void FunctionsService::bbsRemoveMessage(const string &bbsId, const string &messageId, const function<void(const bool)> handler) {
+    // データ作成
+    auto data = Variant::EmptyMap();
+    data.map()["bbsId"] = Variant(bbsId);
+    data.map()["messageId"] = Variant(messageId);
+    
+    auto method = _functions->GetHttpsCallable("bbsRemoveMessage");
+    auto retValue = method.Call(data);
+    retValue.OnCompletion([handler](const Future<functions::HttpsCallableResult> &future){
+        if (future.error() != functions::kErrorNone) {
+            log("%s", future.error_message());
+            handler(false);
+            return;
+        }
         handler(true);
     });
 }

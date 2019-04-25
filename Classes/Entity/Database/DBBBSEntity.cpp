@@ -13,6 +13,7 @@ DBBBSEntity::DBBBSEntity() {
     _username = "";
     _message = "";
     _createdAt = 0;
+    _updatedAt = 0;
 }
 
 DBBBSEntity::DBBBSEntity(const database::DataSnapshot *snapshot) {
@@ -44,6 +45,10 @@ DBBBSEntity::DBBBSEntity(const database::DataSnapshot *snapshot) {
     if (createdAt.is_int64()) {
         setCreatedAt(static_cast<int>(createdAt.int64_value()));
     }
+    auto updatedAt = snapshot->Child("updatedAt").value();
+    if (updatedAt.is_int64()) {
+        setUpdatedAt(static_cast<int>(updatedAt.int64_value()));
+    }
 }
 
 DBBBSEntity::DBBBSEntity(const string &messageId, const string &userId) {
@@ -59,6 +64,7 @@ map<string, Variant> DBBBSEntity::toVariants() {
     variants["username"] = _username;
     variants["message"] = _message;
     variants["createdAt"] = static_cast<int64_t>(_createdAt);
+    variants["updatedAt"] = static_cast<int64_t>(_updatedAt);
     return variants;
 }
 
@@ -95,4 +101,11 @@ void DBBBSEntity::setCreatedAt(const time_t createdAt) {
 }
 time_t DBBBSEntity::createdAt() {
     return _createdAt;
+}
+
+void DBBBSEntity::setUpdatedAt(const time_t updatedAt) {
+    _updatedAt = updatedAt;
+}
+time_t DBBBSEntity::updatedAt() {
+    return _updatedAt;
 }
