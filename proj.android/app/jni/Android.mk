@@ -34,6 +34,13 @@ LOCAL_SRC_FILES := $(FIREBASE_LIBRARY_PATH)/libfirebase_remote_config.a
 LOCAL_EXPORT_C_INCLUDES := $(FIREBASE_CPP_SDK_DIR)/include
 include $(PREBUILT_STATIC_LIBRARY)
 
+# Firebase Functions
+include $(CLEAR_VARS)
+LOCAL_MODULE := firebase_functions
+LOCAL_SRC_FILES := $(FIREBASE_LIBRARY_PATH)/libfirebase_functions.a
+LOCAL_EXPORT_C_INCLUDES := $(FIREBASE_CPP_SDK_DIR)/include
+include $(PREBUILT_STATIC_LIBRARY)
+
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := MyGame_shared
@@ -55,7 +62,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
-LOCAL_STATIC_LIBRARIES := cc_static firebase_auth firebase_database firebase_remote_config firebase_app
+LOCAL_STATIC_LIBRARIES := cc_static firebase_auth firebase_database firebase_remote_config firebase_functions firebase_app
 
 # _COCOS_LIB_ANDROID_BEGIN
 # _COCOS_LIB_ANDROID_END

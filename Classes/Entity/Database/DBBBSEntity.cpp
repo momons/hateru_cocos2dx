@@ -46,10 +46,10 @@ DBBBSEntity::DBBBSEntity(const database::DataSnapshot *snapshot) {
     }
 }
 
-DBBBSEntity::DBBBSEntity(const string &saveData, const string &checkDigit) {
+DBBBSEntity::DBBBSEntity(const string &messageId, const string &userId) {
     DBBBSEntity();
-    setMessageId(saveData);
-    setUserId(checkDigit);
+    setMessageId(messageId);
+    setUserId(userId);
 }
 
 map<string, Variant> DBBBSEntity::toVariants() {

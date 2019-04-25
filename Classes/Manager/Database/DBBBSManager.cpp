@@ -45,9 +45,9 @@ void DBBBSManager::readMy(const function<void(const bool, const DBBBSEntity)> ha
     });
 }
 
-void DBBBSManager::writeMy(const string &saveData, const string &checkDigit) {
+void DBBBSManager::writeMy(const string &messageId, const string &userId) {
     auto dbref = myRef();
-    auto entity = DBBBSEntity(saveData, checkDigit);
+    auto entity = DBBBSEntity(messageId, userId);
     dbref.UpdateChildren(entity.toVariants());
 }
 

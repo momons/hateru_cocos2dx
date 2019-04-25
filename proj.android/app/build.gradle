@@ -141,6 +141,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.1.0'
     implementation 'com.google.firebase:firebase-config:16.4.0'
     implementation 'com.google.firebase:firebase-messaging:17.4.0'
+    implementation 'com.google.firebase:firebase-functions:16.2.0'
 
     // Facebook
     implementation 'com.facebook.android:facebook-android-sdk:4.42.0'

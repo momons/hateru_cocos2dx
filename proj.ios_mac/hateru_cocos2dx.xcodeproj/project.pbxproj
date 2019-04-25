@@ -54,6 +54,8 @@
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
+		F31E2C9B227083EA009F2669 /* FunctionsService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31E2C9A227083EA009F2669 /* FunctionsService.cpp */; };
+		F31E69A92270773900535CAB /* firebase_functions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31E69A82270773900535CAB /* firebase_functions.framework */; };
 		F31FE8BD225D87BA0074AE3D /* TwitterSignInService.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		F31FE8C2225D8C6F0074AE3D /* TwitterConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C1225D8C6F0074AE3D /* TwitterConst.cpp */; };
 		F31FE8C5225D920B0074AE3D /* TwitterSignInServiceWrap.mm in Sources */ = {isa = PBXBuildFile; fileRef = F31FE8C4225D920B0074AE3D /* TwitterSignInServiceWrap.mm */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -303,6 +305,9 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F31E2C99227083DF009F2669 /* FunctionsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionsService.h; sourceTree = "<group>"; };
+		F31E2C9A227083EA009F2669 /* FunctionsService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FunctionsService.cpp; sourceTree = "<group>"; };
+		F31E69A82270773900535CAB /* firebase_functions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = firebase_functions.framework; sourceTree = "<group>"; };
 		F31FE8BB225D87BA0074AE3D /* TwitterSignInService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterSignInService.h; sourceTree = "<group>"; };
 		F31FE8BC225D87BA0074AE3D /* TwitterSignInService.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TwitterSignInService.mm; sourceTree = "<group>"; };
 		F31FE8C0225D8B8A0074AE3D /* TwitterConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterConst.h; sourceTree = "<group>"; };
@@ -628,6 +633,7 @@
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				F34A3C2A22547DAE0041D565 /* firebase.framework in Frameworks */,
 				F34A3C3E2255E2910041D565 /* firebase_database.framework in Frameworks */,
+				F31E69A92270773900535CAB /* firebase_functions.framework in Frameworks */,
 				F34A3C2B22547DAE0041D565 /* firebase_auth.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -811,6 +817,15 @@
 				B6165D77C2B3FBFCF502BC57 /* Pods-hateru_cocos2dx-mobile.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F31E2C97227082C0009F2669 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				F31E2C99227083DF009F2669 /* FunctionsService.h */,
+				F31E2C9A227083EA009F2669 /* FunctionsService.cpp */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		F3293C60226D5BD2009EE69A /* Config */ = {
@@ -1187,6 +1202,7 @@
 			children = (
 				F34A3C2822547DAE0041D565 /* firebase_auth.framework */,
 				F34A3C3D2255E2910041D565 /* firebase_database.framework */,
+				F31E69A82270773900535CAB /* firebase_functions.framework */,
 				F3D93D07225DC104001A36D6 /* firebase_remote_config.framework */,
 				F34A3C2722547DAE0041D565 /* firebase.framework */,
 				F3AFE235225454B000C48F84 /* GoogleService-Info.plist */,
@@ -1398,6 +1414,7 @@
 				F3D93D0F225DC3D2001A36D6 /* FirebaseService.h */,
 				F3D93D10225DC3DF001A36D6 /* FirebaseService.cpp */,
 				F34A3C3822549C070041D565 /* Auth */,
+				F31E2C97227082C0009F2669 /* Functions */,
 				F3D93D0A225DC10A001A36D6 /* RemoteConfig */,
 			);
 			path = Firebase;
@@ -1468,6 +1485,9 @@
 						DevelopmentTeam = BJHQQ4D4GE;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -1734,6 +1754,7 @@
 				F3D8885D220E94DC00B426CC /* GameItemManager.cpp in Sources */,
 				F3D88869220E94DC00B426CC /* Base64Util.cpp in Sources */,
 				F3D8886E220E94DC00B426CC /* TitleLayer.cpp in Sources */,
+				F31E2C9B227083EA009F2669 /* FunctionsService.cpp in Sources */,
 				F3D8885C220E94DC00B426CC /* GameCharaManager.cpp in Sources */,
 				F333686A225B1A25005DD29F /* DBBlacklistEntity.cpp in Sources */,
 				F32BE53F2237D65C00ECA798 /* GameEventEndIfEntity.cpp in Sources */,

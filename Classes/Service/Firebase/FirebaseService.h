@@ -30,9 +30,9 @@ public:
     ~FirebaseService() {}
     
     /**
-     Firebaseアプリケーション取得
-
-     @return Firebaseアプリケーション
+     *  Firebaseアプリケーション取得
+     *
+     *  @return Firebaseアプリケーション
      */
     App *app();
     

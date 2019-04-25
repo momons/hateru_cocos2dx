@@ -32,10 +32,10 @@ public:
     /**
      * コンストラクタ
      *
-     *  @param saveData   セーブデータ
-     *  @param checkDigit チェックデジット
+     *  @param messageId メッセージID
+     *  @param userId    ユーザーID
      */
-    DBBBSEntity(const string &saveData, const string &checkDigit);
+    DBBBSEntity(const string &messageId, const string &userId);
     
     /**
      * デストラクタ

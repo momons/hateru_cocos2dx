@@ -37,10 +37,10 @@ public:
     /**
      *  自分のセーブデータ保存
      *
-     *  @param saveData   セーブデータ
-     *  @param checkDigit チェックデジット
+     *  @param messageId メッセージID
+     *  @param userId    ユーザーID
      */
-    void writeMy(const string &saveData, const string &checkDigit);
+    void writeMy(const string &messageId, const string &userId);
     
     /**
      *  自分のセーブデータ削除
